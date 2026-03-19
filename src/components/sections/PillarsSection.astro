@@ -39,7 +39,8 @@ const pillars = [
       {t(locale, "pillars.purposeHeading")}
     </h2>
     <p class="animate-on-scroll mt-6 text-lg text-[#B3B3B3] md:text-xl">
-      {t(locale, "pillars.purposeDescription")}
+      {t(locale, "pillars.purposeDescription").split("alternatief,")[0]}alternatief,<br />
+      {t(locale, "pillars.purposeDescription").split("alternatief,")[1]?.trim()}
     </p>
   </div>
 </section>
