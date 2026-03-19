@@ -47,7 +47,7 @@ import ChatWidget from "@/components/chat/ChatWidget";
     <meta name="twitter:description" content={description} />
     {ogImage && <meta name="twitter:image" content={ogImage} />}
   </head>
-  <body>
+  <body class="antialiased">
     <slot />
 
     <ChatWidget client:idle locale={locale} />

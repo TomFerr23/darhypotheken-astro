@@ -2,6 +2,7 @@
 import { t } from "@/i18n/translations";
 import { NAV_ITEMS } from "@/lib/constants";
 import HeaderIsland from "./HeaderIsland";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 interface Props {
   locale: string;
@@ -42,6 +43,7 @@ const navItems = NAV_ITEMS.map((item) => ({
     </nav>
 
     <div class="hidden items-center gap-4 nav:flex">
+      <LanguageSwitcher client:load locale={locale} className="text-dar-cream" />
       <a
         href={aanmeldenHref}
         class="shrink-0 rounded-full bg-dar-green px-5 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90"
