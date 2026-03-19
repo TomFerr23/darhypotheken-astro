@@ -1,0 +1,18 @@
+---
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "DAR Hypotheken B.V.",
+  url: "https://darhypotheken.nl",
+  email: "info@darhypotheken.nl",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Oostenburgermiddenstraat 119",
+    addressLocality: "Amsterdam",
+    postalCode: "1018 LH",
+    addressCountry: "NL",
+  },
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

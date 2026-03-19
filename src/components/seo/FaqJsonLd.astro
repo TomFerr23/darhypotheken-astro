@@ -1,0 +1,33 @@
+---
+import faqNl from "@/data/faq/faq-nl.json";
+import faqEn from "@/data/faq/faq-en.json";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+const SELECTED_INDICES = [0, 1, 2, 3, 4, 5, 6, 7, 12, 19];
+const faqData = locale === "en" ? faqEn : faqNl;
+
+const mainEntity = SELECTED_INDICES.map((idx) => {
+  const entry = (faqData as any)[idx];
+  const question = entry.patterns[0];
+  return {
+    "@type": "Question",
+    name: question.charAt(0).toUpperCase() + question.slice(1),
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: entry.answer,
+    },
+  };
+});
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity,
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

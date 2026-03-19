@@ -1,0 +1,84 @@
+---
+import { t } from "@/i18n/translations";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+
+const pillars = [
+  {
+    heading: t(locale, "pillars.duurzaamHeading"),
+    items: [
+      { label: t(locale, "pillars.inclusiviteitLabel"), text: t(locale, "pillars.inclusiviteitText") },
+      { label: t(locale, "pillars.duurzaamLabel"), text: t(locale, "pillars.duurzaamText") },
+    ],
+  },
+  {
+    heading: t(locale, "pillars.alternatiefHeading"),
+    items: [
+      { label: t(locale, "pillars.medeEigendomLabel"), text: t(locale, "pillars.medeEigendomText") },
+      { label: t(locale, "pillars.vasteBetalingenLabel"), text: t(locale, "pillars.vasteBetalingenText") },
+    ],
+  },
+  {
+    heading: t(locale, "pillars.rentevrijHeading"),
+    items: [
+      { label: t(locale, "pillars.geenRenteLabel"), text: t(locale, "pillars.geenRenteText") },
+      { label: t(locale, "pillars.vermogensopbouwLabel"), text: t(locale, "pillars.vermogensopbouwText") },
+    ],
+  },
+];
+---
+
+<!-- Purpose intro -->
+<section id="purpose" class="bg-dar-navy py-20 md:py-28">
+  <div class="mx-auto max-w-4xl px-6 text-center">
+    <h2 class="animate-on-scroll text-3xl font-semibold text-dar-cream md:text-5xl">
+      {t(locale, "pillars.purposeHeading")}
+    </h2>
+    <p class="animate-on-scroll mt-6 text-lg text-dar-cream/80 md:text-xl">
+      {t(locale, "pillars.purposeDescription")}
+    </p>
+  </div>
+</section>
+
+<!-- Three pillars -->
+<section class="bg-[#f4f9ff] py-20 md:py-28">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="grid gap-12 md:grid-cols-3">
+      {pillars.map((pillar, i) => (
+        <div
+          class="animate-on-scroll stagger-child"
+          style={`--stagger-index: ${i};`}
+        >
+          <h3 class="mb-6 text-2xl font-semibold text-dar-navy md:text-3xl">
+            {pillar.heading}
+          </h3>
+          <div class="space-y-5">
+            {pillar.items.map((item) => (
+              <div class="flex gap-3">
+                <svg
+                  class="mt-1 shrink-0 text-[#2384f9]"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <p class="font-semibold text-dar-navy">{item.label}</p>
+                  <p class="mt-1 text-sm text-dar-slate/80">{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

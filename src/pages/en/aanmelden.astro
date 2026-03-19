@@ -1,0 +1,22 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/layout/Header.astro";
+import Footer from "@/components/layout/Footer.astro";
+import AanmeldenForm from "@/components/ui-react/AanmeldenForm";
+import { t } from "@/i18n/translations";
+
+const locale = "en";
+---
+
+<BaseLayout
+  title={t(locale, "apply.pageTitle") + " — DAR Hypotheken"}
+  description={t(locale, "apply.introText")}
+  locale={locale}
+  canonicalUrl="https://darhypotheken.nl/en/aanmelden"
+>
+  <Header locale={locale} />
+  <main class="bg-white">
+    <AanmeldenForm client:load locale={locale} />
+  </main>
+  <Footer locale={locale} />
+</BaseLayout>

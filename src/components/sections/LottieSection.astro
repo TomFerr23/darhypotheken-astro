@@ -1,0 +1,29 @@
+---
+import LottiePlayer from "@/components/ui-react/LottiePlayer";
+---
+
+<section class="-mt-10 -mb-10 bg-white md:-mt-20 md:-mb-16">
+  <div class="mx-auto grid max-w-6xl gap-0 px-6 grid-cols-2 md:grid-cols-3 items-end">
+    <div class="animate-on-scroll stagger-child flex items-end justify-center" style="--stagger-index: 0;">
+      <LottiePlayer
+        client:visible
+        src="/animations/animation-1.lottie"
+        className="h-auto w-full max-w-[250px] md:max-w-[400px] aspect-square"
+      />
+    </div>
+    <div class="animate-on-scroll stagger-child flex items-end justify-center" style="--stagger-index: 1;">
+      <LottiePlayer
+        client:visible
+        src="/animations/animation-2.lottie"
+        className="h-auto w-full max-w-[250px] md:max-w-[400px] aspect-square"
+      />
+    </div>
+    <div class="animate-on-scroll stagger-child hidden items-end justify-center md:flex" style="--stagger-index: 2;">
+      <LottiePlayer
+        client:visible
+        src="/animations/animation-1.lottie"
+        className="h-[400px] w-[400px]"
+      />
+    </div>
+  </div>
+</section>

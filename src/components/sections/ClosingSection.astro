@@ -1,0 +1,78 @@
+---
+import { t } from "@/i18n/translations";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+---
+
+<section class="relative overflow-hidden bg-white pb-0 pt-16 md:pt-24">
+  <!-- Animated clouds -->
+  <div
+    class="pointer-events-none absolute top-[8%] z-0 w-[80px] opacity-60 md:w-[120px]"
+    style="animation: cloud-move-right 22s linear infinite;"
+  >
+    <img
+      src="/images/cloud-blue-last.svg"
+      alt=""
+      width="430"
+      height="210"
+      class="h-auto w-full"
+      loading="lazy"
+      decoding="async"
+      aria-hidden="true"
+    />
+  </div>
+  <div
+    class="pointer-events-none absolute top-[18%] z-0 w-[100px] opacity-40 md:w-[160px]"
+    style="animation: cloud-move-left 32s linear infinite;"
+  >
+    <img
+      src="/images/two-clouds.svg"
+      alt=""
+      width="586"
+      height="321"
+      class="h-auto w-full"
+      loading="lazy"
+      decoding="async"
+      aria-hidden="true"
+    />
+  </div>
+
+  <!-- Tagline -->
+  <div class="animate-on-scroll relative z-10 mx-auto max-w-4xl px-6 text-center">
+    <p class="text-2xl font-semibold text-dar-slate md:text-4xl lg:text-5xl">
+      {t(locale, "closing.tagline")}
+    </p>
+  </div>
+
+  <!-- Artwork -->
+  <div class="relative z-10 mx-auto mt-10 flex max-w-6xl items-end justify-center px-6 md:mt-14">
+    <div class="animate-slide-left w-[45%] max-w-[585px]">
+      <img
+        src="/images/Artwork.svg"
+        alt=""
+        width="585"
+        height="313"
+        class="h-auto w-full"
+        loading="lazy"
+        decoding="async"
+        aria-hidden="true"
+      />
+    </div>
+    <div class="animate-slide-right -ml-[5%] w-[55%] max-w-[633px]">
+      <img
+        src="/images/Artwork-2.svg"
+        alt=""
+        width="633"
+        height="314"
+        class="h-auto w-full"
+        loading="lazy"
+        decoding="async"
+        aria-hidden="true"
+      />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,51 @@
+---
+import { t } from "@/i18n/translations";
+import { getRecentPosts } from "@/sanity/queries";
+import BlogCard from "@/components/blog/BlogCard.astro";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+const posts = await getRecentPosts(3);
+const blogHref = locale === "nl" ? "/blog" : "/en/blog";
+---
+
+{posts && posts.length > 0 && (
+  <section class="bg-[#f4f9ff] py-20 md:py-28">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="animate-on-scroll text-center text-3xl font-semibold text-dar-slate md:text-5xl">
+        {t(locale, "blog.title")}
+      </h2>
+      <p class="animate-on-scroll mx-auto mt-4 max-w-2xl text-center text-dar-gray">
+        {t(locale, "blog.description")}
+      </p>
+
+      <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {posts.map((post: any) => (
+          <div class="animate-on-scroll stagger-child" style={`--stagger-index: ${posts.indexOf(post)};`}>
+            <BlogCard
+              title={locale === "en" && post.titleEn ? post.titleEn : post.title}
+              excerpt={locale === "en" && post.excerptEn ? post.excerptEn : post.excerpt || ""}
+              slug={post.slug.current}
+              mainImage={post.mainImage}
+              publishedAt={post.publishedAt}
+              categories={post.categories}
+              locale={locale}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-10 text-center">
+        <a
+          href={blogHref}
+          class="inline-flex items-center gap-2 font-semibold text-dar-blue transition-opacity hover:opacity-80"
+        >
+          {t(locale, "blog.viewAll")} &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+)}

@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-dar-blue: #060097;
+  --color-dar-navy: #1c3349;
+  --color-dar-purple: #c10fff;
+  --color-dar-yellow: #ffcd57;
+  --color-dar-slate: #1e293b;
+  --color-dar-cream: #f8fdda;
+  --color-dar-gray: #565D66;
+  --color-dar-green: #80C33F;
+  --font-gilroy: "Gilroy", sans-serif;
+  --breakpoint-nav: 921px;
+}
+
+/* Font faces */
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Gilroy", sans-serif;
+  color: var(--color-dar-slate);
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Scroll margin for sticky header offset */
+[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Cloud animations — use calc to stay within viewport bounds */
+@keyframes cloud-move-right {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(calc(100vw - 100%)); }
+}
+
+@keyframes cloud-move-left {
+  0% { transform: translateX(calc(100vw - 100%)); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee var(--marquee-duration, 20s) linear infinite;
+  will-change: transform;
+}
+
+/* Timeline line - grey track */
+.timeline-line-track {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #e2e8f0;
+  transform: translateX(-50%);
+}
+
+/* Timeline line - animated fill */
+.timeline-line-fill {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  background-color: var(--color-dar-blue);
+  transform: translateX(-50%);
+  height: 0%;
+  transition: height 0.1s linear;
+}
+
+@media (max-width: 768px) {
+  .timeline-line-track { left: 20px; }
+  .timeline-line-fill { left: 20px; }
+}
+
+/* Hero artwork slide-in animations */
+@keyframes hero-slide-from-left {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes hero-slide-from-right {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.hero-slide-left {
+  transform: translateX(-100%);
+  animation: hero-slide-from-left 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s forwards;
+}
+
+.hero-slide-right {
+  transform: translateX(100%);
+  animation: hero-slide-from-right 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s forwards;
+}
+
+/* ===== Scroll-triggered animations (IntersectionObserver) ===== */
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-slide-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.animate-slide-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-slide-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.animate-slide-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Stagger children — set --stagger-index via style attribute */
+.stagger-child {
+  transition-delay: calc(var(--stagger-index, 0) * 0.15s);
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-marquee { animation: none !important; }
+  .timeline-line-fill { transition: none !important; }
+  .hero-slide-left,
+  .hero-slide-right {
+    transform: none;
+    animation: none !important;
+  }
+  .animate-on-scroll,
+  .animate-slide-left,
+  .animate-slide-right {
+    opacity: 1;
+    transform: none;
+    transition: none !important;
+  }
+}

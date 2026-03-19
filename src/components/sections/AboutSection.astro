@@ -1,0 +1,27 @@
+---
+import { t } from "@/i18n/translations";
+import VideoPlayer from "@/components/ui-react/VideoPlayer";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+---
+
+<section id="about" class="bg-[#2167a5] py-20 md:py-28">
+  <div class="mx-auto max-w-5xl px-6">
+    <h2 class="animate-on-scroll mx-auto max-w-4xl text-center text-3xl font-semibold leading-tight text-[#f8fddb] md:text-5xl lg:text-[48px] lg:leading-[58px]">
+      {t(locale, "about.heading")}
+    </h2>
+
+    <div class="animate-on-scroll mx-auto mt-8 max-w-4xl text-center" style="--stagger-index: 1;">
+      <p class="text-sm leading-snug text-white/80 md:text-base">{t(locale, "about.description1")}</p>
+      <p class="mt-1 text-sm leading-snug text-white/80 md:text-base">{t(locale, "about.description2")}</p>
+    </div>
+
+    <div class="animate-on-scroll mt-14" style="--stagger-index: 2;">
+      <VideoPlayer client:visible videoFallback={t(locale, "about.videoFallback")} />
+    </div>
+  </div>
+</section>

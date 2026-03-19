@@ -1,0 +1,109 @@
+---
+import { t } from "@/i18n/translations";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+
+const steps = [
+  { title: t(locale, "timeline.step1Title"), description: t(locale, "timeline.step1Description") },
+  { title: t(locale, "timeline.step2Title"), description: t(locale, "timeline.step2Description") },
+  { title: t(locale, "timeline.step3Title"), description: t(locale, "timeline.step3Description") },
+  { title: t(locale, "timeline.step4Title"), description: t(locale, "timeline.step4Description") },
+];
+---
+
+<section id="process" class="overflow-hidden bg-white py-20 md:py-28">
+  <div class="mx-auto max-w-5xl px-6">
+    <h2 class="animate-on-scroll mb-16 text-center text-3xl font-semibold text-dar-slate md:text-5xl">
+      {t(locale, "timeline.heading")}
+    </h2>
+
+    <div class="relative" data-timeline>
+      <div class="timeline-line-track"></div>
+      <div class="timeline-line-fill" data-timeline-fill></div>
+
+      <div class="flex flex-col gap-12">
+        {steps.map((step, i) => {
+          const isLeft = i % 2 !== 0;
+          const animClass = isLeft ? "animate-slide-left" : "animate-slide-right";
+          return (
+            <div class={`relative flex w-full items-center md:justify-center ${animClass} stagger-child`} style={`--stagger-index: ${i};`}>
+              {/* Mobile layout */}
+              <div class="flex w-full items-start gap-6 md:hidden">
+                <div class="relative z-10 mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-dar-blue bg-white">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-dar-blue">
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                </div>
+                <div class="flex-1 pb-10">
+                  <h3 class="text-lg font-semibold text-dar-slate">{step.title}</h3>
+                  <p class="mt-2 text-dar-gray">{step.description}</p>
+                </div>
+              </div>
+
+              {/* Desktop layout: alternating */}
+              <div class="hidden w-full md:grid md:grid-cols-[1fr_auto_1fr] md:gap-8">
+                <div class={`flex items-center ${isLeft ? "justify-end text-right" : ""}`}>
+                  {isLeft && (
+                    <div class="max-w-sm">
+                      <h3 class="text-xl font-semibold text-dar-slate">{step.title}</h3>
+                      <p class="mt-2 text-dar-gray">{step.description}</p>
+                    </div>
+                  )}
+                </div>
+                <div class="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border-2 border-dar-blue bg-white">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-dar-blue">
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                </div>
+                <div class="flex items-center">
+                  {!isLeft && (
+                    <div class="max-w-sm">
+                      <h3 class="text-xl font-semibold text-dar-slate">{step.title}</h3>
+                      <p class="mt-2 text-dar-gray">{step.description}</p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+
+    {/* Sharia Compliance Certification */}
+    <div class="animate-on-scroll mt-20 flex items-center gap-8">
+      <span class="text-[16px] leading-tight text-dar-gray">
+        Sharia Compliance<br />Certification provided by:
+      </span>
+      <a href="https://noorshariah.com" target="_blank" rel="noopener noreferrer">
+        <img src="/images/noor-shariah-logo.png" alt="Noor Shariah Solutions" width="160" height="60" class="h-auto w-[140px]" loading="lazy" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Scroll-linked timeline fill animation
+  const container = document.querySelector('[data-timeline]');
+  const fill = document.querySelector('[data-timeline-fill]') as HTMLElement;
+
+  if (container && fill) {
+    const updateFill = () => {
+      const rect = container.getBoundingClientRect();
+      const viewH = window.innerHeight;
+      const startOffset = viewH * 0.8;
+      const endOffset = viewH * 0.4;
+      const totalTravel = rect.height - (startOffset - endOffset);
+      const traveled = startOffset - rect.top;
+      const progress = Math.max(0, Math.min(1, traveled / totalTravel));
+      fill.style.height = `${progress * 100}%`;
+    };
+
+    window.addEventListener('scroll', updateFill, { passive: true });
+    updateFill();
+  }
+</script>

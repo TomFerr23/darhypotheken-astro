@@ -1,0 +1,31 @@
+---
+import { t } from "@/i18n/translations";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+const items = Array.from({ length: 6 });
+---
+
+<section class="overflow-hidden bg-dar-navy py-6">
+  <div class="overflow-hidden">
+    <div class="animate-marquee flex w-max" style="--marquee-duration: 30s;">
+      <div class="flex shrink-0">
+        {items.map(() => (
+          <span class="mx-8 whitespace-nowrap text-xl font-semibold uppercase tracking-widest text-dar-cream md:text-2xl">
+            {t(locale, "marquee.tagline")}
+          </span>
+        ))}
+      </div>
+      <div class="flex shrink-0" aria-hidden="true">
+        {items.map(() => (
+          <span class="mx-8 whitespace-nowrap text-xl font-semibold uppercase tracking-widest text-dar-cream md:text-2xl">
+            {t(locale, "marquee.tagline")}
+          </span>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

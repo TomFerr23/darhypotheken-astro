@@ -1,0 +1,74 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  locale?: string;
+  canonicalUrl?: string;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description,
+  locale = "nl",
+  canonicalUrl,
+  ogImage,
+} = Astro.props;
+
+import "@/styles/globals.css";
+import ChatWidget from "@/components/chat/ChatWidget";
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+
+    <title>{title}</title>
+
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdn.sanity.io" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+    {ogImage && <meta property="og:image" content={ogImage} />}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {ogImage && <meta name="twitter:image" content={ogImage} />}
+  </head>
+  <body>
+    <slot />
+
+    <ChatWidget client:idle locale={locale} />
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("is-visible");
+              observer.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document
+        .querySelectorAll(
+          ".animate-on-scroll, .animate-slide-left, .animate-slide-right",
+        )
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>

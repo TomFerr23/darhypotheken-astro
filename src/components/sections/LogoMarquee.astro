@@ -1,0 +1,38 @@
+---
+const logos = Array.from({ length: 8 });
+---
+
+<section class="overflow-hidden bg-white py-5">
+  <div class="overflow-hidden py-2">
+    <div class="animate-marquee flex w-max" style="--marquee-duration: 25s;">
+      <div class="flex shrink-0">
+        {logos.map(() => (
+          <div class="mx-12 flex items-center">
+            <img
+              src="/images/dar-logo-blue.svg"
+              alt="DAR"
+              width="100"
+              height="46"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        ))}
+      </div>
+      <div class="flex shrink-0" aria-hidden="true">
+        {logos.map(() => (
+          <div class="mx-12 flex items-center">
+            <img
+              src="/images/dar-logo-blue.svg"
+              alt=""
+              width="100"
+              height="46"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

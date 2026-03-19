@@ -1,0 +1,52 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/layout/Header.astro";
+import Footer from "@/components/layout/Footer.astro";
+import HeroSection from "@/components/sections/HeroSection.astro";
+import AboutSection from "@/components/sections/AboutSection.astro";
+import LogoMarquee from "@/components/sections/LogoMarquee.astro";
+import PillarsSection from "@/components/sections/PillarsSection.astro";
+import LottieSection from "@/components/sections/LottieSection.astro";
+import TaglineMarquee from "@/components/sections/TaglineMarquee.astro";
+import TimelineSection from "@/components/sections/TimelineSection.astro";
+import TeamSection from "@/components/sections/TeamSection.astro";
+import BlogPreviewSection from "@/components/sections/BlogPreviewSection.astro";
+import ClosingSection from "@/components/sections/ClosingSection.astro";
+import ContactSection from "@/components/sections/ContactSection.astro";
+import JsonLd from "@/components/seo/JsonLd.astro";
+import FaqJsonLd from "@/components/seo/FaqJsonLd.astro";
+import { t } from "@/i18n/translations";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+const baseUrl = "https://darhypotheken.nl";
+const canonicalUrl = locale === "nl" ? baseUrl : `${baseUrl}/en`;
+---
+
+<BaseLayout
+  title={t(locale, "meta.title")}
+  description={t(locale, "meta.description")}
+  locale={locale}
+  canonicalUrl={canonicalUrl}
+>
+  <JsonLd />
+  <FaqJsonLd locale={locale} />
+  <Header locale={locale} />
+  <main>
+    <HeroSection locale={locale} />
+    <AboutSection locale={locale} />
+    <LogoMarquee />
+    <PillarsSection locale={locale} />
+    <LottieSection />
+    <TaglineMarquee locale={locale} />
+    <TimelineSection locale={locale} />
+    <TeamSection locale={locale} />
+    <BlogPreviewSection locale={locale} />
+    <ClosingSection locale={locale} />
+    <ContactSection locale={locale} />
+  </main>
+  <Footer locale={locale} />
+</BaseLayout>

@@ -1,0 +1,117 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/layout/Header.astro";
+import Footer from "@/components/layout/Footer.astro";
+import PortableTextRenderer from "@/components/blog/PortableTextRenderer";
+import BlogJsonLd from "@/components/seo/BlogJsonLd.astro";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd.astro";
+import { t } from "@/i18n/translations";
+import { getPostBySlug, getAllSlugs } from "@/sanity/queries";
+import { urlFor } from "@/sanity/image";
+
+export async function getStaticPaths() {
+  const slugs = await getAllSlugs();
+  return slugs.map((slug: string) => ({ params: { slug } }));
+}
+
+const locale = "nl";
+const { slug } = Astro.params;
+const post = await getPostBySlug(slug!);
+if (!post) return Astro.redirect("/blog");
+
+const title = post.title;
+const body = post.body;
+const description = post.seoDescription || post.excerpt || "";
+const backHref = "/blog";
+const baseUrl = "https://darhypotheken.nl";
+const postUrl = `${baseUrl}/blog/${slug}`;
+const imageUrl = post.mainImage?.asset ? urlFor(post.mainImage).width(1200).height(630).fit("crop").url() : undefined;
+const dateLocale = "nl-NL";
+---
+
+<BaseLayout
+  title={(post.seoTitle || title) + " — DAR Hypotheken"}
+  description={description}
+  locale={locale}
+  canonicalUrl={postUrl}
+  ogImage={imageUrl}
+>
+  <BlogJsonLd
+    title={title}
+    description={description}
+    image={imageUrl}
+    datePublished={post.publishedAt}
+    author={post.author || "DAR Hypotheken"}
+    url={postUrl}
+  />
+  <BreadcrumbJsonLd
+    items={[
+      { name: "Home", url: baseUrl },
+      { name: "Blog", url: `${baseUrl}/blog` },
+      { name: title, url: postUrl },
+    ]}
+  />
+
+  <Header locale={locale} />
+
+  <main class="bg-white py-20 md:py-28">
+    <article class="mx-auto max-w-3xl px-6">
+      <a
+        href={backHref}
+        class="inline-flex items-center gap-2 text-sm text-dar-blue hover:underline"
+      >
+        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        {t(locale, "blog.backToList")}
+      </a>
+
+      {post.categories && post.categories.length > 0 && (
+        <div class="mt-6 flex flex-wrap gap-2">
+          {post.categories.map((cat: string) => (
+            <span class="rounded-full bg-dar-blue/10 px-3 py-0.5 text-xs font-medium text-dar-blue">
+              {cat}
+            </span>
+          ))}
+        </div>
+      )}
+
+      <h1 class="mt-4 text-3xl font-bold text-dar-slate md:text-5xl leading-tight">
+        {title}
+      </h1>
+
+      <div class="mt-4 flex items-center gap-4 text-sm text-dar-gray">
+        {post.author && <span>{post.author}</span>}
+        {post.publishedAt && (
+          <time datetime={post.publishedAt}>
+            {new Date(post.publishedAt).toLocaleDateString(dateLocale, {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
+          </time>
+        )}
+      </div>
+
+      {post.mainImage?.asset && (
+        <div class="mt-8 overflow-hidden rounded-2xl">
+          <img
+            src={urlFor(post.mainImage).width(900).height(500).fit("crop").url()}
+            alt={post.mainImage.alt || title}
+            class="h-auto w-full"
+            width="900"
+            height="500"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+      )}
+
+      <div class="mt-10">
+        <PortableTextRenderer client:load value={body} />
+      </div>
+    </article>
+  </main>
+
+  <Footer locale={locale} />
+</BaseLayout>

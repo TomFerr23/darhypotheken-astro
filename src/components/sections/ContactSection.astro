@@ -1,0 +1,35 @@
+---
+import { t } from "@/i18n/translations";
+
+interface Props {
+  locale: string;
+}
+
+const { locale } = Astro.props;
+---
+
+<section id="contact" class="bg-[#1c3349] py-20 md:py-28">
+  <div class="animate-on-scroll mx-auto max-w-3xl px-6 text-center">
+    <h2 class="text-3xl font-semibold text-[#f8fddb] md:text-5xl">
+      {t(locale, "contact.heading")}
+    </h2>
+
+    <p class="animate-on-scroll mt-4 text-xl text-[#f8fddb]/80 md:text-2xl">
+      {t(locale, "contact.subtitle")}
+    </p>
+
+    <p class="animate-on-scroll mt-6 text-[#f8fddb]/70">
+      {t(locale, "contact.description1")}<br />
+      {t(locale, "contact.description2")}
+    </p>
+
+    <div class="animate-on-scroll mt-8">
+      <a
+        href="/aanmelden"
+        class="inline-block rounded-full bg-dar-green px-8 py-3 text-lg font-semibold text-dar-navy transition-transform hover:scale-[1.03] active:scale-[0.97]"
+      >
+        {t(locale, "contact.cta")}
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,136 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Header from "@/components/layout/Header.astro";
+import Footer from "@/components/layout/Footer.astro";
+import { t } from "@/i18n/translations";
+
+const locale = "en";
+---
+
+<BaseLayout
+  title={t(locale, "privacy.title") + " — DAR Hypotheken"}
+  description="Privacy Statement of DAR Hypotheken"
+  locale={locale}
+  canonicalUrl="https://darhypotheken.nl/en/privacy"
+>
+  <Header locale={locale} />
+
+  <main class="bg-white py-20 md:py-28">
+    <div class="mx-auto max-w-3xl px-6">
+      <h1 class="text-3xl font-bold text-dar-slate md:text-5xl">
+        {t(locale, "privacy.title")}
+      </h1>
+
+      <div class="mt-10 space-y-8 text-dar-gray leading-relaxed">
+        <section class="animate-on-scroll">
+          <h2 class="text-xl font-semibold text-dar-slate">{t(locale, "privacy.s1heading")}</h2>
+          <p class="mt-3">{t(locale, "privacy.s1intro")}</p>
+          <ul class="mt-3 list-disc space-y-1 pl-6">
+            <li>{t(locale, "privacy.s1item1")}</li>
+            <li>{t(locale, "privacy.s1item2")}</li>
+            <li>{t(locale, "privacy.s1item3")}</li>
+            <li>{t(locale, "privacy.s1item4")}</li>
+            <li>{t(locale, "privacy.s1item5")}</li>
+            <li>{t(locale, "privacy.s1item6")}</li>
+            <li>{t(locale, "privacy.s1item7")}</li>
+            <li>{t(locale, "privacy.s1item8")}</li>
+            <li>{t(locale, "privacy.s1item9")}</li>
+            <li>{t(locale, "privacy.s1item10")}</li>
+            <li>{t(locale, "privacy.s1item11")}</li>
+          </ul>
+        </section>
+
+        <section class="animate-on-scroll">
+          <h2 class="text-xl font-semibold text-dar-slate">{t(locale, "privacy.s2heading")}</h2>
+          <p class="mt-3">{t(locale, "privacy.s2intro")}</p>
+          <ul class="mt-3 list-disc space-y-1 pl-6">
+            <li>{t(locale, "privacy.s2item1")}</li>
+            <li>{t(locale, "privacy.s2item2")}</li>
+            <li>{t(locale, "privacy.s2item3")}</li>
+            <li>{t(locale, "privacy.s2item4")}</li>
+          </ul>
+        </section>
+
+        <section class="animate-on-scroll">
+          <h2 class="text-xl font-semibold text-dar-slate">{t(locale, "privacy.s3heading")}</h2>
+          <ul class="mt-3 list-disc space-y-1 pl-6">
+            <li>{t(locale, "privacy.s3item1")}</li>
+            <li>{t(locale, "privacy.s3item2")}</li>
+            <li>{t(locale, "privacy.s3item3")}</li>
+            <li>{t(locale, "privacy.s3item4")}</li>
+            <li>{t(locale, "privacy.s3item5")}</li>
+            <li>{t(locale, "privacy.s3item6")}</li>
+            <li>{t(locale, "privacy.s3item7")}</li>
+            <li>{t(locale, "privacy.s3item8")}</li>
+            <li>{t(locale, "privacy.s3item9")}</li>
+            <li>{t(locale, "privacy.s3item10")}</li>
+          </ul>
+          <p class="mt-3">{t(locale, "privacy.s3outro")}</p>
+        </section>
+
+        <section class="animate-on-scroll">
+          <h2 class="text-xl font-semibold text-dar-slate">{t(locale, "privacy.s4heading")}</h2>
+          <p class="mt-3">{t(locale, "privacy.s4intro")}</p>
+          <ul class="mt-3 list-disc space-y-1 pl-6">
+            <li>{t(locale, "privacy.s4item1")}</li>
+            <li>{t(locale, "privacy.s4item2")}</li>
+            <li>{t(locale, "privacy.s4item3")}</li>
+            <li>{t(locale, "privacy.s4item4")}</li>
+          </ul>
+        </section>
+
+        <section class="animate-on-scroll">
+          <h2 class="text-xl font-semibold text-dar-slate">{t(locale, "privacy.s5heading")}</h2>
+          <p class="mt-3">{t(locale, "privacy.s5text")}</p>
+        </section>
+
+        <section class="animate-on-scroll">
+          <h2 class="text-xl font-semibold text-dar-slate">{t(locale, "privacy.s6heading")}</h2>
+          <p class="mt-3">{t(locale, "privacy.s6text")}</p>
+        </section>
+
+        <section class="animate-on-scroll">
+          <h2 class="text-xl font-semibold text-dar-slate">{t(locale, "privacy.s7heading")}</h2>
+          <p class="mt-3">{t(locale, "privacy.s7text")}</p>
+        </section>
+
+        <section class="animate-on-scroll">
+          <h2 class="text-xl font-semibold text-dar-slate">{t(locale, "privacy.s8heading")}</h2>
+          <p class="mt-3">{t(locale, "privacy.s8text")}</p>
+        </section>
+
+        <section class="animate-on-scroll">
+          <h2 class="text-xl font-semibold text-dar-slate">{t(locale, "privacy.s9heading")}</h2>
+          <p class="mt-3">{t(locale, "privacy.s9text")}</p>
+        </section>
+
+        <section class="animate-on-scroll">
+          <h2 class="text-xl font-semibold text-dar-slate">{t(locale, "privacy.s10heading")}</h2>
+          <p class="mt-3">{t(locale, "privacy.s10intro")}</p>
+          <ul class="mt-3 list-disc space-y-1 pl-6">
+            <li>{t(locale, "privacy.s10item1")}</li>
+            <li>{t(locale, "privacy.s10item2")}</li>
+            <li>{t(locale, "privacy.s10item3")}</li>
+          </ul>
+        </section>
+
+        <section class="animate-on-scroll">
+          <h2 class="text-xl font-semibold text-dar-slate">{t(locale, "privacy.s11heading")}</h2>
+          <p class="mt-3">{t(locale, "privacy.s11text")}</p>
+        </section>
+
+        <section class="animate-on-scroll">
+          <h2 class="text-xl font-semibold text-dar-slate">{t(locale, "privacy.s12heading")}</h2>
+          <p class="mt-3">{t(locale, "privacy.s12text")}</p>
+        </section>
+
+        <section class="animate-on-scroll">
+          <h2 class="text-xl font-semibold text-dar-slate">{t(locale, "privacy.s13heading")}</h2>
+          <p class="mt-3">{t(locale, "privacy.s13text")}</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <Footer locale={locale} />
+</BaseLayout>
