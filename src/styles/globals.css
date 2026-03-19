@@ -45,14 +45,12 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
   font-family: "Gilroy", sans-serif;
   color: var(--color-dar-slate);
   background: #ffffff;
-  overflow-x: hidden;
 }
 
 /* Scroll margin for sticky header offset */
