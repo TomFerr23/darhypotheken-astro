@@ -20,14 +20,16 @@ const navItems = NAV_ITEMS.map((item) => ({
 }));
 ---
 
-<header class="sticky top-0 z-50 bg-dar-navy">
-  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+<header id="site-header" class="sticky top-0 z-50 bg-dar-navy transition-all duration-300">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 transition-all duration-300" id="header-inner">
     <a href={homeHref} class="shrink-0">
       <img
         src="/images/dar-logo.svg"
         alt="DAR Hypotheken"
         width="100"
         height="40"
+        id="header-logo"
+        class="transition-all duration-300"
       />
     </a>
 
@@ -61,3 +63,31 @@ const navItems = NAV_ITEMS.map((item) => ({
     />
   </div>
 </header>
+
+<script is:inline>
+  (function() {
+    var header = document.getElementById("site-header");
+    var inner = document.getElementById("header-inner");
+    var logo = document.getElementById("header-logo");
+    var scrolled = false;
+
+    function onScroll() {
+      var isScrolled = window.scrollY > 20;
+      if (isScrolled === scrolled) return;
+      scrolled = isScrolled;
+      if (isScrolled) {
+        inner.style.paddingTop = "0.5rem";
+        inner.style.paddingBottom = "0.5rem";
+        logo.style.width = "70px";
+        logo.style.height = "28px";
+      } else {
+        inner.style.paddingTop = "";
+        inner.style.paddingBottom = "";
+        logo.style.width = "";
+        logo.style.height = "";
+      }
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+  })();
+</script>
