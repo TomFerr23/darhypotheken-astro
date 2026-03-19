@@ -31,6 +31,7 @@ export default defineConfig({
       projectId: "wg4j13ic",
       dataset: "production",
       studioBasePath: "/studio",
+      studioRouterHistory: "hash",
       useCdn: true,
       apiVersion: "2024-01-01",
     }),
