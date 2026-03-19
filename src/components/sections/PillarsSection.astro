@@ -48,18 +48,18 @@ const pillars = [
 <!-- Three pillars -->
 <section class="bg-[#f4f9ff] py-20 md:py-28">
   <div class="mx-auto max-w-6xl px-6">
-    <div class="grid gap-12 md:grid-cols-3">
+    <div class="grid gap-y-12 md:grid-cols-3">
       {pillars.map((pillar, i) => (
         <div
-          class="animate-on-scroll stagger-child"
+          class={`animate-on-scroll stagger-child px-0 md:px-8 ${i > 0 ? "md:border-l md:border-[#d0dde8]" : ""}`}
           style={`--stagger-index: ${i};`}
         >
-          <h3 class="mb-6 text-2xl font-semibold text-dar-navy md:text-3xl">
+          <h3 class="mb-6 text-3xl font-semibold text-[#1e293b] md:text-[36px]">
             {pillar.heading}
           </h3>
-          <div class="space-y-5">
+          <ul class="space-y-4">
             {pillar.items.map((item) => (
-              <div class="flex gap-3">
+              <li class="flex items-start gap-3">
                 <svg
                   class="mt-1 shrink-0 text-[#2384f9]"
                   width="20"
@@ -72,12 +72,12 @@ const pillars = [
                   <path d="M5 13l4 4L19 7" />
                 </svg>
                 <div>
-                  <p class="font-semibold text-dar-navy">{item.label}</p>
-                  <p class="mt-1 text-sm text-dar-slate/80">{item.text}</p>
+                  <span class="font-semibold text-[#67768e]">{item.label}:</span>{" "}
+                  <span class="text-[#67768e]">{item.text}</span>
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       ))}
     </div>
