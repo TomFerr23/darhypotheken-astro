@@ -4,7 +4,7 @@
     {
       "name": "astro-dev",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["astro", "dev", "--port", "4321"],
+      "runtimeArgs": ["astro", "dev", "--port", "4321", "--root", "/Users/tommasoferrari/darhypotheken-astro"],
       "port": 4321
     }
   ]
