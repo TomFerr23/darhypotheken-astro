@@ -9,7 +9,7 @@ interface FormData {
   city: string;
   country: string;
   email: string;
-  purchaseType: "alone" | "together";
+  purchaseType: "" | "alone" | "together";
   income: string;
   financingPercentage: string;
   currentMortgage: string;
@@ -126,7 +126,7 @@ export default function AanmeldenForm({ locale }: Props) {
     city: "",
     country: "",
     email: "",
-    purchaseType: "alone",
+    purchaseType: "",
     income: "",
     financingPercentage: "",
     currentMortgage: "",
@@ -162,6 +162,7 @@ export default function AanmeldenForm({ locale }: Props) {
     } else if (!EMAIL_REGEX.test(form.email.trim())) {
       newErrors.email = t("emailInvalid");
     }
+    if (!form.purchaseType) newErrors.purchaseType = t("required");
     if (!form.income) newErrors.income = t("required");
     if (!form.financingPercentage)
       newErrors.financingPercentage = t("required");
@@ -291,11 +292,13 @@ export default function AanmeldenForm({ locale }: Props) {
                 htmlFor="firstName"
                 className="block text-sm font-medium text-dar-slate"
               >
-                {t("firstName")}
+                {t("firstName")} <span className="text-red-500">*</span>
               </label>
               <input
                 id="firstName"
                 type="text"
+                required
+                aria-required="true"
                 value={form.firstName}
                 onChange={(e) => updateField("firstName", e.target.value)}
                 className={inputClass("firstName")}
@@ -311,11 +314,13 @@ export default function AanmeldenForm({ locale }: Props) {
                 htmlFor="lastName"
                 className="block text-sm font-medium text-dar-slate"
               >
-                {t("lastName")}
+                {t("lastName")} <span className="text-red-500">*</span>
               </label>
               <input
                 id="lastName"
                 type="text"
+                required
+                aria-required="true"
                 value={form.lastName}
                 onChange={(e) => updateField("lastName", e.target.value)}
                 className={inputClass("lastName")}
@@ -331,11 +336,13 @@ export default function AanmeldenForm({ locale }: Props) {
                 htmlFor="dateOfBirth"
                 className="block text-sm font-medium text-dar-slate"
               >
-                {t("dateOfBirth")}
+                {t("dateOfBirth")} <span className="text-red-500">*</span>
               </label>
               <input
                 id="dateOfBirth"
                 type="date"
+                required
+                aria-required="true"
                 value={form.dateOfBirth}
                 onChange={(e) => updateField("dateOfBirth", e.target.value)}
                 className={inputClass("dateOfBirth")}
@@ -353,11 +360,13 @@ export default function AanmeldenForm({ locale }: Props) {
                 htmlFor="city"
                 className="block text-sm font-medium text-dar-slate"
               >
-                {t("city")}
+                {t("city")} <span className="text-red-500">*</span>
               </label>
               <input
                 id="city"
                 type="text"
+                required
+                aria-required="true"
                 value={form.city}
                 onChange={(e) => updateField("city", e.target.value)}
                 className={inputClass("city")}
@@ -373,11 +382,13 @@ export default function AanmeldenForm({ locale }: Props) {
                 htmlFor="country"
                 className="block text-sm font-medium text-dar-slate"
               >
-                {t("country")}
+                {t("country")} <span className="text-red-500">*</span>
               </label>
               <input
                 id="country"
                 type="text"
+                required
+                aria-required="true"
                 value={form.country}
                 onChange={(e) => updateField("country", e.target.value)}
                 className={inputClass("country")}
@@ -393,11 +404,13 @@ export default function AanmeldenForm({ locale }: Props) {
                 htmlFor="email"
                 className="block text-sm font-medium text-dar-slate"
               >
-                {t("email")}
+                {t("email")} <span className="text-red-500">*</span>
               </label>
               <input
                 id="email"
                 type="email"
+                required
+                aria-required="true"
                 value={form.email}
                 onChange={(e) => updateField("email", e.target.value)}
                 className={inputClass("email")}
@@ -419,7 +432,7 @@ export default function AanmeldenForm({ locale }: Props) {
             {/* Purchase Type */}
             <div>
               <p className="text-sm font-medium text-dar-slate">
-                {t("purchaseType")}
+                {t("purchaseType")} <span className="text-red-500">*</span>
               </p>
               <div className="mt-2 flex gap-3">
                 {(["alone", "together"] as const).map((option) => (
@@ -433,6 +446,11 @@ export default function AanmeldenForm({ locale }: Props) {
                   </button>
                 ))}
               </div>
+              {errors.purchaseType && (
+                <p className="mt-1 text-sm text-red-600">
+                  {errors.purchaseType}
+                </p>
+              )}
             </div>
 
             {/* Income */}
@@ -441,10 +459,12 @@ export default function AanmeldenForm({ locale }: Props) {
                 htmlFor="income"
                 className="block text-sm font-medium text-dar-slate"
               >
-                {t("income")}
+                {t("income")} <span className="text-red-500">*</span>
               </label>
               <select
                 id="income"
+                required
+                aria-required="true"
                 value={form.income}
                 onChange={(e) => updateField("income", e.target.value)}
                 className={inputClass("income")}
@@ -474,10 +494,12 @@ export default function AanmeldenForm({ locale }: Props) {
                 htmlFor="financingPercentage"
                 className="block text-sm font-medium text-dar-slate"
               >
-                {t("financingPercentage")}
+                {t("financingPercentage")} <span className="text-red-500">*</span>
               </label>
               <select
                 id="financingPercentage"
+                required
+                aria-required="true"
                 value={form.financingPercentage}
                 onChange={(e) =>
                   updateField("financingPercentage", e.target.value)
@@ -502,7 +524,7 @@ export default function AanmeldenForm({ locale }: Props) {
             {/* Current Mortgage */}
             <div>
               <p className="text-sm font-medium text-dar-slate">
-                {t("currentMortgage")}
+                {t("currentMortgage")} <span className="text-red-500">*</span>
               </p>
               <div className="mt-2 flex gap-3">
                 {(["yes", "no"] as const).map((option) => (
