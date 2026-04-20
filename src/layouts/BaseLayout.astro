@@ -17,6 +17,11 @@ const {
 
 import "@/styles/globals.css";
 import ChatWidget from "@/components/chat/ChatWidget";
+import CookieConsent from "@/components/consent/CookieConsent.astro";
+import { Analytics } from "@vercel/analytics/react";
+import SpeedInsights from "@vercel/speed-insights/astro";
+
+const consentLocale: "nl" | "en" = locale === "en" ? "en" : "nl";
 ---
 
 <!doctype html>
@@ -51,6 +56,13 @@ import ChatWidget from "@/components/chat/ChatWidget";
     <slot />
 
     <ChatWidget client:idle locale={locale} />
+
+    {/* Cookieless analytics — always on, no consent required */}
+    <Analytics client:idle />
+    <SpeedInsights />
+
+    {/* Cookie banner + settings modal (React island, handles GA-mode bridge) */}
+    <CookieConsent locale={consentLocale} />
 
     <script is:inline>
       (function() {

@@ -85,6 +85,15 @@ const currentYear = new Date().getFullYear();
               {t(locale, "footer.privacy")}
             </a>
           </li>
+          <li>
+            <button
+              type="button"
+              data-open-cookie-settings
+              class="text-left hover:text-dar-cream"
+            >
+              {t(locale, "footer.cookieSettings")}
+            </button>
+          </li>
         </ul>
       </div>
 
@@ -106,3 +115,17 @@ const currentYear = new Date().getFullYear();
     </div>
   </div>
 </footer>
+
+<script is:inline>
+  document.addEventListener("click", function (e) {
+    var target = e.target;
+    if (!target) return;
+    var btn = target.closest
+      ? target.closest("[data-open-cookie-settings]")
+      : null;
+    if (btn) {
+      e.preventDefault();
+      window.dispatchEvent(new CustomEvent("dar:open-cookie-settings"));
+    }
+  });
+</script>

@@ -60,6 +60,22 @@ sitemap, robots, favicons, chat widget.
   from build); footer link + homepage preview commented out
 - **Consent collection** on both entry points (form + chatbot) writes
   `emailConsent` to the API so column L in the sheet records it
+- **Cookie consent banner** (`src/components/consent/`) — bottom slide-up
+  banner + settings modal React island (`CookieConsentIsland.tsx`).
+  Equal-weight Accept/Reject buttons + Customize (per CJEU/NL AP
+  guidance). Four categories: Essential (locked), Analytics, Marketing,
+  Preferences. Persists to `localStorage["dar-cookie-consent"]`
+  (versioned + 12-month expiry). Footer `data-open-cookie-settings`
+  button reopens the modal. Inline `is:inline` script sets Google
+  Consent Mode v2 `default: "denied"` and bridges
+  `dar:consent-updated` → `gtag("consent","update", …)` so future GA4
+  / Google Ads respects consent automatically.
+- **Analytics (cookieless, always on)** — `@vercel/analytics`
+  (`Analytics client:idle`) and `@vercel/speed-insights`
+  (`SpeedInsights` Astro integration) mounted in `BaseLayout.astro`.
+  Privacy-safe (no cookies / no personal data), no consent gate needed.
+  GA4 / Clarity / Meta Pixel to be added later gated behind the
+  Analytics + Marketing categories.
 
 ### Known gotchas
 

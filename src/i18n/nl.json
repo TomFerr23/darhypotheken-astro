@@ -123,8 +123,8 @@
     "s4item2": "als bewijs bij klachten of juridische procedures;",
     "s4item3": "voor fraudebestrijding; of",
     "s4item4": "voor het voldoen aan wettelijke verplichtingen.",
-    "s5heading": "Bezoek aan onze website",
-    "s5text": "Wij houden bij hoe u onze websites gebruikt: www.darhypotheken.nl. Deze informatie helpt ons om onze (online) diensten te verbeteren en gebruiksvriendelijker te maken. Wij kunnen deze gegevens ook gebruiken als bewijs, bijvoorbeeld bij het afhandelen van vragen of klachten.",
+    "s5heading": "Bezoek aan onze website en cookies",
+    "s5text": "Wij houden bij hoe u onze websites gebruikt: www.darhypotheken.nl. Hiervoor gebruiken wij standaard Vercel Analytics en Speed Insights. Deze draaien zónder cookies en verzamelen alleen geanonimiseerde gegevens (pagina's, verwijzers, apparaat, prestatie). Aanvullende analyse- of marketingcookies — zoals Google Analytics of advertentiepixels — plaatsen wij uitsluitend nadat u daarvoor via de cookiebanner toestemming heeft gegeven. U kunt uw voorkeuren op elk moment aanpassen via de link 'Cookie-instellingen' onderaan elke pagina. De verzamelde gegevens gebruiken wij om onze dienstverlening te verbeteren en eventueel als bewijs bij het afhandelen van vragen of klachten.",
     "s6heading": "Vertrouwelijkheid",
     "s6text": "Wij respecteren uiteraard uw privacy en behandelen de persoonsgegevens die u aan ons geeft vertrouwelijk. Onze medewerkers zijn bovendien verplicht om uw gegevens geheim te houden. Deze geheimhouding geldt niet als de wet ons anders verplicht of toestaat.",
     "s7heading": "Beveiliging",
@@ -214,6 +214,7 @@
     "contactHeading": "Contact",
     "legal": "Legal",
     "privacy": "Privacy Statement",
+    "cookieSettings": "Cookie-instellingen",
     "copyright": "© {year} DAR Hypotheken. Alle rechten voorbehouden."
   }
 }

@@ -1,0 +1,45 @@
+---
+import CookieConsentIsland from "./CookieConsentIsland.tsx";
+
+interface Props {
+  locale?: "nl" | "en";
+}
+
+const { locale = "nl" } = Astro.props;
+---
+
+{/*
+  Google Consent Mode v2 default-denied shim.
+  Runs BEFORE any analytics SDK loads so GA4/Ads (when wired up later) start
+  in a denied state and only upgrade after the user grants consent. Inline
+  so it executes before hydration without a separate network request.
+*/}
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = window.gtag || gtag;
+  gtag("consent", "default", {
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    analytics_storage: "denied",
+    functionality_storage: "granted",
+    security_storage: "granted",
+    wait_for_update: 500,
+  });
+
+  // Bridge: whenever the island writes a new consent record, update Google's
+  // consent state so any loaded tags react instantly.
+  window.addEventListener("dar:consent-updated", function (e) {
+    var c = e.detail && e.detail.categories ? e.detail.categories : {};
+    gtag("consent", "update", {
+      analytics_storage: c.analytics ? "granted" : "denied",
+      ad_storage: c.marketing ? "granted" : "denied",
+      ad_user_data: c.marketing ? "granted" : "denied",
+      ad_personalization: c.marketing ? "granted" : "denied",
+      functionality_storage: c.preferences ? "granted" : "denied",
+    });
+  });
+</script>
+
+<CookieConsentIsland client:load locale={locale} />
