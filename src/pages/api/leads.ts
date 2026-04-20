@@ -52,8 +52,9 @@ export const POST: APIRoute = async ({ request }) => {
     const leadId = crypto.randomUUID();
     const timestamp = new Date().toISOString();
 
-    const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
-    const credentialsJson = process.env.GOOGLE_SHEETS_CREDENTIALS;
+    const env = import.meta.env as Record<string, string | undefined>;
+    const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID ?? env.GOOGLE_SHEETS_SPREADSHEET_ID;
+    const credentialsJson = process.env.GOOGLE_SHEETS_CREDENTIALS ?? env.GOOGLE_SHEETS_CREDENTIALS;
 
     if (!spreadsheetId || !credentialsJson) {
       console.warn("Google Sheets not configured — lead stored locally only:", { leadId, name, email, phone, locale, source, timestamp });
@@ -73,7 +74,7 @@ export const POST: APIRoute = async ({ request }) => {
       await sheets.spreadsheets.values.append({
         spreadsheetId,
         range: "Sheet1!A:O",
-        valueInputOption: "USER_ENTERED",
+        valueInputOption: "RAW",
         requestBody: {
           values: [[
             name ?? "", surname ?? "", email ?? "", phone ?? "",

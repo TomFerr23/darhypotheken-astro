@@ -22,3 +22,17 @@ export interface LeadApiResponse {
   leadId?: string;
   error?: string;
 }
+
+export type ChatView = "home" | "lead" | "qualifier" | "thanks" | "faq";
+
+export interface QualifierAnswers {
+  purchaseType?: string;
+  priceRange?: string;
+  income?: string;
+  financingPercentage?: string;
+  currentMortgage?: string;
+  dateOfBirth?: string;
+  city?: string;
+  country?: string;
+  surname?: string;
+}

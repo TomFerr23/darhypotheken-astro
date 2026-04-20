@@ -39,7 +39,17 @@ sitemap, robots, favicons, chat widget.
 - **Timeline / mortgage process** has scroll-linked blue line fill
   (rAF-based, tuned triggers in `TimelineSection.astro <script>`),
   down-pointing chevrons, grey subtle card per step
-- **Chat widget** React island (FAB → modal panel) with lead-capture form
+- **Chat widget** React island (FAB → modal panel). Plug&Pay-style multi-view
+  flow: Home (team avatars, CTA card, FAQ preview) → Lead form (name/email
+  /phone/consent, writes initial row `source: chatbot`) → Qualifier (6-step
+  chip/date/text questions: purchase type, price range, income range,
+  existing mortgage, DOB, city — writes enriched row `source:
+  chatbot-qualified`) → Thanks (call/email CTAs). Bottom tab nav Home /
+  Chat / FAQ. Components live in `src/components/chat/`:
+  `ChatHome.tsx`, `ChatLeadForm.tsx`, `ChatQualifier.tsx`, `ChatThanks.tsx`,
+  `ChatFaq.tsx`, `ChatTabs.tsx`, `ChatPanel.tsx`. View state in
+  `ChatContext.tsx` (`view: "home" | "lead" | "qualifier" | "thanks" |
+  "faq"`), answer state in `qualifier`.
 - **Aanmelden form** with all fields mandatory, single merged consent
   checkbox, validation, error states, success state
 - **Address updated** everywhere (footer, JsonLd schema.org, FAQ JSON,
@@ -123,13 +133,33 @@ This means the form never breaks for users even if the sheet is down.
 - [x] Sheet created
 - [x] Headers filled (15 columns)
 - [x] Column L renamed to "Consent"
-- [ ] Google Cloud project created
-- [ ] Google Sheets API enabled
-- [ ] Service account created + JSON key downloaded
-- [ ] Sheet shared with service-account email (Editor)
+- [x] Google Cloud project created (`dar-leads`)
+- [x] Google Sheets API enabled
+- [x] Service account created + JSON key downloaded
+  (`dar-leads-writer@dar-leads.iam.gserviceaccount.com`)
+- [x] Org policy `iam.disableServiceAccountKeyCreation` overridden to Not
+  Enforced at project level
+- [x] Sheet shared with service-account email (Editor)
+- [x] `.env.local` configured locally (env vars wrapped in single quotes
+  to preserve `\n` escapes in `private_key` for `JSON.parse`)
+- [x] Local end-to-end test passing (row appears in sheet)
 - [ ] Env vars added to Vercel (Production + Preview + Development)
 - [ ] Vercel redeployed with env vars
-- [ ] End-to-end test (submit form → row appears in sheet)
+- [ ] Production end-to-end test
+
+### Gotchas we hit during setup
+
+- **Astro dev loads `.env.local` into `import.meta.env`, NOT `process.env`.**
+  Fix: `leads.ts` reads both (`process.env.X ?? import.meta.env.X`) so dev
+  + Vercel prod both work without changes.
+- **`valueInputOption: "USER_ENTERED"` broke the phone column** — a leading
+  `+` in `+31 6 …` made Sheets evaluate it as a formula and show
+  `#ERROR!`. Switched to `"RAW"` so every cell is literal text (also avoids
+  ISO timestamps being converted to date serials).
+- **Two rows per qualified lead by design**: initial row on contact submit
+  (`source: chatbot`) + enriched row on qualifier finish
+  (`source: chatbot-qualified`). Dedupe by email if you need one row per
+  person.
 
 ## Pending / future
 
