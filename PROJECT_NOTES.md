@@ -107,32 +107,32 @@ Request body shape:
   name: string;              // column A
   surname?: string;          // column B (only from aanmelden form)
   email: string;             // column C
-  // phone: REMOVED — we are not allowed to collect it. Column D is
-  // kept in the sheet for row alignment but is always written as "".
-  dateOfBirth?: string;      // column E
-  city?: string;             // column F
-  country?: string;          // column G
-  purchaseType?: string;     // column H
-  income?: string;           // column I
-  financingPercentage?: string; // column J
-  currentMortgage?: string;  // column K
-  emailConsent?: boolean;    // column L (renamed to "Consent" in sheet)
-  source: "form" | "chatbot"; // column M
-  locale: "nl" | "en";       // column N
-  // timestamp is generated server-side → column O
+  dateOfBirth?: string;      // column D
+  city?: string;             // column E
+  country?: string;          // column F
+  purchaseType?: string;     // column G
+  income?: string;           // column H
+  financingPercentage?: string; // column I
+  currentMortgage?: string;  // column J
+  emailConsent?: boolean;    // column K (renamed to "Consent" in sheet)
+  source: "form" | "chatbot"; // column L
+  locale: "nl" | "en";       // column M
+  // timestamp is generated server-side → column N
 }
 ```
 
-Neither form collects a phone number (removed per compliance). Column D
-in the sheet always receives "".
+Neither form collects a phone number (removed per compliance). The old
+"Phone" column was deleted from the sheet via
+`scripts/delete-phone-column.mjs` and everything to the right of it
+shifted one column left.
 
 ### Sheet config
 
 - Spreadsheet ID: `1fFVoQdsBcDpQY1WiRkrgBSvA-PbzOTY_ZPmxcOwrXfk`
 - Tab name: `Sheet1`
-- Write range: `Sheet1!A:O` (15 columns)
-- Column headers (row 1): Name, Surname, Email, Phone, Date of Birth,
-  City, Country, Purchase Type, Income, Financing %, Current Mortgage,
+- Write range: `Sheet1!A:N` (14 columns)
+- Column headers (row 1): Name, Surname, Email, Date of Birth, City,
+  Country, Purchase Type, Income, Financing %, Current Mortgage,
   **Consent**, Source, Locale, Timestamp
 
 ### Required env vars (set in Vercel)

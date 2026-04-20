@@ -69,11 +69,11 @@ export const POST: APIRoute = async ({ request }) => {
 
       await sheets.spreadsheets.values.append({
         spreadsheetId,
-        range: "Sheet1!A:O",
+        range: "Sheet1!A:N",
         valueInputOption: "RAW",
         requestBody: {
           values: [[
-            name ?? "", surname ?? "", email ?? "", "",
+            name ?? "", surname ?? "", email ?? "",
             dateOfBirth ?? "", city ?? "", country ?? "",
             purchaseType ?? "", income ?? "", financingPercentage ?? "",
             currentMortgage ?? "", emailConsent !== undefined ? String(emailConsent) : "",
