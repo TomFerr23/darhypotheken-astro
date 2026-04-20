@@ -35,12 +35,14 @@ const steps = [
               <div class="flex w-full items-start gap-6 md:hidden">
                 <div class="relative z-10 mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-dar-blue bg-white">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-dar-blue">
-                    <path d="M9 18l6-6-6-6" />
+                    <path d="M6 9l6 6 6-6" />
                   </svg>
                 </div>
                 <div class="flex-1 pb-10">
-                  <h3 class="text-lg font-semibold text-dar-slate">{step.title}</h3>
-                  <p class="mt-2 text-dar-gray">{step.description}</p>
+                  <div class="rounded-xl bg-gray-50 p-5 ring-1 ring-gray-100">
+                    <h3 class="text-lg font-semibold text-dar-slate">{step.title}</h3>
+                    <p class="mt-2 text-dar-gray">{step.description}</p>
+                  </div>
                 </div>
               </div>
 
@@ -48,7 +50,7 @@ const steps = [
               <div class="hidden w-full md:grid md:grid-cols-[1fr_auto_1fr] md:gap-8">
                 <div class={`flex items-center ${isLeft ? "justify-end text-right" : ""}`}>
                   {isLeft && (
-                    <div class="max-w-sm">
+                    <div class="max-w-sm rounded-xl bg-gray-50 p-6 ring-1 ring-gray-100">
                       <h3 class="text-xl font-semibold text-dar-slate">{step.title}</h3>
                       <p class="mt-2 text-dar-gray">{step.description}</p>
                     </div>
@@ -56,12 +58,12 @@ const steps = [
                 </div>
                 <div class="relative z-10 flex h-10 w-10 items-center justify-center rounded-full border-2 border-dar-blue bg-white">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="text-dar-blue">
-                    <path d="M9 18l6-6-6-6" />
+                    <path d="M6 9l6 6 6-6" />
                   </svg>
                 </div>
                 <div class="flex items-center">
                   {!isLeft && (
-                    <div class="max-w-sm">
+                    <div class="max-w-sm rounded-xl bg-gray-50 p-6 ring-1 ring-gray-100">
                       <h3 class="text-xl font-semibold text-dar-slate">{step.title}</h3>
                       <p class="mt-2 text-dar-gray">{step.description}</p>
                     </div>
@@ -78,23 +80,38 @@ const steps = [
 </section>
 
 <script>
-  // Scroll-linked timeline fill animation
-  const container = document.querySelector('[data-timeline]');
+  // Scroll-linked timeline fill: progress from 0% to 100% as user scrolls
+  // through the timeline. Fills fastest when the section is centered on screen.
+  const container = document.querySelector('[data-timeline]') as HTMLElement;
   const fill = document.querySelector('[data-timeline-fill]') as HTMLElement;
 
   if (container && fill) {
+    let ticking = false;
+
     const updateFill = () => {
+      ticking = false;
       const rect = container.getBoundingClientRect();
       const viewH = window.innerHeight;
-      const startOffset = viewH * 0.8;
-      const endOffset = viewH * 0.4;
-      const totalTravel = rect.height - (startOffset - endOffset);
-      const traveled = startOffset - rect.top;
+      // Start filling when the section top reaches 75% of the viewport
+      // Complete when the section bottom reaches 25% of the viewport
+      const startTrigger = viewH * 0.75;
+      const endTrigger = viewH * 0.25;
+      const totalTravel = rect.height + (startTrigger - endTrigger);
+      const traveled = startTrigger - rect.top;
       const progress = Math.max(0, Math.min(1, traveled / totalTravel));
       fill.style.height = `${progress * 100}%`;
     };
 
-    window.addEventListener('scroll', updateFill, { passive: true });
-    updateFill();
+    const requestUpdate = () => {
+      if (!ticking) {
+        requestAnimationFrame(updateFill);
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', requestUpdate, { passive: true });
+    window.addEventListener('resize', requestUpdate, { passive: true });
+    // Initial run (after layout settles)
+    requestAnimationFrame(updateFill);
   }
 </script>
