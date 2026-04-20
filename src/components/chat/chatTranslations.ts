@@ -25,6 +25,9 @@ const translations: Record<string, Record<string, string>> = {
     errorPhoneRequired: "Telefoonnummer is verplicht",
     rateLimited: "U stuurt te veel berichten. Wacht even en probeer het opnieuw.",
     poweredBy: "Powered by DAR Hypotheken",
+    consentLabel:
+      "Ik ga ermee akkoord dat DAR mijn gegevens verwerkt en per e-mail of telefoon contact met mij opneemt.",
+    errorConsentRequired: "U moet akkoord gaan om door te gaan.",
   },
   en: {
     title: "DAR Assistant",
@@ -50,6 +53,9 @@ const translations: Record<string, Record<string, string>> = {
     errorPhoneRequired: "Phone number is required",
     rateLimited: "You are sending too many messages. Please wait and try again.",
     poweredBy: "Powered by DAR Hypotheken",
+    consentLabel:
+      "I agree that DAR may process my data and contact me by email or phone.",
+    errorConsentRequired: "You must agree to continue.",
   },
 };
 

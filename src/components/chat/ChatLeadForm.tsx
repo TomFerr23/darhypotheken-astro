@@ -12,6 +12,7 @@ export default function ChatLeadForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [consent, setConsent] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [apiError, setApiError] = useState("");
@@ -29,6 +30,9 @@ export default function ChatLeadForm() {
     }
     if (!phone.trim()) {
       newErrors.phone = t("errorPhoneRequired");
+    }
+    if (!consent) {
+      newErrors.consent = t("errorConsentRequired");
     }
 
     setErrors(newErrors);
@@ -53,6 +57,8 @@ export default function ChatLeadForm() {
           phone: phone.trim(),
           locale,
           source: "chatbot",
+          dataConsent: consent,
+          emailConsent: consent,
         }),
       });
 
@@ -137,6 +143,24 @@ export default function ChatLeadForm() {
           />
           {errors.phone && (
             <p className="mt-1 text-xs text-red-600">{errors.phone}</p>
+          )}
+        </div>
+
+        <div className="pt-1">
+          <label className="flex items-start gap-2 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={consent}
+              onChange={(e) => setConsent(e.target.checked)}
+              disabled={isSubmitting}
+              className="mt-0.5 h-4 w-4 shrink-0 rounded border-[#cbd5e1] text-[#060097] accent-[#060097]"
+            />
+            <span className="text-xs text-[#1c3349] leading-snug">
+              {t("consentLabel")}
+            </span>
+          </label>
+          {errors.consent && (
+            <p className="mt-1 text-xs text-red-600">{errors.consent}</p>
           )}
         </div>
 
