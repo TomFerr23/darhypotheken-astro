@@ -12,6 +12,10 @@ interface LeadRequestBody {
   dateOfBirth?: string;
   city?: string;
   country?: string;
+  // "alone" | "together" — from the registration form. Maps to column G.
+  buyerMode?: string;
+  // "Nieuwbouw" | "Bestaande woning" | "Herfinanciering" | "Anders" — from
+  // the chatbot qualifier. Maps to column O.
   purchaseType?: string;
   income?: string;
   financingPercentage?: string;
@@ -34,7 +38,8 @@ export const POST: APIRoute = async ({ request }) => {
     const body: LeadRequestBody = await request.json();
     const {
       name, email, locale = "nl", source = "chatbot",
-      surname, dateOfBirth, city, country, purchaseType,
+      surname, dateOfBirth, city, country,
+      buyerMode, purchaseType,
       income, financingPercentage, currentMortgage, dataConsent, emailConsent,
     } = body;
 
@@ -69,20 +74,20 @@ export const POST: APIRoute = async ({ request }) => {
 
       await sheets.spreadsheets.values.append({
         spreadsheetId,
-        range: "Sheet1!A:N",
+        range: "Sheet1!A:O",
         valueInputOption: "RAW",
         requestBody: {
           values: [[
             // A Name, B Surname, C Date of Birth, D City, E Country, F Email,
-            // G Purchase Type, H Income, I Financing %, J Current Mortgage,
-            // K Consent, L Timestamp, M Source, N Locale
+            // G Alone or Together, H Income, I Financing %, J Current Mortgage,
+            // K Consent, L Timestamp, M Source, N Locale, O Property Type
             name ?? "",
             surname ?? "",
             dateOfBirth ?? "",
             city ?? "",
             country ?? "",
             email ?? "",
-            purchaseType ?? "",
+            buyerMode ?? "",
             income ?? "",
             financingPercentage ?? "",
             currentMortgage ?? "",
@@ -90,6 +95,7 @@ export const POST: APIRoute = async ({ request }) => {
             timestamp,
             source,
             locale,
+            purchaseType ?? "",
           ]],
         },
       });

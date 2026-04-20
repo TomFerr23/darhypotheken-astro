@@ -110,14 +110,20 @@ Request body shape:
   city?: string;             // column D
   country?: string;          // column E
   email: string;             // column F
-  purchaseType?: string;     // column G
+  // "alone" | "together" — from the aanmelden form only. Maps to
+  // column G "Alone or Together".
+  buyerMode?: string;
   income?: string;           // column H
   financingPercentage?: string; // column I
   currentMortgage?: string;  // column J
   emailConsent?: boolean;    // column K (rendered as "Consent" in sheet)
   // timestamp generated server-side → column L
-  source: "form" | "chatbot"; // column M (extra beyond reference layout)
-  locale: "nl" | "en";       // column N (extra beyond reference layout)
+  source: "form" | "chatbot" | "chatbot-qualified"; // column M
+  locale: "nl" | "en";       // column N
+  // "Nieuwbouw" | "Bestaande woning" | "Herfinanciering" | "Anders" —
+  // from the chatbot qualifier only. Maps to column O "Property Type"
+  // (extra beyond the reference layout).
+  purchaseType?: string;
 }
 ```
 
@@ -133,10 +139,10 @@ Neither form collects a phone number (removed per compliance). The old
 
 - Spreadsheet ID: `1fFVoQdsBcDpQY1WiRkrgBSvA-PbzOTY_ZPmxcOwrXfk`
 - Tab name: `Sheet1`
-- Write range: `Sheet1!A:N` (14 columns)
+- Write range: `Sheet1!A:O` (15 columns)
 - Column headers (row 1): Name, Surname, Date of Birth, City, Country,
-  Email, Purchase Type, Income, Financing %, Current Mortgage,
-  **Consent**, Timestamp, Source, Locale
+  Email, **Alone or Together**, Income, Financing %, Current Mortgage,
+  **Consent**, Timestamp, Source, Locale, **Property Type**
 
 ### Required env vars (set in Vercel)
 

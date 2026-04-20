@@ -191,7 +191,7 @@ export default function AanmeldenForm({ locale }: Props) {
           dateOfBirth: form.dateOfBirth,
           city: form.city.trim(),
           country: form.country.trim(),
-          purchaseType: form.purchaseType,
+          buyerMode: form.purchaseType,
           income: form.income,
           financingPercentage: form.financingPercentage,
           currentMortgage: form.currentMortgage,
