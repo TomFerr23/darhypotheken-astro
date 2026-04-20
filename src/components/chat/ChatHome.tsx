@@ -11,60 +11,85 @@ interface FaqEntry {
 const FAQ_PREVIEW_COUNT = 4;
 
 export default function ChatHome() {
-  const { locale, setView } = useChat();
+  const { locale, setView, setPendingFaqIndex, toggleOpen } = useChat();
   const t = (key: string) => chatT(locale, key);
 
   const faq = (locale === "en" ? faqEn : faqNl) as FaqEntry[];
   const preview = faq.slice(0, FAQ_PREVIEW_COUNT);
 
+  const openLead = () => {
+    setPendingFaqIndex(null);
+    setView("lead");
+  };
+
+  const openFaq = (idx: number) => {
+    setPendingFaqIndex(idx);
+    setView("lead");
+  };
+
   return (
-    <div className="flex flex-1 flex-col overflow-y-auto bg-[#f4f6fa]">
-      {/* Gradient hero — navy fading into cream */}
-      <div className="relative overflow-hidden bg-gradient-to-b from-[#0a1e33] via-[#1c3349] to-[#1c3349] px-5 pb-10 pt-6 text-white">
-        {/* Team avatars */}
-        <div className="mb-6 flex items-center justify-between">
+    <div className="flex min-h-0 flex-1 flex-col overflow-y-auto bg-[#f4f6fa]">
+      {/* Hero */}
+      <div className="shrink-0 bg-[#0f2336] px-5 pb-7 pt-5 text-white">
+        <div className="flex items-start justify-between gap-3">
           <img
             src="/images/dar-logo.svg"
             alt="DAR Hypotheken"
             className="h-6 w-auto opacity-90"
           />
-          <div className="flex -space-x-3">
-            <img
-              src="/images/team/karim-dar.png"
-              alt=""
-              className="h-9 w-9 rounded-full border-2 border-[#1c3349] object-cover"
-            />
-            <img
-              src="/images/team/rachid_new.png"
-              alt=""
-              className="h-9 w-9 rounded-full border-2 border-[#1c3349] object-cover"
-            />
-            <img
-              src="/images/team/fouad_new.png"
-              alt=""
-              className="h-9 w-9 rounded-full border-2 border-[#1c3349] object-cover"
-            />
+          <div className="flex items-center gap-3">
+            <div className="flex -space-x-2">
+              <img
+                src="/images/team/karim-dar.png"
+                alt=""
+                className="h-8 w-8 rounded-full border-2 border-sky-300/80 object-cover"
+              />
+              <img
+                src="/images/team/rachid_new.png"
+                alt=""
+                className="h-8 w-8 rounded-full border-2 border-sky-300/80 object-cover"
+              />
+              <img
+                src="/images/team/fouad_new.png"
+                alt=""
+                className="h-8 w-8 rounded-full border-2 border-sky-300/80 object-cover"
+              />
+            </div>
+            <button
+              onClick={toggleOpen}
+              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20"
+              aria-label={t("close")}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-4 w-4"
+              >
+                <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+              </svg>
+            </button>
           </div>
         </div>
 
-        <p className="text-sm font-medium text-[#f8fddb]/80">
+        <p className="mt-5 text-sm font-medium text-[#f8fddb]/80">
           {t("homeGreeting")}
         </p>
-        <h2 className="mt-1 text-2xl font-bold leading-tight text-white">
+        <h2 className="mt-1 text-xl font-bold leading-snug text-white">
           {t("homeHeadline")}
         </h2>
-        <p className="mt-2 text-sm text-white/70">{t("homeSubhead")}</p>
+        <p className="mt-1.5 text-xs text-white/70">{t("homeSubhead")}</p>
       </div>
 
-      {/* Cards float up over the hero edge */}
-      <div className="-mt-6 flex flex-col gap-3 px-4 pb-4">
+      {/* Content */}
+      <div className="flex flex-col gap-3 px-4 py-4">
         {/* Primary CTA */}
         <button
-          onClick={() => setView("lead")}
-          className="group flex items-center justify-between rounded-2xl bg-white px-4 py-4 text-left shadow-[0_4px_20px_-4px_rgba(10,30,51,0.15)] transition-all hover:shadow-[0_8px_28px_-4px_rgba(10,30,51,0.25)] active:scale-[0.99]"
+          onClick={openLead}
+          className="group flex items-center justify-between gap-3 rounded-2xl bg-white px-4 py-4 text-left shadow-[0_4px_20px_-8px_rgba(10,30,51,0.2)] transition-all hover:shadow-[0_8px_28px_-8px_rgba(10,30,51,0.3)] active:scale-[0.99]"
         >
           <div className="flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#80C33F] text-white transition-transform group-hover:scale-105">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#80C33F] text-white transition-transform group-hover:scale-105">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -78,7 +103,7 @@ export default function ChatHome() {
                 />
               </svg>
             </span>
-            <div>
+            <div className="min-w-0">
               <p className="text-sm font-semibold text-[#1c3349]">
                 {t("homeStartCard")}
               </p>
@@ -93,7 +118,7 @@ export default function ChatHome() {
             fill="none"
             stroke="currentColor"
             strokeWidth={2}
-            className="h-4 w-4 text-[#1c3349] transition-transform group-hover:translate-x-0.5"
+            className="h-4 w-4 shrink-0 text-[#1c3349] transition-transform group-hover:translate-x-0.5"
           >
             <path
               strokeLinecap="round"
@@ -103,16 +128,16 @@ export default function ChatHome() {
           </svg>
         </button>
 
-        {/* FAQ preview card */}
-        <div className="rounded-2xl bg-white p-4 shadow-[0_4px_20px_-4px_rgba(10,30,51,0.1)]">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#64748b]">
+        {/* FAQ preview card — tap goes through lead form first */}
+        <div className="rounded-2xl bg-white p-4 shadow-[0_4px_20px_-8px_rgba(10,30,51,0.15)]">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-[#64748b]">
             {t("homeFaqTitle")}
           </p>
           <ul className="flex flex-col">
             {preview.map((item, idx) => (
               <li key={idx}>
                 <button
-                  onClick={() => setView("faq")}
+                  onClick={() => openFaq(idx)}
                   className="flex w-full items-center justify-between gap-3 border-b border-[#e2e8f0] py-3 text-left last:border-none hover:text-[#060097]"
                 >
                   <span className="text-sm text-[#1c3349]">

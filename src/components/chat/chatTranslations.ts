@@ -17,7 +17,10 @@ const translations: Record<string, Record<string, string>> = {
     // Tabs
     tabHome: "Home",
     tabChat: "Gesprek",
-    tabFaq: "FAQ",
+    // Answer view
+    answerLabel: "Antwoord",
+    answerContinue: "Doorgaan",
+    answerContinueHint: "Nog 6 korte vragen — daarna belt een adviseur u.",
     // Lead form
     leadFormIntro: "Laat uw contactgegevens achter en wij bellen u binnen 24 uur terug. Het is gratis en vrijblijvend.",
     labelName: "Naam",
@@ -99,7 +102,9 @@ const translations: Record<string, Record<string, string>> = {
     homeTeamCaption: "Our advisory team is ready",
     tabHome: "Home",
     tabChat: "Chat",
-    tabFaq: "FAQ",
+    answerLabel: "Answer",
+    answerContinue: "Continue",
+    answerContinueHint: "6 more quick questions — then an advisor will call you.",
     leadFormIntro: "Leave your contact details and we'll call you back within 24 hours. Free and without obligation.",
     labelName: "Name",
     labelEmail: "Email",

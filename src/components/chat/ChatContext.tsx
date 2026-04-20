@@ -18,6 +18,7 @@ interface ChatContextValue {
   messages: ChatMessage[];
   lead: LeadInfo | null;
   qualifier: QualifierAnswers;
+  pendingFaqIndex: number | null;
   isLoading: boolean;
   isAvailable: boolean;
   locale: string;
@@ -26,6 +27,7 @@ interface ChatContextValue {
   setLead: (lead: LeadInfo) => void;
   updateQualifier: (patch: Partial<QualifierAnswers>) => void;
   resetQualifier: () => void;
+  setPendingFaqIndex: (idx: number | null) => void;
   addMessage: (message: ChatMessage) => void;
   replaceTypingMessage: (message: ChatMessage) => void;
   setLoading: (loading: boolean) => void;
@@ -40,6 +42,7 @@ export function ChatProvider({ children, locale = "nl" }: { children: ReactNode;
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [lead, setLeadState] = useState<LeadInfo | null>(null);
   const [qualifier, setQualifier] = useState<QualifierAnswers>({});
+  const [pendingFaqIndex, setPendingFaqIndexState] = useState<number | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isAvailable, setIsAvailable] = useState(true);
 
@@ -55,6 +58,10 @@ export function ChatProvider({ children, locale = "nl" }: { children: ReactNode;
   }, []);
 
   const resetQualifier = useCallback(() => setQualifier({}), []);
+
+  const setPendingFaqIndex = useCallback((idx: number | null) => {
+    setPendingFaqIndexState(idx);
+  }, []);
 
   const addMessage = useCallback((message: ChatMessage) => {
     setMessages((prev) => [...prev, message]);
@@ -88,6 +95,7 @@ export function ChatProvider({ children, locale = "nl" }: { children: ReactNode;
         messages,
         lead,
         qualifier,
+        pendingFaqIndex,
         isLoading,
         isAvailable,
         locale,
@@ -96,6 +104,7 @@ export function ChatProvider({ children, locale = "nl" }: { children: ReactNode;
         setLead,
         updateQualifier,
         resetQualifier,
+        setPendingFaqIndex,
         addMessage,
         replaceTypingMessage,
         setLoading,
