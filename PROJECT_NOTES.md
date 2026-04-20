@@ -106,34 +106,37 @@ Request body shape:
 {
   name: string;              // column A
   surname?: string;          // column B (only from aanmelden form)
-  email: string;             // column C
-  dateOfBirth?: string;      // column D
-  city?: string;             // column E
-  country?: string;          // column F
+  dateOfBirth?: string;      // column C
+  city?: string;             // column D
+  country?: string;          // column E
+  email: string;             // column F
   purchaseType?: string;     // column G
   income?: string;           // column H
   financingPercentage?: string; // column I
   currentMortgage?: string;  // column J
-  emailConsent?: boolean;    // column K (renamed to "Consent" in sheet)
-  source: "form" | "chatbot"; // column L
-  locale: "nl" | "en";       // column M
-  // timestamp is generated server-side → column N
+  emailConsent?: boolean;    // column K (rendered as "Consent" in sheet)
+  // timestamp generated server-side → column L
+  source: "form" | "chatbot"; // column M (extra beyond reference layout)
+  locale: "nl" | "en";       // column N (extra beyond reference layout)
 }
 ```
 
 Neither form collects a phone number (removed per compliance). The old
 "Phone" column was deleted from the sheet via
-`scripts/delete-phone-column.mjs` and everything to the right of it
-shifted one column left.
+`scripts/delete-phone-column.mjs`. Columns were later reordered via
+`scripts/reorder-columns.mjs` to match the internal reference layout
+(Voornaam/Achternaam/Geboortedatum/Woonplaats/Land/E-mail/…
+/Toestemming/Datum inzending) but kept in English; our two extras
+(`Source`, `Locale`) live in columns M+N after `Timestamp`.
 
 ### Sheet config
 
 - Spreadsheet ID: `1fFVoQdsBcDpQY1WiRkrgBSvA-PbzOTY_ZPmxcOwrXfk`
 - Tab name: `Sheet1`
 - Write range: `Sheet1!A:N` (14 columns)
-- Column headers (row 1): Name, Surname, Email, Date of Birth, City,
-  Country, Purchase Type, Income, Financing %, Current Mortgage,
-  **Consent**, Source, Locale, Timestamp
+- Column headers (row 1): Name, Surname, Date of Birth, City, Country,
+  Email, Purchase Type, Income, Financing %, Current Mortgage,
+  **Consent**, Timestamp, Source, Locale
 
 ### Required env vars (set in Vercel)
 

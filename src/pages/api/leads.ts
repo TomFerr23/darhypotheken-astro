@@ -73,11 +73,23 @@ export const POST: APIRoute = async ({ request }) => {
         valueInputOption: "RAW",
         requestBody: {
           values: [[
-            name ?? "", surname ?? "", email ?? "",
-            dateOfBirth ?? "", city ?? "", country ?? "",
-            purchaseType ?? "", income ?? "", financingPercentage ?? "",
-            currentMortgage ?? "", emailConsent !== undefined ? String(emailConsent) : "",
-            source, locale, timestamp,
+            // A Name, B Surname, C Date of Birth, D City, E Country, F Email,
+            // G Purchase Type, H Income, I Financing %, J Current Mortgage,
+            // K Consent, L Timestamp, M Source, N Locale
+            name ?? "",
+            surname ?? "",
+            dateOfBirth ?? "",
+            city ?? "",
+            country ?? "",
+            email ?? "",
+            purchaseType ?? "",
+            income ?? "",
+            financingPercentage ?? "",
+            currentMortgage ?? "",
+            emailConsent !== undefined ? String(emailConsent) : "",
+            timestamp,
+            source,
+            locale,
           ]],
         },
       });
