@@ -54,7 +54,7 @@ export default function ChatTabs() {
   const t = (key: string) => chatT(locale, key);
 
   return (
-    <nav className="flex items-center justify-around border-t border-[#e2e8f0] bg-white px-2 py-2">
+    <nav className="flex shrink-0 items-center justify-around border-t border-[#e2e8f0] bg-white px-2 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
       {TABS.map((tab) => {
         // If chat tab is clicked after lead is captured, jump to qualifier, not lead form
         const isActive =

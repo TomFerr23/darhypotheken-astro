@@ -17,7 +17,7 @@ export default function ChatPanel() {
   const showCompactHeader = view !== "home";
 
   return (
-    <div className="relative flex h-full min-h-0 flex-col overflow-hidden rounded-2xl bg-white shadow-2xl md:rounded-2xl">
+    <div className="relative flex h-full min-h-0 w-full flex-col overflow-hidden rounded-2xl bg-white shadow-2xl max-md:rounded-b-none">
       {showCompactHeader && (
         <div className="flex shrink-0 items-center justify-between bg-[#0f2336] px-4 py-3">
           <span className="text-sm font-semibold text-[#f8fddb]">

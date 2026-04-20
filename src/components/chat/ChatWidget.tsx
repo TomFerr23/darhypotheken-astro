@@ -7,9 +7,12 @@ function ChatFab() {
 
   return (
     <>
+      {/* FAB — hidden while panel is open on mobile so it doesn't cover the sheet */}
       <button
         onClick={toggleOpen}
-        className="fixed bottom-6 right-6 z-[60] flex h-14 w-14 items-center justify-center rounded-full bg-[#80C33F] text-white shadow-lg transition-all hover:bg-[#6daa33] hover:shadow-xl active:scale-95"
+        className={`fixed bottom-6 right-6 z-[60] flex h-14 w-14 items-center justify-center rounded-full bg-[#80C33F] text-white shadow-lg transition-all hover:bg-[#6daa33] hover:shadow-xl active:scale-95 ${
+          isOpen ? "max-md:hidden" : ""
+        }`}
         aria-label="Chat"
       >
         {isOpen ? (
@@ -25,15 +28,31 @@ function ChatFab() {
 
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: 20, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
-            className="fixed bottom-24 right-6 z-[60] flex w-[400px] h-[640px] max-h-[calc(100dvh-120px)] max-md:inset-0 max-md:bottom-0 max-md:right-0 max-md:w-full max-md:h-[100dvh] max-md:max-h-[100dvh] max-md:rounded-none"
-          >
-            <ChatPanel />
-          </motion.div>
+          <>
+            {/* Scrim — only on mobile, fades in behind the sheet, tap to dismiss */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              onClick={toggleOpen}
+              className="fixed inset-0 z-[55] bg-black/40 md:hidden"
+              aria-hidden
+            />
+
+            {/* Panel —
+               Desktop: floating card top-right of the FAB (400×640).
+               Mobile: bottom sheet pinned to bottom, 88dvh so the page peeks above. */}
+            <motion.div
+              initial={{ opacity: 0, y: 20, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 20, scale: 0.95 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              className="fixed bottom-24 right-6 z-[60] flex w-[400px] h-[640px] max-h-[calc(100dvh-120px)] max-md:inset-x-0 max-md:bottom-0 max-md:right-auto max-md:w-full max-md:h-[88dvh] max-md:max-h-[88dvh]"
+            >
+              <ChatPanel />
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </>

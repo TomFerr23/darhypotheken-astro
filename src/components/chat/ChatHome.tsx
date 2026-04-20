@@ -38,21 +38,21 @@ export default function ChatHome() {
             className="h-6 w-auto opacity-90"
           />
           <div className="flex items-center gap-3">
-            <div className="flex items-center -space-x-1">
+            <div className="flex items-center gap-1.5">
               <img
                 src="/images/team/karim-dar.png"
                 alt=""
-                className="relative z-30 h-9 w-9 rounded-full object-cover ring-2 ring-sky-300 ring-offset-[3px] ring-offset-[#0f2336]"
+                className="h-9 w-9 rounded-full object-cover ring-2 ring-sky-300 ring-offset-[3px] ring-offset-[#0f2336]"
               />
               <img
                 src="/images/team/rachid_new.png"
                 alt=""
-                className="relative z-20 h-9 w-9 rounded-full object-cover ring-2 ring-sky-300 ring-offset-[3px] ring-offset-[#0f2336]"
+                className="h-9 w-9 rounded-full object-cover ring-2 ring-sky-300 ring-offset-[3px] ring-offset-[#0f2336]"
               />
               <img
                 src="/images/team/fouad_new.png"
                 alt=""
-                className="relative z-10 h-9 w-9 rounded-full object-cover ring-2 ring-sky-300 ring-offset-[3px] ring-offset-[#0f2336]"
+                className="h-9 w-9 rounded-full object-cover ring-2 ring-sky-300 ring-offset-[3px] ring-offset-[#0f2336]"
               />
             </div>
             <button
