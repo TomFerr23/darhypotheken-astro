@@ -41,7 +41,8 @@ sitemap, robots, favicons, chat widget.
   down-pointing chevrons, grey subtle card per step
 - **Chat widget** React island (FAB → modal panel). Plug&Pay-style multi-view
   flow: Home (team avatars, CTA card, FAQ preview) → Lead form (name/email
-  /phone/consent, writes initial row `source: chatbot`) → Qualifier (6-step
+  /consent — phone removed per compliance, writes initial row
+  `source: chatbot`) → Qualifier (6-step
   chip/date/text questions: purchase type, price range, income range,
   existing mortgage, DOB, city — writes enriched row `source:
   chatbot-qualified`) → Thanks (call/email CTAs). Bottom tab nav Home /
@@ -106,7 +107,8 @@ Request body shape:
   name: string;              // column A
   surname?: string;          // column B (only from aanmelden form)
   email: string;             // column C
-  phone?: string;            // column D ("-" from aanmelden form)
+  // phone: REMOVED — we are not allowed to collect it. Column D is
+  // kept in the sheet for row alignment but is always written as "".
   dateOfBirth?: string;      // column E
   city?: string;             // column F
   country?: string;          // column G
@@ -121,8 +123,8 @@ Request body shape:
 }
 ```
 
-Phone is required for `source !== "form"` (chatbot requires it).
-Aanmelden form always sends `phone: "-"` as a placeholder.
+Neither form collects a phone number (removed per compliance). Column D
+in the sheet always receives "".
 
 ### Sheet config
 

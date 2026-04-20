@@ -159,7 +159,6 @@ export default function ChatQualifier() {
         body: JSON.stringify({
           name: lead.name,
           email: lead.email,
-          phone: lead.phone,
           locale,
           source: "chatbot-qualified",
           dataConsent: true,

@@ -8,7 +8,6 @@ export interface ChatMessage {
 export interface LeadInfo {
   name: string;
   email: string;
-  phone: string;
   leadId?: string;
 }
 

@@ -11,7 +11,6 @@ export default function ChatLeadForm() {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
   const [consent, setConsent] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -27,9 +26,6 @@ export default function ChatLeadForm() {
       newErrors.email = t("errorEmailRequired");
     } else if (!EMAIL_REGEX.test(email.trim())) {
       newErrors.email = t("errorEmailInvalid");
-    }
-    if (!phone.trim()) {
-      newErrors.phone = t("errorPhoneRequired");
     }
     if (!consent) {
       newErrors.consent = t("errorConsentRequired");
@@ -54,7 +50,6 @@ export default function ChatLeadForm() {
         body: JSON.stringify({
           name: name.trim(),
           email: email.trim(),
-          phone: phone.trim(),
           locale,
           source: "chatbot",
           dataConsent: consent,
@@ -68,7 +63,6 @@ export default function ChatLeadForm() {
         setLead({
           name: name.trim(),
           email: email.trim(),
-          phone: phone.trim(),
           leadId: data.leadId,
         });
         setView(pendingFaqIndex !== null ? "answer" : "conversation");
@@ -126,24 +120,6 @@ export default function ChatLeadForm() {
           />
           {errors.email && (
             <p className="mt-1 text-xs text-red-600">{errors.email}</p>
-          )}
-        </div>
-
-        <div>
-          <label htmlFor="chat-phone" className={labelClasses}>
-            {t("labelPhone")}
-          </label>
-          <input
-            id="chat-phone"
-            type="tel"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            placeholder={t("placeholderPhone")}
-            className={inputClasses}
-            disabled={isSubmitting}
-          />
-          {errors.phone && (
-            <p className="mt-1 text-xs text-red-600">{errors.phone}</p>
           )}
         </div>
 

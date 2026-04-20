@@ -186,7 +186,6 @@ export default function AanmeldenForm({ locale }: Props) {
           name: form.firstName.trim(),
           surname: form.lastName.trim(),
           email: form.email.trim(),
-          phone: "-",
           locale,
           source: "form",
           dateOfBirth: form.dateOfBirth,

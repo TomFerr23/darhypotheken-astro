@@ -6,7 +6,6 @@ export const prerender = false;
 interface LeadRequestBody {
   name: string;
   email: string;
-  phone?: string;
   locale?: string;
   source?: string;
   surname?: string;
@@ -34,7 +33,7 @@ export const POST: APIRoute = async ({ request }) => {
   try {
     const body: LeadRequestBody = await request.json();
     const {
-      name, email, phone, locale = "nl", source = "chatbot",
+      name, email, locale = "nl", source = "chatbot",
       surname, dateOfBirth, city, country, purchaseType,
       income, financingPercentage, currentMortgage, dataConsent, emailConsent,
     } = body;
@@ -45,9 +44,6 @@ export const POST: APIRoute = async ({ request }) => {
     if (!email || !EMAIL_REGEX.test(email)) {
       return jsonResponse({ error: "A valid email is required." }, 400);
     }
-    if (source !== "form" && (!phone || typeof phone !== "string" || phone.trim().length === 0)) {
-      return jsonResponse({ error: "Phone number is required." }, 400);
-    }
 
     const leadId = crypto.randomUUID();
     const timestamp = new Date().toISOString();
@@ -57,7 +53,7 @@ export const POST: APIRoute = async ({ request }) => {
     const credentialsJson = process.env.GOOGLE_SHEETS_CREDENTIALS ?? env.GOOGLE_SHEETS_CREDENTIALS;
 
     if (!spreadsheetId || !credentialsJson) {
-      console.warn("Google Sheets not configured — lead stored locally only:", { leadId, name, email, phone, locale, source, timestamp });
+      console.warn("Google Sheets not configured — lead stored locally only:", { leadId, name, email, locale, source, timestamp });
       return jsonResponse({ success: true, leadId });
     }
 
@@ -77,7 +73,7 @@ export const POST: APIRoute = async ({ request }) => {
         valueInputOption: "RAW",
         requestBody: {
           values: [[
-            name ?? "", surname ?? "", email ?? "", phone ?? "",
+            name ?? "", surname ?? "", email ?? "", "",
             dateOfBirth ?? "", city ?? "", country ?? "",
             purchaseType ?? "", income ?? "", financingPercentage ?? "",
             currentMortgage ?? "", emailConsent !== undefined ? String(emailConsent) : "",
