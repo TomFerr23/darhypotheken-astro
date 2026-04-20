@@ -183,7 +183,8 @@ export default function AanmeldenForm({ locale }: Props) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: `${form.firstName.trim()} ${form.lastName.trim()}`,
+          name: form.firstName.trim(),
+          surname: form.lastName.trim(),
           email: form.email.trim(),
           phone: "-",
           locale,
