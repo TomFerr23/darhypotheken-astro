@@ -19,8 +19,15 @@ const translations: Record<string, Record<string, string>> = {
     tabChat: "Gesprek",
     // Answer view
     answerLabel: "Antwoord",
-    answerContinue: "Doorgaan",
-    answerContinueHint: "Nog 6 korte vragen — daarna belt een adviseur u.",
+    answerContinue: "Stel een vervolgvraag",
+    answerContinueHint: "U kunt meteen verder chatten met onze assistent.",
+    // Conversation view
+    conversationWelcome:
+      "Hoi! Stel gerust uw vraag over onze halal hypotheek, of tik op een van de onderwerpen hieronder.",
+    conversationWelcomeNamed:
+      "Hoi {name}! Stel gerust uw vraag over onze halal hypotheek, of tik op een van de onderwerpen hieronder.",
+    scheduleCallTitle: "Plan een terugbelafspraak",
+    scheduleCallSub: "Beantwoord 6 korte vragen zodat de adviseur zich kan voorbereiden.",
     // Lead form
     leadFormIntro: "Laat uw contactgegevens achter en wij bellen u binnen 24 uur terug. Het is gratis en vrijblijvend.",
     labelName: "Naam",
@@ -103,8 +110,14 @@ const translations: Record<string, Record<string, string>> = {
     tabHome: "Home",
     tabChat: "Chat",
     answerLabel: "Answer",
-    answerContinue: "Continue",
-    answerContinueHint: "6 more quick questions — then an advisor will call you.",
+    answerContinue: "Ask a follow-up",
+    answerContinueHint: "Keep chatting with our assistant.",
+    conversationWelcome:
+      "Hi! Ask anything about our halal mortgage, or tap one of the topics below.",
+    conversationWelcomeNamed:
+      "Hi {name}! Ask anything about our halal mortgage, or tap one of the topics below.",
+    scheduleCallTitle: "Schedule a call back",
+    scheduleCallSub: "Answer 6 short questions so the advisor can prepare.",
     leadFormIntro: "Leave your contact details and we'll call you back within 24 hours. Free and without obligation.",
     labelName: "Name",
     labelEmail: "Email",

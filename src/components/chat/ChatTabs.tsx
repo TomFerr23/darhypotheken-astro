@@ -56,17 +56,18 @@ export default function ChatTabs() {
   return (
     <nav className="flex shrink-0 items-center justify-around border-t border-[#e2e8f0] bg-white px-2 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
       {TABS.map((tab) => {
-        // If chat tab is clicked after lead is captured, jump to qualifier, not lead form
+        // "Chat" tab is highlighted for any of the in-conversation views
         const isActive =
           view === tab.view ||
           (tab.view === "lead" &&
-            (view === "qualifier" ||
+            (view === "conversation" ||
+              view === "qualifier" ||
               view === "thanks" ||
               view === "answer"));
         const handle = () => {
           if (tab.view === "lead" && lead) {
-            // after lead captured, resume qualifier
-            setView("qualifier");
+            // after lead captured, resume the conversation
+            setView("conversation");
           } else {
             setView(tab.view);
           }

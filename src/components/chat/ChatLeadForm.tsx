@@ -71,7 +71,7 @@ export default function ChatLeadForm() {
           phone: phone.trim(),
           leadId: data.leadId,
         });
-        setView(pendingFaqIndex !== null ? "answer" : "qualifier");
+        setView(pendingFaqIndex !== null ? "answer" : "conversation");
       } else {
         setApiError(data.error || t("errorGeneric"));
       }

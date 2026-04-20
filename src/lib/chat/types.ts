@@ -23,7 +23,13 @@ export interface LeadApiResponse {
   error?: string;
 }
 
-export type ChatView = "home" | "lead" | "qualifier" | "thanks" | "answer";
+export type ChatView =
+  | "home"
+  | "lead"
+  | "conversation"
+  | "qualifier"
+  | "thanks"
+  | "answer";
 
 export interface QualifierAnswers {
   purchaseType?: string;

@@ -9,21 +9,42 @@ interface FaqEntry {
 }
 
 export default function ChatAnswer() {
-  const { locale, pendingFaqIndex, setPendingFaqIndex, setView } = useChat();
+  const {
+    locale,
+    pendingFaqIndex,
+    setPendingFaqIndex,
+    setView,
+    addMessage,
+  } = useChat();
   const t = (key: string) => chatT(locale, key);
 
   const faq = (locale === "en" ? faqEn : faqNl) as FaqEntry[];
   const item = pendingFaqIndex !== null ? faq[pendingFaqIndex] : null;
 
   if (!item) {
-    // Nothing to show — skip straight to qualifier
-    setView("qualifier");
+    // Nothing to show — skip straight to conversation
+    setView("conversation");
     return null;
   }
 
   const handleContinue = () => {
+    // Seed the conversation with the question + answer so the user lands into
+    // an already-warmed chat and can keep asking follow-ups.
+    const question = capitalise(item.patterns[0]);
+    addMessage({
+      id: `user-faq-${Date.now()}`,
+      role: "user",
+      content: question,
+      timestamp: Date.now(),
+    });
+    addMessage({
+      id: `assistant-faq-${Date.now()}`,
+      role: "assistant",
+      content: item.answer,
+      timestamp: Date.now() + 1,
+    });
     setPendingFaqIndex(null);
-    setView("qualifier");
+    setView("conversation");
   };
 
   return (

@@ -2,6 +2,7 @@ import { chatT } from "./chatTranslations";
 import { useChat } from "./ChatContext";
 import ChatLeadForm from "./ChatLeadForm";
 import ChatHome from "./ChatHome";
+import ChatConversation from "./ChatConversation";
 import ChatQualifier from "./ChatQualifier";
 import ChatThanks from "./ChatThanks";
 import ChatAnswer from "./ChatAnswer";
@@ -44,8 +45,12 @@ export default function ChatPanel() {
       {view === "home" && <ChatHome />}
       {view === "lead" && <ChatLeadForm />}
       {view === "answer" && lead && <ChatAnswer />}
+      {view === "conversation" && lead && <ChatConversation />}
       {view === "qualifier" && lead && <ChatQualifier />}
-      {(view === "qualifier" || view === "answer") && !lead && <ChatLeadForm />}
+      {(view === "conversation" ||
+        view === "qualifier" ||
+        view === "answer") &&
+        !lead && <ChatLeadForm />}
       {view === "thanks" && <ChatThanks />}
 
       <ChatTabs />

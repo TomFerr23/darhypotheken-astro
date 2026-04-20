@@ -92,8 +92,9 @@ export const POST: APIRoute = async ({ request }) => {
       }
     }
 
-    // API key
-    const apiKey = process.env.ANTHROPIC_API_KEY;
+    // API key — read from process.env (Vercel runtime) with import.meta.env fallback (Astro dev .env.local)
+    const env = import.meta.env as Record<string, string | undefined>;
+    const apiKey = process.env.ANTHROPIC_API_KEY ?? env.ANTHROPIC_API_KEY;
     if (!apiKey) {
       return jsonResponse({ message: COMING_SOON[safeLocale], available: false });
     }
@@ -113,7 +114,7 @@ export const POST: APIRoute = async ({ request }) => {
         "anthropic-version": "2023-06-01",
       },
       body: JSON.stringify({
-        model: "claude-sonnet-4-20250514",
+        model: "claude-haiku-4-5-20251001",
         max_tokens: 500,
         system: systemPrompt,
         messages: messages.map((m) => ({ role: m.role, content: m.content })),
