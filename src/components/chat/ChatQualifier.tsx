@@ -220,7 +220,7 @@ export default function ChatQualifier() {
       {/* Question bubble */}
       <div className="mb-4 flex gap-2">
         <span className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#1c3349] text-xs font-semibold text-[#f8fddb]">
-          DA
+          DAR
         </span>
         <div className="flex-1 rounded-2xl rounded-tl-sm bg-white px-4 py-3 shadow-sm">
           <p className="text-sm font-medium text-[#1c3349]">{t(q.labelKey)}</p>

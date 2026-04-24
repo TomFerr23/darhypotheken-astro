@@ -253,7 +253,7 @@ function MessageBubble({ message }: { message: ChatMessage }) {
     <div className={`flex gap-2 ${isUser ? "flex-row-reverse" : ""}`}>
       {!isUser && (
         <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#1c3349] text-[10px] font-semibold text-[#f8fddb]">
-          DA
+          DAR
         </span>
       )}
       <div
