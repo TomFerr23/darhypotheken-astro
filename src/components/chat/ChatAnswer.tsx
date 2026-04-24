@@ -1,25 +1,29 @@
 import { useChat } from "./ChatContext";
 import { chatT } from "./chatTranslations";
-import faqNl from "@/data/faq/faq-nl.json";
-import faqEn from "@/data/faq/faq-en.json";
+import hotFaqsNl from "@/data/faq/hot-faqs-nl.json";
+import hotFaqsEn from "@/data/faq/hot-faqs-en.json";
 
-interface FaqEntry {
-  patterns: string[];
+interface HotFaq {
+  id: string;
+  question: string;
   answer: string;
+  category: string;
 }
 
 export default function ChatAnswer() {
   const {
     locale,
-    pendingFaqIndex,
-    setPendingFaqIndex,
+    pendingFaqId,
+    setPendingFaqId,
     setView,
     addMessage,
   } = useChat();
   const t = (key: string) => chatT(locale, key);
 
-  const faq = (locale === "en" ? faqEn : faqNl) as FaqEntry[];
-  const item = pendingFaqIndex !== null ? faq[pendingFaqIndex] : null;
+  const hotFaqs = (locale === "en" ? hotFaqsEn : hotFaqsNl) as HotFaq[];
+  const item = pendingFaqId
+    ? hotFaqs.find((f) => f.id === pendingFaqId)
+    : null;
 
   if (!item) {
     // Nothing to show — skip straight to conversation
@@ -28,13 +32,12 @@ export default function ChatAnswer() {
   }
 
   const handleContinue = () => {
-    // Seed the conversation with the question + answer so the user lands into
-    // an already-warmed chat and can keep asking follow-ups.
-    const question = capitalise(item.patterns[0]);
+    // Seed the conversation with the question + answer so the user lands
+    // into an already-warmed chat and can keep asking follow-ups.
     addMessage({
       id: `user-faq-${Date.now()}`,
       role: "user",
-      content: question,
+      content: item.question,
       timestamp: Date.now(),
     });
     addMessage({
@@ -43,7 +46,7 @@ export default function ChatAnswer() {
       content: item.answer,
       timestamp: Date.now() + 1,
     });
-    setPendingFaqIndex(null);
+    setPendingFaqId(null);
     setView("conversation");
   };
 
@@ -54,7 +57,7 @@ export default function ChatAnswer() {
       </p>
 
       <h3 className="mb-3 text-base font-bold text-[#1c3349]">
-        {capitalise(item.patterns[0])}
+        {item.question}
       </h3>
 
       <div className="mb-4 flex gap-2">
@@ -93,9 +96,4 @@ export default function ChatAnswer() {
       </div>
     </div>
   );
-}
-
-function capitalise(s: string): string {
-  if (!s) return "";
-  return s.charAt(0).toUpperCase() + s.slice(1);
 }

@@ -1,29 +1,28 @@
 import { useChat } from "./ChatContext";
 import { chatT } from "./chatTranslations";
-import faqNl from "@/data/faq/faq-nl.json";
-import faqEn from "@/data/faq/faq-en.json";
+import hotFaqsNl from "@/data/faq/hot-faqs-nl.json";
+import hotFaqsEn from "@/data/faq/hot-faqs-en.json";
 
-interface FaqEntry {
-  patterns: string[];
+interface HotFaq {
+  id: string;
+  question: string;
   answer: string;
+  category: string;
 }
 
-const FAQ_PREVIEW_COUNT = 4;
-
 export default function ChatHome() {
-  const { locale, setView, setPendingFaqIndex, toggleOpen } = useChat();
+  const { locale, setView, setPendingFaqId, toggleOpen } = useChat();
   const t = (key: string) => chatT(locale, key);
 
-  const faq = (locale === "en" ? faqEn : faqNl) as FaqEntry[];
-  const preview = faq.slice(0, FAQ_PREVIEW_COUNT);
+  const hotFaqs = (locale === "en" ? hotFaqsEn : hotFaqsNl) as HotFaq[];
 
   const openLead = () => {
-    setPendingFaqIndex(null);
+    setPendingFaqId(null);
     setView("lead");
   };
 
-  const openFaq = (idx: number) => {
-    setPendingFaqIndex(idx);
+  const openFaq = (id: string) => {
+    setPendingFaqId(id);
     setView("lead");
   };
 
@@ -128,20 +127,20 @@ export default function ChatHome() {
           </svg>
         </button>
 
-        {/* FAQ preview card — tap goes through lead form first */}
+        {/* Hot FAQs — tap goes through lead form first */}
         <div className="rounded-2xl bg-white p-4 shadow-[0_4px_20px_-8px_rgba(10,30,51,0.15)]">
           <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-[#64748b]">
             {t("homeFaqTitle")}
           </p>
           <ul className="flex flex-col">
-            {preview.map((item, idx) => (
-              <li key={idx}>
+            {hotFaqs.map((item) => (
+              <li key={item.id}>
                 <button
-                  onClick={() => openFaq(idx)}
+                  onClick={() => openFaq(item.id)}
                   className="flex w-full items-center justify-between gap-3 border-b border-[#e2e8f0] py-3 text-left last:border-none hover:text-[#060097]"
                 >
                   <span className="text-sm text-[#1c3349]">
-                    {capitalise(item.patterns[0])}
+                    {item.question}
                   </span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -165,9 +164,4 @@ export default function ChatHome() {
       </div>
     </div>
   );
-}
-
-function capitalise(s: string): string {
-  if (!s) return "";
-  return s.charAt(0).toUpperCase() + s.slice(1);
 }

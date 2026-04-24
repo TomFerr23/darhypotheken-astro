@@ -1,72 +1,2562 @@
 [
   {
-    "id": "nl-001",
-    "source": "website",
-    "title": "Wat is DAR Hypotheken?",
-    "content": "DAR Hypotheken is de eerste halal hypotheekverstrekker in Nederland. DAR biedt een rentevrij alternatief voor de traditionele hypotheek, gebaseerd op het principe van mede-eigendom. De naam DAR betekent 'huis' in het Arabisch, wat de kernmissie van het bedrijf weerspiegelt: het mogelijk maken van halal woningfinanciering voor iedereen in Nederland. DAR Hypotheken is opgericht om een eerlijke en transparante woningfinanciering te bieden die volledig in lijn is met islamitische financieringsprincipes. Het bedrijf is gevestigd in Den Haag en staat onder toezicht van de Autoriteit Financiële Markten (AFM). DAR Hypotheken maakt het mogelijk om een woning te kopen zonder rente te betalen, wat het een uniek product maakt op de Nederlandse hypotheekmarkt.",
-    "keywords": ["DAR Hypotheken", "halal hypotheek", "rentevrij", "islamitisch financieren", "Nederland", "eerste", "wie is DAR", "wat is DAR"]
+    "id": "Q001",
+    "category": "Islamic Finance Basics",
+    "title": "Wat is islamitisch financieren?",
+    "question": "Wat is islamitisch financieren?",
+    "content": "Islamitisch financieren is een manier van financieren die de sharia volgt, het islamitische juridische en ethische kader. Het verbiedt rente (riba), excessieve onzekerheid (gharar) en gokken (maysir), en elke financiële transactie moet verbonden zijn aan een reëel goed of een reële economische activiteit. In de praktijk betekent dit dat financier en klant risico delen, in plaats van dat de één simpelweg tegen rente uitleent.\n\nRelated question: Waar komt islamitisch financieren vandaan?\nAnswer: De regels komen voort uit de Koran en de soenna van de profeet Mohammed, en zijn eeuwenlang ontwikkeld door islamitische rechtsgeleerden (fuqaha). Als formele industrie is islamitisch financieren ontstaan in de jaren '70 en inmiddels uitgegroeid tot een wereldwijde sector van meer dan 2 biljoen dollar.\n\nRelated question: Is het overal ter wereld hetzelfde?\nAnswer: De kernbeginselen zijn overal identiek, maar de praktische uitleg kan verschillen. Een product dat in Maleisië als sharia-compliant wordt aangemerkt, kan in de Golfstaten anders worden beoordeeld. Dat betekent niet dat het product inhoudelijk onjuist is, maar weerspiegelt het bestaan van meerdere gezaghebbende interpretatielijnen binnen de islamitische rechtspraktijk. Om de internationale consistentie te vergroten opereren standaardiseringsorganisaties zoals Accounting and Auditing Organization for Islamic Financial Institutions (AAIOFI), die beogen de interpretaties van de vier soennitische rechtsscholen te harmoniseren en te vertalen naar een bruikbaar normatief kader voor islamitische financiële structuren wereldwijd. Dit draagt bij aan rechtszekerheid, marktacceptatie en schaalbaarheid van producten in verschillende jurisdicties.",
+    "followups": [
+      {
+        "q": "Waar komt islamitisch financieren vandaan?",
+        "a": "De regels komen voort uit de Koran en de soenna van de profeet Mohammed, en zijn eeuwenlang ontwikkeld door islamitische rechtsgeleerden (fuqaha). Als formele industrie is islamitisch financieren ontstaan in de jaren '70 en inmiddels uitgegroeid tot een wereldwijde sector van meer dan 2 biljoen dollar."
+      },
+      {
+        "q": "Is het overal ter wereld hetzelfde?",
+        "a": "De kernbeginselen zijn overal identiek, maar de praktische uitleg kan verschillen. Een product dat in Maleisië als sharia-compliant wordt aangemerkt, kan in de Golfstaten anders worden beoordeeld. Dat betekent niet dat het product inhoudelijk onjuist is, maar weerspiegelt het bestaan van meerdere gezaghebbende interpretatielijnen binnen de islamitische rechtspraktijk. Om de internationale consistentie te vergroten opereren standaardiseringsorganisaties zoals Accounting and Auditing Organization for Islamic Financial Institutions (AAIOFI), die beogen de interpretaties van de vier soennitische rechtsscholen te harmoniseren en te vertalen naar een bruikbaar normatief kader voor islamitische financiële structuren wereldwijd. Dit draagt bij aan rechtszekerheid, marktacceptatie en schaalbaarheid van producten in verschillende jurisdicties."
+      }
+    ],
+    "keywords": [
+      "islamitisch",
+      "financieren",
+      "waar",
+      "komt",
+      "vandaan",
+      "overal",
+      "ter",
+      "wereld",
+      "hetzelfde",
+      "islamic",
+      "finance",
+      "basics"
+    ],
+    "source": "Soliman (2016) hfd. 1 & 2",
+    "reviewStatus": "Ready"
   },
   {
-    "id": "nl-002",
-    "source": "website",
-    "title": "Hoe werkt mede-eigendom?",
-    "content": "De DAR Hypotheek werkt op basis van het mede-eigendom principe (ook wel Diminishing Musharakah genoemd). Dit betekent dat DAR Hypotheken en de klant samen eigenaar worden van de woning. Bij aanvang koopt DAR een deel van de woning en de klant koopt het andere deel. Vervolgens koopt de klant geleidelijk het aandeel van DAR over via maandelijkse aflossingen. Naarmate de klant meer heeft afgelost, groeit het eigendomsaandeel van de klant en krimpt het aandeel van DAR. Na volledige aflossing is de klant de enige en volledige eigenaar van de woning. Dit model verschilt fundamenteel van een traditionele hypotheek omdat er geen sprake is van een lening met rente, maar van een gezamenlijke investering in vastgoed.",
-    "keywords": ["mede-eigendom", "Diminishing Musharakah", "hoe werkt het", "eigendom", "samen eigenaar", "principe", "model"]
+    "id": "Q002",
+    "category": "Islamic Finance Basics",
+    "title": "Hoe verschilt islamitisch financieren van conventioneel financieren?",
+    "question": "Hoe verschilt islamitisch financieren van conventioneel financieren?",
+    "content": "Het grootste verschil is risicodeling. Bij een conventionele lening ontvangt de geldverstrekker rente, ongeacht hoe de investering van de lener presteert. Bij islamitisch financieren moet de financier meedelen in het werkelijke risico van de onderliggende transactie — hij treedt op als mede-eigenaar, (ver)koper of verhuurder, niet als pure geldverstrekker. Dit koppelt rendement aan reële economische activiteit.\n\nRelated question: Is islamitisch financieren dan in feite ethisch financieren?\nAnswer: Er is veel overlap. Beide vermijden schadelijke sectoren zoals wapens, gokken en uitbuitende leningen. Islamitisch financieren voegt daar de specifieke regels van de sharia aan toe, zoals het verbod op rente en (excessieve) speculatie.\n\nRelated question: Verdient de financier dan minder?\nAnswer: Niet per se. De financier wordt beloond via huur, een winstopslag op een verkoop of een aandeel in de winst van een samenwerking. Het rendement kan vergelijkbaar zijn met conventioneel financieren; wat verandert is hóe het rendement wordt verdiend en welke risico's de financier accepteert.",
+    "followups": [
+      {
+        "q": "Is islamitisch financieren dan in feite ethisch financieren?",
+        "a": "Er is veel overlap. Beide vermijden schadelijke sectoren zoals wapens, gokken en uitbuitende leningen. Islamitisch financieren voegt daar de specifieke regels van de sharia aan toe, zoals het verbod op rente en (excessieve) speculatie."
+      },
+      {
+        "q": "Verdient de financier dan minder?",
+        "a": "Niet per se. De financier wordt beloond via huur, een winstopslag op een verkoop of een aandeel in de winst van een samenwerking. Het rendement kan vergelijkbaar zijn met conventioneel financieren; wat verandert is hóe het rendement wordt verdiend en welke risico's de financier accepteert."
+      }
+    ],
+    "keywords": [
+      "verschilt",
+      "islamitisch",
+      "financieren",
+      "conventioneel",
+      "feite",
+      "ethisch",
+      "verdient",
+      "financier",
+      "minder",
+      "islamic",
+      "finance",
+      "basics"
+    ],
+    "source": "Soliman (2016) §2.2 & Tjittes 2008",
+    "reviewStatus": "Ready"
   },
   {
-    "id": "nl-003",
-    "source": "website",
-    "title": "Vaste maandelijkse betalingen",
-    "content": "Bij de DAR Hypotheek betaalt de klant elke maand een vast bedrag dat uit twee componenten bestaat: de aflossing en de vergoeding. De aflossing is het bedrag waarmee de klant geleidelijk het eigendomsaandeel van DAR overneemt. De vergoeding is een gebruiksvergoeding die de klant betaalt voor het gebruik van het deel van de woning dat nog eigendom is van DAR. Dit is uitdrukkelijk geen rente, maar een vergoeding voor het gebruik van het vastgoed. De maandelijkse betalingen zijn transparant en voorspelbaar, zodat de klant precies weet wat de kosten zijn. Het totale maandelijkse bedrag is vergelijkbaar met wat je bij een traditionele hypotheek zou betalen, maar dan zonder rente.",
-    "keywords": ["maandelijkse betalingen", "aflossing", "vergoeding", "kosten", "vast bedrag", "maandlasten", "betalen"]
+    "id": "Q003",
+    "category": "Islamic Finance Basics",
+    "title": "Waarom vermijden sommige moslims conventionele hypotheken?",
+    "question": "Waarom vermijden sommige moslims conventionele hypotheken?",
+    "content": "Een conventionele hypotheek is gebaseerd op een rentedragende lening, en rente (riba) is expliciet verboden in de Koran en de soenna. Voor een praktiserende moslim botst het afsluiten van een rentedragende hypotheek met een kerngebod van het geloof. Tot nu toe huurden de meeste moslims in Nederland, kochten zij met familiekapitaal of deden zij een religieus compromis (namelijk een beroep op economische noodzaak in het licht van een gebrek aan een alternatief) — DAR Hypotheken bestaat om hen een echt sharia-conform alternatief te bieden.\n\nRelated question: Is een conventionele hypotheek een zonde?\nAnswer: De meeste islamitische geleerden beschouwen het betalen of ontvangen van rente als haram (verboden). Sommige geleerden staan uitzonderingen toe in landen zonder halal alternatief, maar dit is een minderheidsstandpunt en geen prettige oplossing voor de meeste gelovigen. Het bestaan van een halalhypotheek neemt dit dilemma weg.\n\nRelated question: Om hoeveel moslims in Nederland gaat het?\nAnswer: Rabobank schatte eerder ongeveer 200.000 huishoudens als potentiële vraag naar islamitische hypotheekproducten in Nederland. De moslimgemeenschap in Nederland bestaat uit ruim een miljoen mensen, waarvan een aanzienlijk deel het geloof actief praktiseert.",
+    "followups": [
+      {
+        "q": "Is een conventionele hypotheek een zonde?",
+        "a": "De meeste islamitische geleerden beschouwen het betalen of ontvangen van rente als haram (verboden). Sommige geleerden staan uitzonderingen toe in landen zonder halal alternatief, maar dit is een minderheidsstandpunt en geen prettige oplossing voor de meeste gelovigen. Het bestaan van een halalhypotheek neemt dit dilemma weg."
+      },
+      {
+        "q": "Om hoeveel moslims in Nederland gaat het?",
+        "a": "Rabobank schatte eerder ongeveer 200.000 huishoudens als potentiële vraag naar islamitische hypotheekproducten in Nederland. De moslimgemeenschap in Nederland bestaat uit ruim een miljoen mensen, waarvan een aanzienlijk deel het geloof actief praktiseert."
+      }
+    ],
+    "keywords": [
+      "waarom",
+      "vermijden",
+      "sommige",
+      "moslims",
+      "conventionele",
+      "hypotheken",
+      "hypotheek",
+      "zonde",
+      "hoeveel",
+      "nederland",
+      "gaat",
+      "islamic",
+      "finance",
+      "basics"
+    ],
+    "source": "Soliman (2017) art. §1 & Schutten 2006",
+    "reviewStatus": "Ready"
   },
   {
-    "id": "nl-004",
-    "source": "website",
-    "title": "Looptijd van 30 jaar",
-    "content": "De DAR Hypotheek heeft een standaard looptijd van 30 jaar. Gedurende deze periode koopt de klant geleidelijk het volledige eigendom van de woning over van DAR. De looptijd van 30 jaar is vergelijkbaar met een standaard hypotheek in Nederland en zorgt ervoor dat de maandelijkse betalingen betaalbaar blijven. Het is mogelijk om sneller af te lossen als de financiële situatie van de klant dit toelaat, zonder boeterente of extra kosten. Na 30 jaar, of eerder bij versnelde aflossing, is de klant volledig eigenaar van de woning en zijn er geen verdere betalingen aan DAR verschuldigd.",
-    "keywords": ["looptijd", "30 jaar", "aflossen", "sneller aflossen", "periode", "boetevrij", "vervroegd aflossen"]
+    "id": "Q004",
+    "category": "Islamic Finance Basics",
+    "title": "Is islamitisch financieren alleen voor moslims?",
+    "question": "Is islamitisch financieren alleen voor moslims?",
+    "content": "Nee. Hoewel de regels uit de sharia komen, kan iedereen gebruikmaken van islamitische financiële producten. In het Verenigd Koninkrijk is een deel van de klanten van islamitisch-financiele instellingen niet-moslim; zij kiezen voor de ethische beginselen en/of de alternative risicodeling tussen financier en klant. DAR Hypotheken staat open voor alle Nederlandse kopers die aan de criteria voldoen, ongeacht geloof.\n\nRelated question: Waarom zou een niet-moslim hiervoor kiezen?\nAnswer: Drie redenen komen vaak terug: (1) de alternatieve vorm van risicodeling tussen klant en financier, waarbij beide partijen economisch in dezelfde positie verkeren in plaats van tegenover elkaar te staan als schuldenaar en schuldeiser, (2) de afwijkende fiscale consequenties en mogelijke voordelen die samenhangen met het feit dat geen sprake is van een rentedragend product, en (3) de transparante en contractueel vastgelegde structuur waarin vermogensopbouw en financiering met elkaar zijn geïntegreerd. Voor huishoudens die waarde hechten aan meer evenwichtige risicoverdeling en voorspelbaarheid in de financieringsrelatie kan DAR Hypotheken aantrekkelijk zijn\n\nRelated question: Zijn niet-moslims écht welkom?\nAnswer: Absoluut. DAR Hypotheken is een Nederlands bedrijf met een Nederlands financieel product, geen religieuze instelling. Onze toelatingscriteria zijn financieel, niet religieus.",
+    "followups": [
+      {
+        "q": "Waarom zou een niet-moslim hiervoor kiezen?",
+        "a": "Drie redenen komen vaak terug: (1) de alternatieve vorm van risicodeling tussen klant en financier, waarbij beide partijen economisch in dezelfde positie verkeren in plaats van tegenover elkaar te staan als schuldenaar en schuldeiser, (2) de afwijkende fiscale consequenties en mogelijke voordelen die samenhangen met het feit dat geen sprake is van een rentedragend product, en (3) de transparante en contractueel vastgelegde structuur waarin vermogensopbouw en financiering met elkaar zijn geïntegreerd. Voor huishoudens die waarde hechten aan meer evenwichtige risicoverdeling en voorspelbaarheid in de financieringsrelatie kan DAR Hypotheken aantrekkelijk zijn"
+      },
+      {
+        "q": "Zijn niet-moslims écht welkom?",
+        "a": "Absoluut. DAR Hypotheken is een Nederlands bedrijf met een Nederlands financieel product, geen religieuze instelling. Onze toelatingscriteria zijn financieel, niet religieus."
+      }
+    ],
+    "keywords": [
+      "islamitisch",
+      "financieren",
+      "alleen",
+      "moslims",
+      "waarom",
+      "zou",
+      "moslim",
+      "hiervoor",
+      "kiezen",
+      "écht",
+      "welkom",
+      "islamic",
+      "finance",
+      "basics"
+    ],
+    "source": "Soliman (2016) §1.1",
+    "reviewStatus": "Ready"
   },
   {
-    "id": "nl-005",
-    "source": "website",
-    "title": "Marktconforme vergoedingsstructuur",
-    "content": "De gebruiksvergoeding die DAR Hypotheken in rekening brengt is marktconform. Dit betekent dat de totale kosten vergelijkbaar zijn met wat gangbaar is op de Nederlandse hypotheekmarkt. De vergoeding wordt berekend op basis van het aandeel van DAR in de woning en een percentage dat vergelijkbaar is met de marktrente, maar het is nadrukkelijk geen rente. De vergoeding daalt naarmate de klant meer heeft afgelost en het aandeel van DAR kleiner wordt. DAR biedt verschillende looptijden voor de rentevaste periode van de vergoeding, zodat klanten kunnen kiezen voor meer zekerheid of flexibiliteit in hun maandlasten.",
-    "keywords": ["marktconform", "vergoeding", "kosten", "percentage", "rentevaste periode", "tarieven", "hoeveel kost"]
+    "id": "Q005",
+    "category": "Islamic Finance Basics",
+    "title": "Wat zijn de kernbeginselen van islamitisch financieren?",
+    "question": "Wat zijn de kernbeginselen van islamitisch financieren?",
+    "content": "Er zijn er vier: (1) het verbod op riba — vrij vertaald rente; (2) het vermijden van excessieve gharar — onzekerheid over essentialia van een overeenkomst; (3) het verbod op maysir en qimar — gokken en zero-sum speculatie; en (4) uitsluiting van haram activiteiten zoals alcohol, varkensvlees, wapens en de volwassenenindustrie. Daar overheen ligt een vijfde beginsel: elke financiële transactie moet verbonden zijn aan reële, tastbare activa of activiteiten.\n\nRelated question: Wat betekent 'asset-backed' precies?\nAnswer: Het betekent dat geld niet uit zichzelf geld kan voortbrengen. De financier moet blootstaan aan een reëel goed of reële economische activiteit — een huis kopen, verhuren, mede-eigenaar worden van een onderneming. Dit verankert financieren in de reële economie en beperkt zuivere speculatie.\n\nRelated question: Zijn deze beginselen juridisch bindend?\nAnswer: Naar Nederlands recht zijn islamitisch-financiële beginselen als zodanig niet juridisch bindend. Het Nederlandse recht kent echter een ruime mate van contractsvrijheid, waardoor partijen hun rechtsverhouding in belangrijke mate zelf kunnen structureren binnen de grenzen van de wet. Binnen dat kader kunnen financieringsstructuren worden vormgegeven die aansluiten bij islamitisch-financiële uitgangspunten, terwijl zij civielrechtelijk volledig afdwingbaar blijven. DAR Hypotheken heeft vanuit dat perspectief een hypotheek ontwikkeld die naar Nederlands recht functioneert en juridisch verankerd is in bestaande goederen- en verbintenisrechtelijke instrumenten, maar tegelijkertijd materieel in lijn is gebracht met de relevante islamitisch-financiële beginselen. Daarmee ontstaat een hybride model dat zowel rechtszekerheid biedt binnen het Nederlandse stelsel als aansluiting houdt bij de beoogde religieus-financiële uitgangspunten.",
+    "followups": [
+      {
+        "q": "Wat betekent 'asset-backed' precies?",
+        "a": "Het betekent dat geld niet uit zichzelf geld kan voortbrengen. De financier moet blootstaan aan een reëel goed of reële economische activiteit — een huis kopen, verhuren, mede-eigenaar worden van een onderneming. Dit verankert financieren in de reële economie en beperkt zuivere speculatie."
+      },
+      {
+        "q": "Zijn deze beginselen juridisch bindend?",
+        "a": "Naar Nederlands recht zijn islamitisch-financiële beginselen als zodanig niet juridisch bindend. Het Nederlandse recht kent echter een ruime mate van contractsvrijheid, waardoor partijen hun rechtsverhouding in belangrijke mate zelf kunnen structureren binnen de grenzen van de wet. Binnen dat kader kunnen financieringsstructuren worden vormgegeven die aansluiten bij islamitisch-financiële uitgangspunten, terwijl zij civielrechtelijk volledig afdwingbaar blijven. DAR Hypotheken heeft vanuit dat perspectief een hypotheek ontwikkeld die naar Nederlands recht functioneert en juridisch verankerd is in bestaande goederen- en verbintenisrechtelijke instrumenten, maar tegelijkertijd materieel in lijn is gebracht met de relevante islamitisch-financiële beginselen. Daarmee ontstaat een hybride model dat zowel rechtszekerheid biedt binnen het Nederlandse stelsel als aansluiting houdt bij de beoogde religieus-financiële uitgangspunten."
+      }
+    ],
+    "keywords": [
+      "kernbeginselen",
+      "islamitisch",
+      "financieren",
+      "betekent",
+      "asset",
+      "backed",
+      "precies",
+      "deze",
+      "beginselen",
+      "juridisch",
+      "bindend",
+      "islamic",
+      "finance",
+      "basics"
+    ],
+    "source": "Soliman (2016) §2.2",
+    "reviewStatus": "Ready"
   },
   {
-    "id": "nl-006",
-    "source": "website",
-    "title": "Geen rente - gebruiksvergoeding",
-    "content": "Een fundamenteel verschil tussen de DAR Hypotheek en een traditionele hypotheek is dat er geen rente (riba) wordt berekend. In de islamitische financiering is rente verboden. In plaats daarvan betaalt de klant een gebruiksvergoeding aan DAR voor het deel van de woning dat nog in eigendom is van DAR. Deze vergoeding is gebaseerd op het feit dat DAR daadwerkelijk mede-eigenaar is van de woning en de klant een vergoeding betaalt voor het gebruik van dit eigendom. Dit is een wezenlijk ander juridisch en financieel construct dan een lening met rente. De structuur is getoetst en goedgekeurd door onafhankelijke sharia-geleerden.",
-    "keywords": ["geen rente", "rentevrij", "riba", "gebruiksvergoeding", "haram", "halal", "islamitisch", "verschil"]
+    "id": "Q006",
+    "category": "Islamic Finance Basics",
+    "title": "Is islamitisch financieren erkend in Nederland?",
+    "question": "Is islamitisch financieren erkend in Nederland?",
+    "content": "Er bestaat geen aparte wet voor islamitisch financieren in Nederland, maar het Burgerlijk Wetboek en de Wet op het financieel toezicht (Wft) bieden voldoende ruimte voor de benodigde contractstructuren — koop, huur, samenwerking en gemeenschap — zonder aanpassing. DNB, AFM, de Belastingdienst en het ministerie van Financiën hebben islamitisch financieren tussen 2006 en 2008 onderzocht en haalbaar bevonden. DAR Hypotheken is de eerste financiële instelling die een halalhypotheek aanbiedt aan Nederlandse consumenten.\n\nRelated question: Waarom heeft het zo lang geduurd?\nAnswer: De Nederlandse wet- en regelgeving is bedoeld voor rentedragende financiële producten. Alternatieve financiële producten zijn daarom lastig te plaatsen in het Nederlandse recht.",
+    "followups": [
+      {
+        "q": "Waarom heeft het zo lang geduurd?",
+        "a": "De Nederlandse wet- en regelgeving is bedoeld voor rentedragende financiële producten. Alternatieve financiële producten zijn daarom lastig te plaatsen in het Nederlandse recht."
+      }
+    ],
+    "keywords": [
+      "islamitisch",
+      "financieren",
+      "erkend",
+      "nederland",
+      "waarom",
+      "lang",
+      "geduurd",
+      "islamic",
+      "finance",
+      "basics"
+    ],
+    "source": "Soliman (2016) §1.1 & Verhoef e.a. 2008",
+    "reviewStatus": "DAR to confirm launch-specific regulatory status"
   },
   {
-    "id": "nl-007",
-    "source": "website",
-    "title": "Sharia-compliance en certificering",
-    "content": "De DAR Hypotheek is volledig sharia-compliant. Het product is getoetst en gecertificeerd door Noor Shariah Solutions, een onafhankelijk en internationaal erkend sharia-adviesbureau. Noor Shariah Solutions heeft bevestigd dat de structuur van de DAR Hypotheek voldoet aan de principes van islamitische financiering, inclusief het verbod op rente (riba), het verbod op excessieve onzekerheid (gharar), en het vereiste van een reële onderliggende waarde (asset-backed). DAR Hypotheken wordt doorlopend gemonitord om ervoor te zorgen dat het product blijft voldoen aan de sharia-richtlijnen. Klanten kunnen er dus op vertrouwen dat hun woningfinanciering halal is.",
-    "keywords": ["sharia", "halal", "certificering", "Noor Shariah Solutions", "compliant", "islamitisch", "goedgekeurd", "riba"]
+    "id": "Q007",
+    "category": "Islamic Finance Basics",
+    "title": "Wanneer is een financieel product sharia-conform?",
+    "question": "Wanneer is een financieel product sharia-conform?",
+    "content": "Een product is sharia-conform als het (a) riba, gharar en maysir vermijdt; (b) is gestructureerd rond reële activa; (c) haram sectoren uitsluit; en (d) is beoordeeld en goedgekeurd door een gekwalificeerde shariageleerde.\n\nRelated question: Kan een product zijn sharia-status later verliezen?\nAnswer: Ja, dat kan. Producten wordt vaak voor maximaal een jaar gecertificeerd door een shariageleerde. Daarna is een hercertificering nodig. Als het product is veranderd en daardoor niet meer in lijn is met de islamitisch-financiele regels, dan kan het halalcertificaat worden ingetrokken en/of geen nieuw halalcertificaat worden verstrekt.\n\nRelated question: Bestaat er een wereldwijde sharia-standaard?\nAnswer: Er zijn verschillende internationale standaarden, waarvan de meest gezaghebbende internationale standaard is opgesteld door de Accounting and Auditing Organization for Islamic Financial Institutions (AAIOFI).",
+    "followups": [
+      {
+        "q": "Kan een product zijn sharia-status later verliezen?",
+        "a": "Ja, dat kan. Producten wordt vaak voor maximaal een jaar gecertificeerd door een shariageleerde. Daarna is een hercertificering nodig. Als het product is veranderd en daardoor niet meer in lijn is met de islamitisch-financiele regels, dan kan het halalcertificaat worden ingetrokken en/of geen nieuw halalcertificaat worden verstrekt."
+      },
+      {
+        "q": "Bestaat er een wereldwijde sharia-standaard?",
+        "a": "Er zijn verschillende internationale standaarden, waarvan de meest gezaghebbende internationale standaard is opgesteld door de Accounting and Auditing Organization for Islamic Financial Institutions (AAIOFI)."
+      }
+    ],
+    "keywords": [
+      "wanneer",
+      "financieel",
+      "product",
+      "sharia",
+      "conform",
+      "status",
+      "later",
+      "verliezen",
+      "bestaat",
+      "wereldwijde",
+      "standaard",
+      "islamic",
+      "finance",
+      "basics"
+    ],
+    "source": "Soliman (2016) §2.2.4 & AAOIFI SS",
+    "reviewStatus": "Ready"
   },
   {
-    "id": "nl-008",
-    "source": "website",
-    "title": "Voor wie is de DAR Hypotheek?",
-    "content": "De DAR Hypotheek is toegankelijk voor iedereen, ongeacht religie of achtergrond. Hoewel het product is ontworpen volgens islamitische financieringsprincipes, is het een uitstekend alternatief voor iedereen die op zoek is naar een transparante en eerlijke manier van woningfinanciering zonder rente. De DAR Hypotheek is geschikt voor starters, doorstromers en mensen die hun huidige hypotheek willen oversluiten naar een halal alternatief. Zowel alleenstaanden als stellen kunnen een aanvraag indienen. De standaard acceptatiecriteria zijn vergelijkbaar met die van andere hypotheekverstrekkers in Nederland, inclusief inkomenstoetsing en taxatie van de woning.",
-    "keywords": ["voor wie", "iedereen", "geschikt", "starters", "doorstromers", "oversluiten", "toegankelijk", "aanvragen"]
+    "id": "Q008",
+    "category": "Islamic Finance Basics",
+    "title": "Wie stelt de regels voor islamitisch financieren vast?",
+    "question": "Wie stelt de regels voor islamitisch financieren vast?",
+    "content": "De uiteindelijke bron is de sharia, afgeleid uit Koran en soenna. Praktische regels worden ontwikkeld door fuqaha (islamitische rechtsgeleerden) via methoden als ijma (consensus) en qiyas (analogie). Op productniveau controleert een shariageleerde betrokken bij een islamitisch-financiële instelling de naleving van deze regels en geeft daarvoor halalcertificaten uit.\n\nRelated question: Wat is AAOIFI?\nAnswer: De Accounting and Auditing Organization for Islamic Financial Institutions, gevestigd in Bahrein. Het is wereldwijd de meest gezaghebbende normsteller voor sharia-conform financieren en publiceert de sharia-standaarden die in de hele industrie worden gebruikt.\n\nRelated question: En IFSB?\nAnswer: De Islamic Financial Services Board (IFSB), gevestigd in Maleisië, is een internationale standaardsetter van toezichthoudende en regulerende autoriteiten die tot doel heeft de soliditeit en stabiliteit van islamitische financiële dienstverlening te bevorderen. De organisatie ontwikkelt en adviseert prudentiële en toezichtstandaarden die in overeenstemming zijn met sharia-beginselen voor financiële instellingen binnen het bankwezen, de kapitaalmarkten en de verzekeringssector (takaful), en vervult daarmee binnen het islamitisch financieren een rol die vergelijkbaar is met die van het Basel Committee voor het conventionele bankwezen",
+    "followups": [
+      {
+        "q": "Wat is AAOIFI?",
+        "a": "De Accounting and Auditing Organization for Islamic Financial Institutions, gevestigd in Bahrein. Het is wereldwijd de meest gezaghebbende normsteller voor sharia-conform financieren en publiceert de sharia-standaarden die in de hele industrie worden gebruikt."
+      },
+      {
+        "q": "En IFSB?",
+        "a": "De Islamic Financial Services Board (IFSB), gevestigd in Maleisië, is een internationale standaardsetter van toezichthoudende en regulerende autoriteiten die tot doel heeft de soliditeit en stabiliteit van islamitische financiële dienstverlening te bevorderen. De organisatie ontwikkelt en adviseert prudentiële en toezichtstandaarden die in overeenstemming zijn met sharia-beginselen voor financiële instellingen binnen het bankwezen, de kapitaalmarkten en de verzekeringssector (takaful), en vervult daarmee binnen het islamitisch financieren een rol die vergelijkbaar is met die van het Basel Committee voor het conventionele bankwezen"
+      }
+    ],
+    "keywords": [
+      "stelt",
+      "regels",
+      "islamitisch",
+      "financieren",
+      "vast",
+      "aaoifi",
+      "ifsb",
+      "islamic",
+      "finance",
+      "basics"
+    ],
+    "source": "Soliman (2016) §2.1.2 & §3",
+    "reviewStatus": "Ready"
   },
   {
-    "id": "nl-009",
-    "source": "website",
-    "title": "Het aanvraagproces",
-    "content": "Het aanvragen van een DAR Hypotheek verloopt in een aantal stappen. Eerst kun je een oriënterend gesprek aanvragen via de website of telefonisch contact opnemen. Vervolgens wordt er een persoonlijk adviesgesprek ingepland waarin de mogelijkheden worden besproken op basis van de financiële situatie. Na het adviesgesprek wordt een hypotheekaanvraag ingediend. DAR beoordeelt de aanvraag op basis van inkomen, de waarde van de woning en andere relevante factoren. Bij goedkeuring volgt de passering bij de notaris, waarna de klant en DAR samen eigenaar worden van de woning. Het gehele proces is vergelijkbaar met een reguliere hypotheekaanvraag en wordt begeleid door ervaren hypotheekadviseurs.",
-    "keywords": ["aanvragen", "aanvraagproces", "stappen", "adviesgesprek", "hypotheekaanvraag", "hoe aanvragen", "notaris", "proces"]
+    "id": "Q009",
+    "category": "Islamic Finance Basics",
+    "title": "Hoe oud is islamitisch financieren?",
+    "question": "Hoe oud is islamitisch financieren?",
+    "content": "De beginselen gaan terug tot de zevende eeuw, toen de Koran en de leer van de profeet het verbod op riba en het principe van risicodeling vastlegden. Modern islamitisch bankieren ontstond in de jaren '60 en '70 met de oprichting van Mit Ghamr Savings Bank in Egypte en later de Dubai Islamic Bank. De sector groeit sindsdien exponentieel en breidt zich uit naar niet-islamitische landen.\n\nRelated question: Is het een echte sector of een nichemarkt?\nAnswer: Het is een volwaardige wereldwijde sector met banken, vermogensbeheerders, sukuk-markten, takaful-verzekeraars en eigen toezichthouders. Het Verenigd Koninkrijk, Luxemburg, Frankrijk, Duitsland en Ierland hebben wetswijzigingen doorgevoerd om de sector te faciliteren.\n\nRelated question: Wat zijn de grootste islamitische banken?\nAnswer: Al Rajhi Bank (Saoedi-Arabië), Dubai Islamic Bank, Kuwait Finance House en Maybank Islamic (Maleisië) behoren tot de grootste. In Europa is Al Rayan Bank in het Verenigd Koninkrijk de bekendste islamitische consumentenbank.",
+    "followups": [
+      {
+        "q": "Is het een echte sector of een nichemarkt?",
+        "a": "Het is een volwaardige wereldwijde sector met banken, vermogensbeheerders, sukuk-markten, takaful-verzekeraars en eigen toezichthouders. Het Verenigd Koninkrijk, Luxemburg, Frankrijk, Duitsland en Ierland hebben wetswijzigingen doorgevoerd om de sector te faciliteren."
+      },
+      {
+        "q": "Wat zijn de grootste islamitische banken?",
+        "a": "Al Rajhi Bank (Saoedi-Arabië), Dubai Islamic Bank, Kuwait Finance House en Maybank Islamic (Maleisië) behoren tot de grootste. In Europa is Al Rayan Bank in het Verenigd Koninkrijk de bekendste islamitische consumentenbank."
+      }
+    ],
+    "keywords": [
+      "oud",
+      "islamitisch",
+      "financieren",
+      "echte",
+      "sector",
+      "nichemarkt",
+      "grootste",
+      "islamitische",
+      "banken",
+      "islamic",
+      "finance",
+      "basics"
+    ],
+    "source": "Soliman (2016) §1.1 & MIFC 2014",
+    "reviewStatus": "Ready"
   },
   {
-    "id": "nl-010",
-    "source": "website",
-    "title": "Contact en bedrijfsinformatie",
-    "content": "DAR Hypotheken is gevestigd aan de Mercuriusweg 26, 2516 AW Den Haag. Je kunt contact opnemen via e-mail op info@darhypotheken.nl of telefonisch op 020-210 1656. De website van DAR Hypotheken biedt uitgebreide informatie over het product en de mogelijkheden. Via de website kun je ook een oriënterend gesprek aanvragen of een afspraak maken met een hypotheekadviseur. DAR Hypotheken staat ingeschreven bij de Kamer van Koophandel en opereert onder toezicht van de Autoriteit Financiële Markten (AFM). Het team van DAR bestaat uit ervaren professionals in de financiële dienstverlening die gepassioneerd zijn over het toegankelijk maken van halal woningfinanciering in Nederland.",
-    "keywords": ["contact", "Den Haag", "The Hague", "Mercuriusweg", "telefoon", "e-mail", "info", "adres", "AFM", "KvK", "bereikbaar"]
+    "id": "Q010",
+    "category": "Islamic Finance Basics",
+    "title": "Hoe groot is de wereldwijde islamitische financiële sector?",
+    "question": "Hoe groot is de wereldwijde islamitische financiële sector?",
+    "content": "De wereldwijde islamitische financiële activa overschreden in 2014 de 2,1 biljoen dollar en zijn sindsdien verder gegroeid. De sector groeide tussen 2010 en 2014 met jaarlijks 17,3% — veel sneller dan conventioneel financieren. Grote conventionele banken — Deutsche Bank, Citigroup, Barclays, BNP Paribas, Rabobank en ABN AMRO — hebben allemaal een Islamic window.\n\nRelated question: Groeit het ook in Europa?\nAnswer: Ja. Het Verenigd Koninkrijk heeft de grootste Europese markt, met onder meer Al Rayan Bank. Luxemburg is een belangrijk sukuk-centrum. Duitsland, Frankrijk en Ierland hebben gerichte wetswijzigingen doorgevoerd. Nederland is op dit moment de ontbrekende schakel — precies de positie die DAR Hypotheken inneemt.\n\nRelated question: Is Deutsche Bank actief in islamitisch financieren?\nAnswer: Ja, Deutsche Bank heeft al jaren een Islamic window dat wereldwijd gestructureerde islamitische producten aanbiedt. Hun expertise in sharia-conforme structurering maakt hen een natuurlijke funding-partner voor een Nederlandse aanbieder van islamitische hypotheken.",
+    "followups": [
+      {
+        "q": "Groeit het ook in Europa?",
+        "a": "Ja. Het Verenigd Koninkrijk heeft de grootste Europese markt, met onder meer Al Rayan Bank. Luxemburg is een belangrijk sukuk-centrum. Duitsland, Frankrijk en Ierland hebben gerichte wetswijzigingen doorgevoerd. Nederland is op dit moment de ontbrekende schakel — precies de positie die DAR Hypotheken inneemt."
+      },
+      {
+        "q": "Is Deutsche Bank actief in islamitisch financieren?",
+        "a": "Ja, Deutsche Bank heeft al jaren een Islamic window dat wereldwijd gestructureerde islamitische producten aanbiedt. Hun expertise in sharia-conforme structurering maakt hen een natuurlijke funding-partner voor een Nederlandse aanbieder van islamitische hypotheken."
+      }
+    ],
+    "keywords": [
+      "groot",
+      "wereldwijde",
+      "islamitische",
+      "financiële",
+      "sector",
+      "groeit",
+      "europa",
+      "deutsche",
+      "bank",
+      "actief",
+      "islamitisch",
+      "financieren",
+      "islamic",
+      "finance",
+      "basics"
+    ],
+    "source": "Soliman (2016) §1.1 & MIFC 2014",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q011",
+    "category": "Riba (Interest)",
+    "title": "Wat is riba?",
+    "question": "Wat is riba?",
+    "content": "Riba betekent letterlijk 'groeien' of 'toenemen'. In islamitisch financieren omvat het elke tijds- of overmatige toeslag, inclusief wat in conventioneel financieren rente heet. Er zijn twee categorieën: riba an-nasi'a (door uitstel — elke vooraf afgesproken toeslag voor tijdsverloop) en riba al-fadl (door overmaat — ongelijke ruil van gelijksoortige goederen). Beide zijn strikt verboden.\n\nRelated question: Is riba precies hetzelfde als rente?\nAnswer: Rente is de meest voorkomende moderne vorm van riba, maar riba is breder. Het omvat ook de ruil van ongelijke hoeveelheden van hetzelfde goed (bijvoorbeeld 100 kg gewoon graan voor 50 kg topkwaliteit). Het onderliggende idee is dat geld of goederen niet vanzelf meer van zichzelf mogen voortbrengen zonder reële economische activiteit.\n\nRelated question: Betekent dat dat alle winst verboden is?\nAnswer: Nee — winst uit handel, huur uit verhuur en rendement uit risicodragende samenwerking zijn allemaal toegestaan. Wat verboden is, is een gegarandeerde toeslag voor het louter uitlenen van geld, losgekoppeld van reëel risico of een reëel goed.",
+    "followups": [
+      {
+        "q": "Is riba precies hetzelfde als rente?",
+        "a": "Rente is de meest voorkomende moderne vorm van riba, maar riba is breder. Het omvat ook de ruil van ongelijke hoeveelheden van hetzelfde goed (bijvoorbeeld 100 kg gewoon graan voor 50 kg topkwaliteit). Het onderliggende idee is dat geld of goederen niet vanzelf meer van zichzelf mogen voortbrengen zonder reële economische activiteit."
+      },
+      {
+        "q": "Betekent dat dat alle winst verboden is?",
+        "a": "Nee — winst uit handel, huur uit verhuur en rendement uit risicodragende samenwerking zijn allemaal toegestaan. Wat verboden is, is een gegarandeerde toeslag voor het louter uitlenen van geld, losgekoppeld van reëel risico of een reëel goed."
+      }
+    ],
+    "keywords": [
+      "riba",
+      "precies",
+      "hetzelfde",
+      "rente",
+      "betekent",
+      "alle",
+      "winst",
+      "verboden",
+      "interest"
+    ],
+    "source": "Soliman (2016) §2.2.1",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q012",
+    "category": "Riba (Interest)",
+    "title": "Waarom is riba in de islam verboden?",
+    "question": "Waarom is riba in de islam verboden?",
+    "content": "De Koran verbiedt riba in meerdere verzen en bestempelt het als onrechtvaardig — de sterken buiten de zwakken uit via oplopende schuld. Riba concentreert rijkdom, koppelt financiering los van reële productieve activiteit en legt het risico volledig bij de lener. De islam houdt vast aan de regel dat geld verbonden moet zijn aan reële goederen en diensten, en dat financiers moeten meedelen in de uitkomst, niet een vaste toeslag incasseren ongeacht het resultaat.\n\nRelated question: Is deze visie uniek voor de islam?\nAnswer: Nee. Ook in historische joodse en christelijke leer bestaan/bestonden verboden op rente ('woeker'); Aristoteles noemde het heffen van rente 'onnatuurlijk'.\n\nRelated question: Ondersteunt de moderne economische wetenschap dit?\nAnswer: Sommige economen — waaronder oud-beleidsmakers van de Bank of England en IMF-onderzoekers — hebben betoogd dat rentedragende schuld een structurele bijdrage levert aan ongelijkheid en financiële crises. Verscheidene westerse commentatoren hebben risicodelende islamitische modellen voorgesteld als alternatief om huishoudschuld te verlagen.",
+    "followups": [
+      {
+        "q": "Is deze visie uniek voor de islam?",
+        "a": "Nee. Ook in historische joodse en christelijke leer bestaan/bestonden verboden op rente ('woeker'); Aristoteles noemde het heffen van rente 'onnatuurlijk'."
+      },
+      {
+        "q": "Ondersteunt de moderne economische wetenschap dit?",
+        "a": "Sommige economen — waaronder oud-beleidsmakers van de Bank of England en IMF-onderzoekers — hebben betoogd dat rentedragende schuld een structurele bijdrage levert aan ongelijkheid en financiële crises. Verscheidene westerse commentatoren hebben risicodelende islamitische modellen voorgesteld als alternatief om huishoudschuld te verlagen."
+      }
+    ],
+    "keywords": [
+      "waarom",
+      "riba",
+      "islam",
+      "verboden",
+      "deze",
+      "visie",
+      "uniek",
+      "ondersteunt",
+      "moderne",
+      "economische",
+      "wetenschap",
+      "interest"
+    ],
+    "source": "Soliman (2017) art. §1 citing Buiter, AFR 2016",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q013",
+    "category": "Riba (Interest)",
+    "title": "Is elke vorm van rente verboden?",
+    "question": "Is elke vorm van rente verboden?",
+    "content": "Elke toeslag die louter wordt gevraagd voor tijdsverloop of het gebruik van geld — vast of variabel, en of het nu rente, boeterente, vertragingsvergoeding of korting bij vervroegde aflossing heet — valt onder riba en is verboden. Toegestaan zijn vergoedingen die gekoppeld zijn aan reële transacties: huur voor het gebruik van een goed, winstopslag op een verkoop of een aandeel in winst uit samenwerking.\n\nRelated question: En een boete bij te late betaling?\nAnswer: De financier mag een boete wegens te late betaling niet zelf houden. In de islamitische praktijk wordt vaak bedongen dat de klant zich eenzijdig verplicht een vast bedrag aan een goed doel over te maken bij te late betaling — dit stimuleert tijdige betaling zonder riba voor de financier.\n\nRelated question: Is korting bij vervroegde aflossing verboden?\nAnswer: Een vooraf afgesproken korting bij vervroegde aflossing wordt gezien als een vorm van riba an-nasi'a en is niet toegestaan. Een vrijwillige, eenzijdige goodwill-korting door de financier — niet contractueel beloofd — is wel toegestaan.",
+    "followups": [
+      {
+        "q": "En een boete bij te late betaling?",
+        "a": "De financier mag een boete wegens te late betaling niet zelf houden. In de islamitische praktijk wordt vaak bedongen dat de klant zich eenzijdig verplicht een vast bedrag aan een goed doel over te maken bij te late betaling — dit stimuleert tijdige betaling zonder riba voor de financier."
+      },
+      {
+        "q": "Is korting bij vervroegde aflossing verboden?",
+        "a": "Een vooraf afgesproken korting bij vervroegde aflossing wordt gezien als een vorm van riba an-nasi'a en is niet toegestaan. Een vrijwillige, eenzijdige goodwill-korting door de financier — niet contractueel beloofd — is wel toegestaan."
+      }
+    ],
+    "keywords": [
+      "elke",
+      "vorm",
+      "rente",
+      "verboden",
+      "boete",
+      "late",
+      "betaling",
+      "korting",
+      "vervroegde",
+      "aflossing",
+      "riba",
+      "interest"
+    ],
+    "source": "Soliman (2016) §2.2.1 & §3.2",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q014",
+    "category": "Riba (Interest)",
+    "title": "Wat is het verschil tussen riba en legitieme winst?",
+    "question": "Wat is het verschil tussen riba en legitieme winst?",
+    "content": "Winst wordt verdiend door reëel risico te nemen en deel te nemen aan reële activiteit — goederen kopen en verkopen, vastgoed verhuren of delen in bedrijfsresultaten. Riba wordt verdiend door geld uit te lenen tegen een vast rendement, zonder blootstelling aan een reëel goed of risicodeling. Het Koranische onderscheid is eenvoudig: 'Allah heeft handel toegestaan en riba verboden' (Koran 2:275).\n\nRelated question: DAR Hypotheken kan dus gewoon geld verdienen aan een hypotheek?\nAnswer: Ja, DAR Hypotheken ontvangt een vergoeding voor het ter beschikking stellen van de woning aan de klant. DAR Hypotheken wordt ook mede-eigenaar van de woning en draagt als mede-eigenaar mee in bepaalde risico's. Dat is structureel anders dan rente dat een vergoeding is voor het ter beschikking stellen van een lening.\n\nRelated question: Is dat geen rente onder een andere naam?\nAnswer: Nee, en het verschil is wezenlijk. De financier in een halalhypotheek is daadwerkelijk mede-eigenaar van het huis en draagt het risico van schade. Als het huis afbrandt, lijdt de financier verlies. Een leninggever draagt dat risico niet.",
+    "followups": [
+      {
+        "q": "DAR Hypotheken kan dus gewoon geld verdienen aan een hypotheek?",
+        "a": "Ja, DAR Hypotheken ontvangt een vergoeding voor het ter beschikking stellen van de woning aan de klant. DAR Hypotheken wordt ook mede-eigenaar van de woning en draagt als mede-eigenaar mee in bepaalde risico's. Dat is structureel anders dan rente dat een vergoeding is voor het ter beschikking stellen van een lening."
+      },
+      {
+        "q": "Is dat geen rente onder een andere naam?",
+        "a": "Nee, en het verschil is wezenlijk. De financier in een halalhypotheek is daadwerkelijk mede-eigenaar van het huis en draagt het risico van schade. Als het huis afbrandt, lijdt de financier verlies. Een leninggever draagt dat risico niet."
+      }
+    ],
+    "keywords": [
+      "verschil",
+      "tussen",
+      "riba",
+      "legitieme",
+      "winst",
+      "dar",
+      "hypotheken",
+      "dus",
+      "gewoon",
+      "geld",
+      "verdienen",
+      "hypotheek",
+      "geen",
+      "rente",
+      "onder",
+      "andere",
+      "naam",
+      "interest"
+    ],
+    "source": "Soliman (2016) §2.2.1 & §3.1",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q015",
+    "category": "Riba (Interest)",
+    "title": "",
+    "question": "",
+    "content": "\n\nRelated question: Blijft de vergoeding die de klant betaalt altijd gelijk?\nAnswer: Ja, bij een hypotheek van DAR Hypotheken betaal je hetzelfde maandelijkse bedrag tot het einde van de looptijd.",
+    "followups": [
+      {
+        "q": "Blijft de vergoeding die de klant betaalt altijd gelijk?",
+        "a": "Ja, bij een hypotheek van DAR Hypotheken betaal je hetzelfde maandelijkse bedrag tot het einde van de looptijd."
+      }
+    ],
+    "keywords": [
+      "blijft",
+      "vergoeding",
+      "klant",
+      "betaalt",
+      "altijd",
+      "gelijk",
+      "riba",
+      "interest"
+    ],
+    "source": "Soliman (2016) §3.3 & Soliman (2017) §3.2",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q016",
+    "category": "Riba (Interest)",
+    "title": "Kan ik rendement halen op mijn spaargeld met islamitisch financieren?",
+    "question": "Kan ik rendement halen op mijn spaargeld met islamitisch financieren?",
+    "content": "Ja. Islamitische spaarrekeningen werken doorgaans op basis van een muDARaba-structuur: u vertrouwt uw geld toe aan de bank, die het belegt in sharia-conforme activiteiten, en u deelt in de winst. Anders dan bij een conventioneel deposito is het rendement niet gegarandeerd — het weerspiegelt werkelijke winstgevendheid.\n\nRelated question: Is er dus beleggingsrisico?\nAnswer: Technisch wel, wat aansluit bij het beginsel van risicodeling. In de praktijk houden veel islamitische banken winst-egalisatiereserves aan zodat het rendement voor klanten stabiel blijft.\n\nRelated question: Gaat DAR Hypotheken spaarrekeningen aanbieden?\nAnswer: De focus van DAR Hypotheken ligt nu op de sharia-conforme hypotheek. Spaarproducten kunnen in latere fasen volgen. Neem voor de planning contact op met ons team.",
+    "followups": [
+      {
+        "q": "Is er dus beleggingsrisico?",
+        "a": "Technisch wel, wat aansluit bij het beginsel van risicodeling. In de praktijk houden veel islamitische banken winst-egalisatiereserves aan zodat het rendement voor klanten stabiel blijft."
+      },
+      {
+        "q": "Gaat DAR Hypotheken spaarrekeningen aanbieden?",
+        "a": "De focus van DAR Hypotheken ligt nu op de sharia-conforme hypotheek. Spaarproducten kunnen in latere fasen volgen. Neem voor de planning contact op met ons team."
+      }
+    ],
+    "keywords": [
+      "rendement",
+      "halen",
+      "spaargeld",
+      "islamitisch",
+      "financieren",
+      "dus",
+      "beleggingsrisico",
+      "gaat",
+      "dar",
+      "hypotheken",
+      "spaarrekeningen",
+      "aanbieden",
+      "riba",
+      "interest"
+    ],
+    "source": "Soliman (2016) §4.2 muDARaba deposits",
+    "reviewStatus": "DAR to confirm future product roadmap"
+  },
+  {
+    "id": "Q017",
+    "category": "Riba (Interest)",
+    "title": "Hoe stimuleert islamitisch financieren tijdige betaling zonder rente?",
+    "question": "Hoe stimuleert islamitisch financieren tijdige betaling zonder rente?",
+    "content": "Via een boetebeding ten behoeve van een goed doel: de klant verplicht zich om een vast bedrag aan een goed doel over te maken bij te late betaling. De financier houdt dit bedrag zelf nooit, zodat het geen riba vormt, maar de prikkel blijft betekenisvol. Empirisch onderzoek in Pakistan vond verzuimpercentages bij islamitisch financieren van minder dan de helft van die bij conventioneel lenen — wat suggereert dat deze benadering werkt.\n\nRelated question: DAR Hypotheken kan dus geen boeterente rekenen?\nAnswer: Klopt — niet voor eigen rekening. Een eventuele contractuele bijdrage bij te late betaling gaat naar een goed doel, niet naar DAR Hypotheken.\n\nRelated question: Waarom zijn de verzuimpercentages lager?\nAnswer: Onderzoekers wijzen op drie factoren: religieuze motivatie bij klanten, de reële economische band met het goed (klanten willen hun huis niet verliezen) en het boetebeding ten behoeve van een goed doel. Samen verminderen zij moral hazard.",
+    "followups": [
+      {
+        "q": "DAR Hypotheken kan dus geen boeterente rekenen?",
+        "a": "Klopt — niet voor eigen rekening. Een eventuele contractuele bijdrage bij te late betaling gaat naar een goed doel, niet naar DAR Hypotheken."
+      },
+      {
+        "q": "Waarom zijn de verzuimpercentages lager?",
+        "a": "Onderzoekers wijzen op drie factoren: religieuze motivatie bij klanten, de reële economische band met het goed (klanten willen hun huis niet verliezen) en het boetebeding ten behoeve van een goed doel. Samen verminderen zij moral hazard."
+      }
+    ],
+    "keywords": [
+      "stimuleert",
+      "islamitisch",
+      "financieren",
+      "tijdige",
+      "betaling",
+      "zonder",
+      "rente",
+      "dar",
+      "hypotheken",
+      "dus",
+      "geen",
+      "boeterente",
+      "rekenen",
+      "waarom",
+      "verzuimpercentages",
+      "lager",
+      "riba",
+      "interest"
+    ],
+    "source": "Soliman (2016) §3.2 & §4.2; Baele/Farooq/Ongena 2012",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q018",
+    "category": "Riba (Interest)",
+    "title": "Gaat het verbod op riba alleen over uitbuiting?",
+    "question": "Gaat het verbod op riba alleen over uitbuiting?",
+    "content": "Dat is één dimensie, maar niet het hele beeld. Het verbod dient ook systeemdoelen: financiën gekoppeld houden aan reële activa, schuldinflatiecycli voorkomen, risico eerlijker verdelen tussen financier en klant, en productieve investering — niet financiële speculatie — in het hart van de economie houden. De kredietcrisis van 2008 heeft de argumentatie versterkt dat een meer risicodelend model systeemkwetsbaarheid kan verminderen.",
+    "followups": [],
+    "keywords": [
+      "gaat",
+      "verbod",
+      "riba",
+      "alleen",
+      "uitbuiting",
+      "interest"
+    ],
+    "source": "Soliman (2017) art. §1 & §5",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q019",
+    "category": "Prohibitions (Gharar, Maysir, Haram)",
+    "title": "Wat is gharar?",
+    "question": "Wat is gharar?",
+    "content": "Gharar betekent onzekerheid. Islamitisch financieren onderscheidt gharar fahish — excessieve onzekerheid over de essentialia van een overeenkomst (prijs, object, levering) — en gharar yasir, kleine onvermijdelijke onzekerheid die wordt toegestaan. Excessieve gharar maakt een overeenkomst nietig omdat het de deur opent voor onrechtvaardige uitkomsten.\n\nRelated question: Wat is een voorbeeld van excessieve gharar?\nAnswer: Bijvoorbeeld iets verkopen dat u nog niet bezit (short sale) of tegen een onbepaalde prijs.",
+    "followups": [
+      {
+        "q": "Wat is een voorbeeld van excessieve gharar?",
+        "a": "Bijvoorbeeld iets verkopen dat u nog niet bezit (short sale) of tegen een onbepaalde prijs."
+      }
+    ],
+    "keywords": [
+      "gharar",
+      "voorbeeld",
+      "excessieve",
+      "prohibitions",
+      "maysir",
+      "haram"
+    ],
+    "source": "Soliman (2016) §2.2.2",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q020",
+    "category": "Prohibitions (Gharar, Maysir, Haram)",
+    "title": "Wat is maysir?",
+    "question": "Wat is maysir?",
+    "content": "Maysir is gokken of zero-sum speculatie — winst behalen door toeval ten koste van een ander. Qimar is de engere term voor wedden. Beide zijn verboden omdat zij rijkdom overhevelen zonder productieve bijdrage en geschillen creëren. Dit verbod is de reden dat islamitisch financieren veel conventionele derivaten vermijdt, waar winsten puur afhangen van marktbewegingen in plaats van reële economische activiteit.\n\nRelated question: Dus helemaal geen derivaten?\nAnswer: Zuiver speculatieve derivaten (opties, naakte futures, swaps) worden doorgaans vermeden. Maar bepaalde instrumenten met een duidelijk hedgingdoel en reële activa-koppeling — zoals bai' as-salam (termijnkoop) of wa'ad-constructies — kunnen sharia-conform zijn mits correct gestructureerd.\n\nRelated question: Is normaal ondernemingsrisico hetzelfde als maysir?\nAnswer: Nee. Commercieel risico (een winkel verkoopt wellicht zijn voorraad niet) is fundamenteel anders dan gokken (de uitkomst hangt louter af van toeval).",
+    "followups": [
+      {
+        "q": "Dus helemaal geen derivaten?",
+        "a": "Zuiver speculatieve derivaten (opties, naakte futures, swaps) worden doorgaans vermeden. Maar bepaalde instrumenten met een duidelijk hedgingdoel en reële activa-koppeling — zoals bai' as-salam (termijnkoop) of wa'ad-constructies — kunnen sharia-conform zijn mits correct gestructureerd."
+      },
+      {
+        "q": "Is normaal ondernemingsrisico hetzelfde als maysir?",
+        "a": "Nee. Commercieel risico (een winkel verkoopt wellicht zijn voorraad niet) is fundamenteel anders dan gokken (de uitkomst hangt louter af van toeval)."
+      }
+    ],
+    "keywords": [
+      "maysir",
+      "dus",
+      "helemaal",
+      "geen",
+      "derivaten",
+      "normaal",
+      "ondernemingsrisico",
+      "hetzelfde",
+      "prohibitions",
+      "gharar",
+      "haram"
+    ],
+    "source": "Soliman (2016) §2.2.3",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q021",
+    "category": "Prohibitions (Gharar, Maysir, Haram)",
+    "title": "Waarom vermijdt islamitisch financieren conventionele verzekeringen?",
+    "question": "Waarom vermijdt islamitisch financieren conventionele verzekeringen?",
+    "content": "Conventionele verzekeringen combineren elementen van gharar (u betaalt premies voor een onzekere gebeurtenis), maysir (het kan lijken op een weddenschap op pech) en riba (de verzekeraar belegt premies in rentedragende activa). Islamitisch financieren gebruikt in plaats daarvan takaful — een onderling beschermingsmodel waarin polishouders gezamenlijk bijdragen om elkaars verliezen te dekken.\n\nRelated question: Hoe werkt takaful?\nAnswer: Deelnemers dragen bij aan een gedeeld fonds. Als een deelnemer een gedekt verlies lijdt, keert het fonds uit. Een eventueel overschot kan worden verdeeld onder deelnemers. De takaful-operator beheert het fonds en is geen wederpartij die tegen polishouders wedt — waardoor de gharar- en maysirproblemen worden weggenomen.\n\nRelated question: Is takaful beschikbaar in Nederland?\nAnswer: Specifieke takaful-aanbieders zijn nog niet actief op de Nederlandse consumentenmarkt.",
+    "followups": [
+      {
+        "q": "Hoe werkt takaful?",
+        "a": "Deelnemers dragen bij aan een gedeeld fonds. Als een deelnemer een gedekt verlies lijdt, keert het fonds uit. Een eventueel overschot kan worden verdeeld onder deelnemers. De takaful-operator beheert het fonds en is geen wederpartij die tegen polishouders wedt — waardoor de gharar- en maysirproblemen worden weggenomen."
+      },
+      {
+        "q": "Is takaful beschikbaar in Nederland?",
+        "a": "Specifieke takaful-aanbieders zijn nog niet actief op de Nederlandse consumentenmarkt."
+      }
+    ],
+    "keywords": [
+      "waarom",
+      "vermijdt",
+      "islamitisch",
+      "financieren",
+      "conventionele",
+      "verzekeringen",
+      "werkt",
+      "takaful",
+      "beschikbaar",
+      "nederland",
+      "prohibitions",
+      "gharar",
+      "maysir",
+      "haram"
+    ],
+    "source": "Soliman (2017) art. §3.2 note on takaful",
+    "reviewStatus": "DAR to confirm insurance partner"
+  },
+  {
+    "id": "Q022",
+    "category": "Prohibitions (Gharar, Maysir, Haram)",
+    "title": "Welke sectoren zijn haram om te financieren?",
+    "question": "Welke sectoren zijn haram om te financieren?",
+    "content": "Islamitisch financieren sluit sectoren uit waarvan de kernactiviteit botst met de sharia: alcohol, varkensvlees, gokken, conventioneel (rentedragend) bankieren,, wapens, tabak en bepaalde entertainment. Een financier mag niet deelnemen aan of profiteren van deze sectoren. Hierdoor overlapt islamitisch financieren sterk met ESG-filters uit conventioneel ethisch beleggen.\n\nRelated question: Heeft dit gevolgen voor wie een halalhypotheek kan krijgen?\nAnswer: Nee, dit raakt gewone woningkopers niet die de woning bestemmen als hoofdverblijf.\n\nRelated question: En inkomensbronnen — moet mijn inkomen halal zijn?\nAnswer: Iedereen is bij DAR Hypotheken welkom. DAR Hypotheken voert dezelfde betaalbaarheids- en herkomstchecks uit die de Nederlandse wet- en regelgeving voorschrijft. Wij voeren geen religieuze controles uit.",
+    "followups": [
+      {
+        "q": "Heeft dit gevolgen voor wie een halalhypotheek kan krijgen?",
+        "a": "Nee, dit raakt gewone woningkopers niet die de woning bestemmen als hoofdverblijf."
+      },
+      {
+        "q": "En inkomensbronnen — moet mijn inkomen halal zijn?",
+        "a": "Iedereen is bij DAR Hypotheken welkom. DAR Hypotheken voert dezelfde betaalbaarheids- en herkomstchecks uit die de Nederlandse wet- en regelgeving voorschrijft. Wij voeren geen religieuze controles uit."
+      }
+    ],
+    "keywords": [
+      "welke",
+      "sectoren",
+      "haram",
+      "financieren",
+      "gevolgen",
+      "halalhypotheek",
+      "krijgen",
+      "inkomensbronnen",
+      "moet",
+      "inkomen",
+      "halal",
+      "prohibitions",
+      "gharar",
+      "maysir"
+    ],
+    "source": "Soliman (2016) §2.2 (haram activities) & §3.2",
+    "reviewStatus": "DAR to confirm income-screening policy"
+  },
+  {
+    "id": "Q023",
+    "category": "Prohibitions (Gharar, Maysir, Haram)",
+    "title": "Is alle onzekerheid verboden in contracten?",
+    "question": "Is alle onzekerheid verboden in contracten?",
+    "content": "Nee. Alleen excessieve onzekerheid (gharar fahish) is verboden. Kleine onzekerheid (gharar yasir) is onvermijdelijk in de handel en wordt aanvaard. Voorbeeld: niet weten wat een huis straks precies waard is, is toegestaan; een huis verkopen zonder prijs af te spreken, niet. De toets is of de onzekerheid de essentialia van de overeenkomst raakt.\n\nRelated question: En de koopprijs van het aandeel van de financier?\nAnswer: Bij een degressieve musharaka kan de aandelenprijs vooraf worden vastgesteld of gebaseerd zijn op de marktwaarde op het moment van aankoop — beide zijn sharia-conform mits de methode vooraf transparant is afgesproken.",
+    "followups": [
+      {
+        "q": "En de koopprijs van het aandeel van de financier?",
+        "a": "Bij een degressieve musharaka kan de aandelenprijs vooraf worden vastgesteld of gebaseerd zijn op de marktwaarde op het moment van aankoop — beide zijn sharia-conform mits de methode vooraf transparant is afgesproken."
+      }
+    ],
+    "keywords": [
+      "alle",
+      "onzekerheid",
+      "verboden",
+      "contracten",
+      "koopprijs",
+      "aandeel",
+      "financier",
+      "prohibitions",
+      "gharar",
+      "maysir",
+      "haram"
+    ],
+    "source": "Soliman (2016) §2.2.2 & §3.1.1",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q024",
+    "category": "Prohibitions (Gharar, Maysir, Haram)",
+    "title": "Hoe zit het met derivaten en hedging?",
+    "question": "Hoe zit het met derivaten en hedging?",
+    "content": "De meeste conventionele derivaten (opties, swaps, naakte futures) worden vermeden omdat zij zuivere speculatie zijn op prijsbewegingen zonder koppeling aan een reëel goed. Islamitisch financieren heeft echter sharia-conforme hedginginstrumenten ontwikkeld op basis van wa'ad (eenzijdige belofte), arbun (waarborgsom) en back-to-back verkopen om reële bedrijfsrisico's te beheren zonder in gokken te vervallen.",
+    "followups": [],
+    "keywords": [
+      "zit",
+      "derivaten",
+      "hedging",
+      "prohibitions",
+      "gharar",
+      "maysir",
+      "haram"
+    ],
+    "source": "Soliman (2016) §3.2.2 & §4.2",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q025",
+    "category": "Prohibitions (Gharar, Maysir, Haram)",
+    "title": "Waarom is asset-backing zo belangrijk?",
+    "question": "Waarom is asset-backing zo belangrijk?",
+    "content": "Asset-backing betekent dat elke financiële transactie gekoppeld is aan een reëel, identificeerbaar goed of dienst. Dit voorkomt dat geld uit zichzelf geld voortbrengt (riba), verankert financieren in de reële economie en zorgt dat financieel risico correspondeert met reëel economisch risico.\n\nRelated question: Beperkt dit de producten die DAR Hypotheken kan aanbieden?\nAnswer: Het focust het productbereik. De halalhypotheek wordt gedekt door echte woningen. Toekomstige spaar- of beleggingsproducten moeten eveneens worden gedekt door tastbare activa of reële samenwerkingen.\n\nRelated question: Is asset-backing hetzelfde als gedekte kredietverlening?\nAnswer: Nee. Gedekte kredietverlening is nog steeds rentegebaseerd — de kredietgever houdt onderpand, maar is geen eigenaar van het goed en neemt er geen reëel risico op. Asset-backing in islamitisch financieren betekent dat de financier daadwerkelijk eigenaar, koper of verhuurder is van het goed, met reële blootstelling aan het economisch lot ervan.",
+    "followups": [
+      {
+        "q": "Beperkt dit de producten die DAR Hypotheken kan aanbieden?",
+        "a": "Het focust het productbereik. De halalhypotheek wordt gedekt door echte woningen. Toekomstige spaar- of beleggingsproducten moeten eveneens worden gedekt door tastbare activa of reële samenwerkingen."
+      },
+      {
+        "q": "Is asset-backing hetzelfde als gedekte kredietverlening?",
+        "a": "Nee. Gedekte kredietverlening is nog steeds rentegebaseerd — de kredietgever houdt onderpand, maar is geen eigenaar van het goed en neemt er geen reëel risico op. Asset-backing in islamitisch financieren betekent dat de financier daadwerkelijk eigenaar, koper of verhuurder is van het goed, met reële blootstelling aan het economisch lot ervan."
+      }
+    ],
+    "keywords": [
+      "waarom",
+      "asset",
+      "backing",
+      "belangrijk",
+      "beperkt",
+      "producten",
+      "dar",
+      "hypotheken",
+      "aanbieden",
+      "hetzelfde",
+      "gedekte",
+      "kredietverlening",
+      "prohibitions",
+      "gharar",
+      "maysir",
+      "haram"
+    ],
+    "source": "Soliman (2016) §2.2.1 note 30",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q026",
+    "category": "Core Islamic Contracts",
+    "title": "Wat is Murabaha?",
+    "question": "Wat is Murabaha?",
+    "content": "Murabaha is financiering waarbij de financier het goed koopt dat de klant wenst en aan de klant verkoopt tegen een afgesproken winstopslag, betaalbaar in termijnen. Kenmerkend is de transparantie: de klant kent de oorspronkelijke kostprijs en de winstmarge. Het is wereldwijd de meest gebruikte islamitische financieringsmethode.\n\nRelated question: Hoe verschilt Murabaha van een lening?\nAnswer: Bij een lening draagt de geldverstrekker geld over; bij Murabaha draagt de financier een reëel goed over. De financier is kort eigenaar en draagt de eigendomsrisico's (schade, gebreken) vóór doorverkoop. De prijs kan nooit stijgen na het afsluiten en een vergoeding bij te late betaling gaat niet naar de financier.\n\nRelated question: Gebruikt DAR Hypotheken Murabaha?\nAnswer: DAR Hypotheken gebruikt een combinatie van Musharaka en Murabaha.",
+    "followups": [
+      {
+        "q": "Hoe verschilt Murabaha van een lening?",
+        "a": "Bij een lening draagt de geldverstrekker geld over; bij Murabaha draagt de financier een reëel goed over. De financier is kort eigenaar en draagt de eigendomsrisico's (schade, gebreken) vóór doorverkoop. De prijs kan nooit stijgen na het afsluiten en een vergoeding bij te late betaling gaat niet naar de financier."
+      },
+      {
+        "q": "Gebruikt DAR Hypotheken Murabaha?",
+        "a": "DAR Hypotheken gebruikt een combinatie van Musharaka en Murabaha."
+      }
+    ],
+    "keywords": [
+      "murabaha",
+      "verschilt",
+      "lening",
+      "gebruikt",
+      "dar",
+      "hypotheken",
+      "core",
+      "islamic",
+      "contracts"
+    ],
+    "source": "Soliman (2016) §3.2",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q027",
+    "category": "Core Islamic Contracts",
+    "title": "Wat is Musharaka?",
+    "question": "Wat is Musharaka?",
+    "content": "Musharaka is een samenwerking waarbij twee of meer partijen gezamenlijk kapitaal inbrengen en winst en verlies delen volgens afgesproken verhoudingen. Winst wordt gedeeld in ratio (niet als vast bedrag); verlies wordt gedragen naar rato van de kapitaalinbreng. Doordat de financier deelneemt in reële winst- en verlies­uitkomsten, is musharaka verenigbaar met het verbod op riba.\n\nRelated question: Is het net als een joint venture?\nAnswer: In essentie wel. Beide partijen brengen kapitaal in een gezamenlijke onderneming of goed, beheren dit samen (tenzij het contract het beheer aan één partij toewijst) en delen het resultaat. Dit is het 'ideale' model in islamitisch financieren omdat risico echt wordt gedeeld.\n\nRelated question: Wie draagt het verlies?\nAnswer: Alle vennoten dragen verlies naar rato van hun kapitaalinbreng. Winst kan in elke verhouding worden gedeeld die de vennoten afspreken, mits het een percentage is en geen vast bedrag.",
+    "followups": [
+      {
+        "q": "Is het net als een joint venture?",
+        "a": "In essentie wel. Beide partijen brengen kapitaal in een gezamenlijke onderneming of goed, beheren dit samen (tenzij het contract het beheer aan één partij toewijst) en delen het resultaat. Dit is het 'ideale' model in islamitisch financieren omdat risico echt wordt gedeeld."
+      },
+      {
+        "q": "Wie draagt het verlies?",
+        "a": "Alle vennoten dragen verlies naar rato van hun kapitaalinbreng. Winst kan in elke verhouding worden gedeeld die de vennoten afspreken, mits het een percentage is en geen vast bedrag."
+      }
+    ],
+    "keywords": [
+      "musharaka",
+      "net",
+      "joint",
+      "venture",
+      "draagt",
+      "verlies",
+      "core",
+      "islamic",
+      "contracts"
+    ],
+    "source": "Soliman (2016) §3.1",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q028",
+    "category": "Core Islamic Contracts",
+    "title": "Wat is Musharaka al-Mutanaqisa (diminishing musharaka)?",
+    "question": "Wat is Musharaka al-Mutanaqisa (diminishing musharaka)?",
+    "content": "Het is een musharaka waarbij vanaf de aanvang is overeengekomen dat de financier zijn aandeel in termijnen aan de klant verkoopt. Het aandeel van de klant groeit en dat van de financier krimpt, totdat de klant 100% bezit. Elke aandelenoverdracht is een aparte verkoop, geprijsd op marktwaarde of een vooraf afgesproken formule.",
+    "followups": [],
+    "keywords": [
+      "musharaka",
+      "mutanaqisa",
+      "diminishing",
+      "core",
+      "islamic",
+      "contracts"
+    ],
+    "source": "Soliman (2016) §3.1.1 & Soliman (2017) §3.1",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q029",
+    "category": "Core Islamic Contracts",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "core",
+      "islamic",
+      "contracts"
+    ],
+    "source": "Soliman (2016) §3.3 & §3.3.2",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q030",
+    "category": "Core Islamic Contracts",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "core",
+      "islamic",
+      "contracts"
+    ],
+    "source": "Soliman (2016) §3.3.1",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q031",
+    "category": "Core Islamic Contracts",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "core",
+      "islamic",
+      "contracts"
+    ],
+    "source": "Soliman (2016) §3.1.2",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q032",
+    "category": "Core Islamic Contracts",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "core",
+      "islamic",
+      "contracts"
+    ],
+    "source": "Soliman (2016) §1.1 & Salah 2014",
+    "reviewStatus": "DAR to confirm future funding strategy"
+  },
+  {
+    "id": "Q033",
+    "category": "Core Islamic Contracts",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "core",
+      "islamic",
+      "contracts"
+    ],
+    "source": "Soliman (2016) §3.1.1 & Salah 2014",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q034",
+    "category": "Core Islamic Contracts",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "core",
+      "islamic",
+      "contracts"
+    ],
+    "source": "Soliman (2016) §3.1 & §3.1.3",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q035",
+    "category": "Core Islamic Contracts",
+    "title": "Welke islamitische contracten gebruikt DAR Hypotheken?",
+    "question": "Welke islamitische contracten gebruikt DAR Hypotheken?",
+    "content": "\n\nRelated question: Heeft DAR Hypotheken een halalcertificaat?\nAnswer: Ja. DAR Hypotheken heeft een halalcertificaat ontvangen voor de halalhypotheek.",
+    "followups": [
+      {
+        "q": "Heeft DAR Hypotheken een halalcertificaat?",
+        "a": "Ja. DAR Hypotheken heeft een halalcertificaat ontvangen voor de halalhypotheek."
+      }
+    ],
+    "keywords": [
+      "welke",
+      "islamitische",
+      "contracten",
+      "gebruikt",
+      "dar",
+      "hypotheken",
+      "halalcertificaat",
+      "core",
+      "islamic",
+      "contracts"
+    ],
+    "source": "Soliman (2017) §3 & DAR Hypotheken product documentation",
+    "reviewStatus": "DAR to confirm final contract set"
+  },
+  {
+    "id": "Q036",
+    "category": "Halalhypotheek Explained",
+    "title": "Wat is een halalhypotheek?",
+    "question": "Wat is een halalhypotheek?",
+    "content": "Een halalhypotheek is een sharia-conform alternatief voor een conventionele hypotheek. In plaats van dat een bank u geld leent tegen rente, koopt DAR Hypotheken samen met u de woning. U betaalt het aandeel in de woning van DAR Hypotheken geleidelijk terug. Het resultaat: woningbezit zonder riba.\n\nRelated question: Is dit de eerste in Nederland?\nAnswer: Ja. DAR Hypotheken is de eerste Nederlandse aanbieder die een volledig gecertificeerde halalhypotheek naar de markt breng",
+    "followups": [
+      {
+        "q": "Is dit de eerste in Nederland?",
+        "a": "Ja. DAR Hypotheken is de eerste Nederlandse aanbieder die een volledig gecertificeerde halalhypotheek naar de markt breng"
+      }
+    ],
+    "keywords": [
+      "halalhypotheek",
+      "eerste",
+      "nederland",
+      "explained"
+    ],
+    "source": "DAR Hypotheken positioning + Soliman (2017)",
+    "reviewStatus": "DAR to finalise launch date"
+  },
+  {
+    "id": "Q037",
+    "category": "Halalhypotheek Explained",
+    "title": "Hoe werkt de hypotheek van DAR Hypotheken in eenvoudige taal?",
+    "question": "Hoe werkt de hypotheek van DAR Hypotheken in eenvoudige taal?",
+    "content": "In drie stappen. Eén: u en DAR Hypotheken kopen samen het huis dat u wilt — u brengt in wat u kunt, DAR Hypotheken dekt de rest. Twee: u woont in de woning en betaalt DAR maandelijks een bedrag terug inclusief een opslag. Drie: aan het eind van de looptijd bent u enig eigenaar van de woning.\n\nRelated question: Hoe is mijn maandelijkse betaling opgebouwd?\nAnswer: Elke maand dekt uw betaling (a) aflossing over de kostprijs die DAR heeft betaald en (b) een opslag. Uw maandelijkse bedrag blijft hetzelfde tot einde looptijd.\n\nRelated question: Lijkt dit op het Britse model?\nAnswer: Ja, dit lijkt in opzet op wat in het Verenigd Koninkrijk en in de Golfstaten wordt aangeboden. DAR Hypotheken heeft het model aangepast aan het Nederlandse recht.",
+    "followups": [
+      {
+        "q": "Hoe is mijn maandelijkse betaling opgebouwd?",
+        "a": "Elke maand dekt uw betaling (a) aflossing over de kostprijs die DAR heeft betaald en (b) een opslag. Uw maandelijkse bedrag blijft hetzelfde tot einde looptijd."
+      },
+      {
+        "q": "Lijkt dit op het Britse model?",
+        "a": "Ja, dit lijkt in opzet op wat in het Verenigd Koninkrijk en in de Golfstaten wordt aangeboden. DAR Hypotheken heeft het model aangepast aan het Nederlandse recht."
+      }
+    ],
+    "keywords": [
+      "werkt",
+      "hypotheek",
+      "dar",
+      "hypotheken",
+      "eenvoudige",
+      "taal",
+      "maandelijkse",
+      "betaling",
+      "opgebouwd",
+      "lijkt",
+      "britse",
+      "model",
+      "halalhypotheek",
+      "explained"
+    ],
+    "source": "DAR Hypotheken product + Soliman (2017)",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q038",
+    "category": "Halalhypotheek Explained",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "halalhypotheek",
+      "explained"
+    ],
+    "source": "Soliman (2017) §3 & DAR contract architecture",
+    "reviewStatus": "DAR to confirm final contract titles"
+  },
+  {
+    "id": "Q039",
+    "category": "Halalhypotheek Explained",
+    "title": "Wie is eigenaar van de woning bij een halalhypotheek?",
+    "question": "Wie is eigenaar van de woning bij een halalhypotheek?",
+    "content": "Vanaf het moment van aankoop zijn u en DAR Hypotheken gezamenlijk juridisch eigenaar — beide met een geregistreerd aandeel bij het Kadaster. Dit verschilt sterk van een conventionele hypotheek, waar u enig eigenaar bent en de bank alleen een recht van hypotheek heeft als zekerheid.\n\nRelated question: Staat het huis op mijn naam?\nAnswer: Beide namen verschijnen aanvankelijk op de eigendomsregistratie, met de respectieve aandelen vastgelegd.\n\nRelated question: Kan ik vrij verbouwen of inrichten?\nAnswer: U heeft volledig dagelijks gebruik van de woning en vrijheid om in te richten.",
+    "followups": [
+      {
+        "q": "Staat het huis op mijn naam?",
+        "a": "Beide namen verschijnen aanvankelijk op de eigendomsregistratie, met de respectieve aandelen vastgelegd."
+      },
+      {
+        "q": "Kan ik vrij verbouwen of inrichten?",
+        "a": "U heeft volledig dagelijks gebruik van de woning en vrijheid om in te richten."
+      }
+    ],
+    "keywords": [
+      "eigenaar",
+      "woning",
+      "halalhypotheek",
+      "staat",
+      "huis",
+      "naam",
+      "vrij",
+      "verbouwen",
+      "inrichten",
+      "explained"
+    ],
+    "source": "Soliman (2017) §3.4 & Dutch BW Title 3.7",
+    "reviewStatus": "DAR to confirm registration format"
+  },
+  {
+    "id": "Q040",
+    "category": "Halalhypotheek Explained",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "halalhypotheek",
+      "explained"
+    ],
+    "source": "Soliman (2017) §1 & §3.3; CBS 2015; DNB 2015",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q041",
+    "category": "Halalhypotheek Explained",
+    "title": "",
+    "question": "",
+    "content": "\n\nRelated question: Verandert het totaalbedrag in de tijd?\nAnswer: Nee, het totaalbedrag blijft gelijk tot aan einde looptijd.\n\nRelated question: Kan ik het tempo van de uitkoop zelf kiezen?\nAnswer: Ja — DAR Hypotheken biedt flexibiliteit. U kunt een standaardschema volgen of versnellen met extra betalingen.",
+    "followups": [
+      {
+        "q": "Verandert het totaalbedrag in de tijd?",
+        "a": "Nee, het totaalbedrag blijft gelijk tot aan einde looptijd."
+      },
+      {
+        "q": "Kan ik het tempo van de uitkoop zelf kiezen?",
+        "a": "Ja — DAR Hypotheken biedt flexibiliteit. U kunt een standaardschema volgen of versnellen met extra betalingen."
+      }
+    ],
+    "keywords": [
+      "verandert",
+      "totaalbedrag",
+      "tijd",
+      "tempo",
+      "uitkoop",
+      "zelf",
+      "kiezen",
+      "halalhypotheek",
+      "explained"
+    ],
+    "source": "Soliman (2017) §3.2 & DAR Hypotheken product design",
+    "reviewStatus": "DAR to publish precise rate grid"
+  },
+  {
+    "id": "Q042",
+    "category": "Halalhypotheek Explained",
+    "title": "Waarom is er geen 'rente' bij een halalhypotheek?",
+    "question": "Waarom is er geen 'rente' bij een halalhypotheek?",
+    "content": "Omdat u geen geld leent. U koopt samen een huis en betaalt voor de ter beschikking stelling van de woning. Het rendement van de financier komt uit het beschikbaar stellen van reëel vastgoed. Dit zijn reële, aan activa gekoppelde economische rendementen — geen vaste toeslag op uitgeleend geld over tijd, wat rente is.\n\nRelated question: Zou iemand kunnen stellen dat het verkapte rente is?\nAnswer: Sommige critici brengen dat inderdaad in. Het kernantwoord is dat de financier bij een halalhypotheek daadwerkelijk mede-eigenaar is die reëel risico loopt (schade, marktdaling, wijziging huurrecht). Een rentegever loopt die risico's niet. Het gaat om de inhoud, niet alleen om de vorm.",
+    "followups": [
+      {
+        "q": "Zou iemand kunnen stellen dat het verkapte rente is?",
+        "a": "Sommige critici brengen dat inderdaad in. Het kernantwoord is dat de financier bij een halalhypotheek daadwerkelijk mede-eigenaar is die reëel risico loopt (schade, marktdaling, wijziging huurrecht). Een rentegever loopt die risico's niet. Het gaat om de inhoud, niet alleen om de vorm."
+      }
+    ],
+    "keywords": [
+      "waarom",
+      "geen",
+      "rente",
+      "halalhypotheek",
+      "zou",
+      "iemand",
+      "kunnen",
+      "stellen",
+      "verkapte",
+      "explained"
+    ],
+    "source": "Soliman (2017) §3.4.3 discussion of rent vs. interest",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q043",
+    "category": "Halalhypotheek Explained",
+    "title": "Wat gebeurt er als ik klaar ben met betalen?",
+    "question": "Wat gebeurt er als ik klaar ben met betalen?",
+    "content": "Wanneer u het laatste aandeel van DAR Hypotheken heeft gekocht, wordt u 100% eigenaar. Het aandeel van DAR wordt via de notaris formeel aan u overgedragen, de woning wordt alleen op uw naam geregistreerd bij het Kadaster, en de betalingen eindigen.\n\nRelated question: Is er een afsluitingsceremonie of administratie?\nAnswer: De overdracht van het laatste aandeel wordt geformaliseerd via een notariële akte, zoals elke eigendomsoverdracht in Nederland. U ontvangt een bijgewerkte Kadasterregistratie die uw volledige eigendom weerspiegelt.",
+    "followups": [
+      {
+        "q": "Is er een afsluitingsceremonie of administratie?",
+        "a": "De overdracht van het laatste aandeel wordt geformaliseerd via een notariële akte, zoals elke eigendomsoverdracht in Nederland. U ontvangt een bijgewerkte Kadasterregistratie die uw volledige eigendom weerspiegelt."
+      }
+    ],
+    "keywords": [
+      "gebeurt",
+      "klaar",
+      "ben",
+      "betalen",
+      "afsluitingsceremonie",
+      "administratie",
+      "halalhypotheek",
+      "explained"
+    ],
+    "source": "Soliman (2016) §3.1.1 & DAR Hypotheken",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q044",
+    "category": "Halalhypotheek Explained",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "halalhypotheek",
+      "explained"
+    ],
+    "source": "Soliman (2017) §3.3",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q045",
+    "category": "Halalhypotheek Explained",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "halalhypotheek",
+      "explained"
+    ],
+    "source": "Soliman (2017) §3.3 & §3.4.1",
+    "reviewStatus": "DAR to confirm share-pricing options"
+  },
+  {
+    "id": "Q046",
+    "category": "Halalhypotheek Explained",
+    "title": "",
+    "question": "",
+    "content": "\n\nRelated question: En de overdrachtsbelasting?\nAnswer: Overdrachtsbelasting betaalt u alleen aan het begin en aan het eind van de looptijd. Er vindt geen tussentijdse overdrachtsbelasting plaats.\n\nRelated question: Moet DAR instemmen met de verkoop van mijn woning?\nAnswer: Als mede-eigenaar heeft DAR een rol, maar DAR kan een legitieme verkoop niet onredelijk blokkeren. Het contract voorziet in een duidelijk verkoopmechanisme op verzoek.",
+    "followups": [
+      {
+        "q": "En de overdrachtsbelasting?",
+        "a": "Overdrachtsbelasting betaalt u alleen aan het begin en aan het eind van de looptijd. Er vindt geen tussentijdse overdrachtsbelasting plaats."
+      },
+      {
+        "q": "Moet DAR instemmen met de verkoop van mijn woning?",
+        "a": "Als mede-eigenaar heeft DAR een rol, maar DAR kan een legitieme verkoop niet onredelijk blokkeren. Het contract voorziet in een duidelijk verkoopmechanisme op verzoek."
+      }
+    ],
+    "keywords": [
+      "overdrachtsbelasting",
+      "moet",
+      "dar",
+      "instemmen",
+      "verkoop",
+      "woning",
+      "halalhypotheek",
+      "explained"
+    ],
+    "source": "Soliman (2017) §3.3 & §3.4.2",
+    "reviewStatus": "DAR to confirm tax treatment with notaris"
+  },
+  {
+    "id": "Q047",
+    "category": "Halalhypotheek Explained",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "halalhypotheek",
+      "explained"
+    ],
+    "source": "Soliman (2017) §3 intro",
+    "reviewStatus": "DAR to confirm product line-up"
+  },
+  {
+    "id": "Q048",
+    "category": "Halalhypotheek Explained",
+    "title": "Hoe verschilt de degressieve musharaka van een Murabaha-hypotheek?",
+    "question": "Hoe verschilt de degressieve musharaka van een Murabaha-hypotheek?",
+    "content": "Murabaha is één kostprijs-plus verkoop: de financier koopt de woning en verkoopt deze aan u door tegen een vaste totaalprijs, in termijnen. U wordt direct enig eigenaar, maar bent de volledige prijs verschuldigd. Degressieve musharaka is een doorlopende samenwerking: u bent vanaf dag één mede-eigenaar, koopt de financier geleidelijk uit. De tweede is flexibeler en risicodelend.\n\nRelated question: Wat is per saldo goedkoper?\nAnswer: In de Nederlandse context is de hypotheek van DAR Hypotheken per saldo goedkoper dan een Murabaha of andere Musharaka, vanwege de gekozen structuur die fiscaal voordelen oplevert voor de klant.",
+    "followups": [
+      {
+        "q": "Wat is per saldo goedkoper?",
+        "a": "In de Nederlandse context is de hypotheek van DAR Hypotheken per saldo goedkoper dan een Murabaha of andere Musharaka, vanwege de gekozen structuur die fiscaal voordelen oplevert voor de klant."
+      }
+    ],
+    "keywords": [
+      "verschilt",
+      "degressieve",
+      "musharaka",
+      "murabaha",
+      "hypotheek",
+      "per",
+      "saldo",
+      "goedkoper",
+      "halalhypotheek",
+      "explained"
+    ],
+    "source": "Soliman (2017) §3 & §5",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q049",
+    "category": "Halalhypotheek Explained",
+    "title": "Is mijn halalhypotheek gecertificeerd door islamitische geleerden?",
+    "question": "Is mijn halalhypotheek gecertificeerd door islamitische geleerden?",
+    "content": "Ja. Het product is beoordeeld en goedgekeurd door een erkende, internationale organisatie.\n\nRelated question: Kan ik de fatwa inzien?\nAnswer: Een samenvatting van de fatwa en de methodologie van de sharia-raad is op verzoek beschikbaar. Sommige details betreffen vertrouwelijke contractarchitectuur, maar de hoofdpunten — welke geleerden hebben goedgekeurd, welke standaarden zijn toegepast — zijn beschikbaar.",
+    "followups": [
+      {
+        "q": "Kan ik de fatwa inzien?",
+        "a": "Een samenvatting van de fatwa en de methodologie van de sharia-raad is op verzoek beschikbaar. Sommige details betreffen vertrouwelijke contractarchitectuur, maar de hoofdpunten — welke geleerden hebben goedgekeurd, welke standaarden zijn toegepast — zijn beschikbaar."
+      }
+    ],
+    "keywords": [
+      "halalhypotheek",
+      "gecertificeerd",
+      "islamitische",
+      "geleerden",
+      "fatwa",
+      "inzien",
+      "explained"
+    ],
+    "source": "Soliman (2016) §2.2.4",
+    "reviewStatus": "DAR to confirm public fatwa summary"
+  },
+  {
+    "id": "Q050",
+    "category": "Halalhypotheek Explained",
+    "title": "Kunnen niet-moslims een halalhypotheek aanvragen?",
+    "question": "Kunnen niet-moslims een halalhypotheek aanvragen?",
+    "content": "Ja. DAR Hypotheken is een Nederlands gereguleerd financieel product, open voor iedereen die aan de financiële criteria voldoet, ongeacht religieuze achtergrond.\n\nRelated question: Moet ik een religieuze praktijk volgen?\nAnswer: Nee. Er zijn geen religieuze vereisten voor klanten. Wat telt is dat de contracten zelf met islamitisch-financiele beginselen.",
+    "followups": [
+      {
+        "q": "Moet ik een religieuze praktijk volgen?",
+        "a": "Nee. Er zijn geen religieuze vereisten voor klanten. Wat telt is dat de contracten zelf met islamitisch-financiele beginselen."
+      }
+    ],
+    "keywords": [
+      "kunnen",
+      "moslims",
+      "halalhypotheek",
+      "aanvragen",
+      "moet",
+      "religieuze",
+      "praktijk",
+      "volgen",
+      "explained"
+    ],
+    "source": "Soliman (2017) §5 & Al Rayan Bank UK data",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q051",
+    "category": "Comparison with Conventional Mortgages",
+    "title": "Hoe verschilt de halalhypotheek van een gewone Nederlandse hypotheek?",
+    "question": "Hoe verschilt de halalhypotheek van een gewone Nederlandse hypotheek?",
+    "content": "Een conventionele hypotheek is een rentedragende lening met een recht van hypotheek op uw woning: u bent alleen eigenaar, u bent de bank de leensom verschuldigd en u betaalt rente voor het leenrecht. Een halalhypotheek is een structuur van gezamenlijk eigendom: u en DAR Hypotheken zijn mede-eigenaar, u betaalt voor DAR's aandeel en wordt uiteindelijk enig eigenaar uit, zonder rente.\n\nRelated question: Is het dus eigenlijk geen hypotheek?\nAnswer: Juridisch is het een andere constructie dan een geldlening, maar economisch levert het op vergelijkbare wijze woningbezit op. De naam 'halalhypotheek' wordt gebruikt voor duidelijkheid.\n\nRelated question: Is het eindresultaat hetzelfde?\nAnswer: In beide gevallen wordt u uiteindelijk eigenaar. De belangrijkste verschillen zijn hoe de maandlast is opgebouwd en hoe risico wordt gedeeld.",
+    "followups": [
+      {
+        "q": "Is het dus eigenlijk geen hypotheek?",
+        "a": "Juridisch is het een andere constructie dan een geldlening, maar economisch levert het op vergelijkbare wijze woningbezit op. De naam 'halalhypotheek' wordt gebruikt voor duidelijkheid."
+      },
+      {
+        "q": "Is het eindresultaat hetzelfde?",
+        "a": "In beide gevallen wordt u uiteindelijk eigenaar. De belangrijkste verschillen zijn hoe de maandlast is opgebouwd en hoe risico wordt gedeeld."
+      }
+    ],
+    "keywords": [
+      "verschilt",
+      "halalhypotheek",
+      "gewone",
+      "nederlandse",
+      "hypotheek",
+      "dus",
+      "eigenlijk",
+      "geen",
+      "eindresultaat",
+      "hetzelfde",
+      "comparison",
+      "with",
+      "conventional",
+      "mortgages"
+    ],
+    "source": "Soliman (2017) §3 & §5",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q052",
+    "category": "Comparison with Conventional Mortgages",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "comparison",
+      "with",
+      "conventional",
+      "mortgages"
+    ],
+    "source": "Soliman (2016) §4.2 benchmark discussion",
+    "reviewStatus": "DAR to publish rate grid"
+  },
+  {
+    "id": "Q053",
+    "category": "Comparison with Conventional Mortgages",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "comparison",
+      "with",
+      "conventional",
+      "mortgages"
+    ],
+    "source": "Soliman (2017) §3.3",
+    "reviewStatus": "DAR to build scenario calculator"
+  },
+  {
+    "id": "Q054",
+    "category": "Comparison with Conventional Mortgages",
+    "title": "Hoe zit het met hypotheekrenteaftrek?",
+    "question": "Hoe zit het met hypotheekrenteaftrek?",
+    "content": "Hypotheekrenteaftrek is een Nederlandse fiscale aftrek specifiek voor rente op een kwalificerende hypothecaire lening. Omdat bij de halalhypotheek geen rente wordt betaald, geldt de traditionele hypotheekrenteaftrek niet. Dit betekent dat de bruto maandlasten hetzelfde zijn als de netto maandlasten.\n\nRelated question: Verlies ik dus de aftrek?\nAnswer: Op korte termijn ontvangt u mogelijk niet op dezelfde wijze hypotheekrenteaftrek als een conventionele hypotheekhouder. Bespreek uw specifieke fiscale situatie met een gekwalificeerde fiscalist.",
+    "followups": [
+      {
+        "q": "Verlies ik dus de aftrek?",
+        "a": "Op korte termijn ontvangt u mogelijk niet op dezelfde wijze hypotheekrenteaftrek als een conventionele hypotheekhouder. Bespreek uw specifieke fiscale situatie met een gekwalificeerde fiscalist."
+      }
+    ],
+    "keywords": [
+      "zit",
+      "hypotheekrenteaftrek",
+      "verlies",
+      "dus",
+      "aftrek",
+      "comparison",
+      "with",
+      "conventional",
+      "mortgages"
+    ],
+    "source": "Soliman (2017) policy recommendations",
+    "reviewStatus": "DAR to confirm fiscal position"
+  },
+  {
+    "id": "Q055",
+    "category": "Comparison with Conventional Mortgages",
+    "title": "Is NHG (Nationale Hypotheek Garantie) beschikbaar voor de halalhypotheek?",
+    "question": "Is NHG (Nationale Hypotheek Garantie) beschikbaar voor de halalhypotheek?",
+    "content": "NHG is specifiek ontworpen voor conventionele hypothecaire leningen en vereist een kwalificerende hypotheekschuld. Omdat de halalhypotheek anders is gestructureerd, is directe NHG-dekking in de huidige vorm mogelijk niet van toepassing. DAR Hypotheken is in gesprek met NHG om de mogelijkheden te verkennen.",
+    "followups": [],
+    "keywords": [
+      "nhg",
+      "nationale",
+      "hypotheek",
+      "garantie",
+      "beschikbaar",
+      "halalhypotheek",
+      "comparison",
+      "with",
+      "conventional",
+      "mortgages"
+    ],
+    "source": "DAR Hypotheken regulatory engagement",
+    "reviewStatus": "DAR to confirm NHG status"
+  },
+  {
+    "id": "Q056",
+    "category": "Comparison with Conventional Mortgages",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "comparison",
+      "with",
+      "conventional",
+      "mortgages"
+    ],
+    "source": "Soliman (2017) §3.1 & DAR Hypotheken criteria",
+    "reviewStatus": "DAR to publish exact minima"
+  },
+  {
+    "id": "Q057",
+    "category": "Comparison with Conventional Mortgages",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "comparison",
+      "with",
+      "conventional",
+      "mortgages"
+    ],
+    "source": "Soliman (2017) §3.2 & DAR product grid",
+    "reviewStatus": "DAR to confirm fixed periods"
+  },
+  {
+    "id": "Q058",
+    "category": "Comparison with Conventional Mortgages",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "comparison",
+      "with",
+      "conventional",
+      "mortgages"
+    ],
+    "source": "DAR Hypotheken product design",
+    "reviewStatus": "DAR to confirm repayment mirrors"
+  },
+  {
+    "id": "Q059",
+    "category": "Comparison with Conventional Mortgages",
+    "title": "Wat zijn de fiscale gevolgen van een halalhypotheek?",
+    "question": "Wat zijn de fiscale gevolgen van een halalhypotheek?",
+    "content": "Drie fiscale kwesties spelen: (1) hypotheekrenteaftrek — momenteel ontworpen voor rente, niet huur; (2) overdrachtsbelasting — geldt bij aan het begin en aan het eind van de looptijd; en (3) btw en overige belastingen — doorgaans gelijk aan conventionele behandeling. Het team van DAR Hypotheken werkt met belastingspecialisten om binnen Nederlands recht efficiënt te structureren. Raadpleeg voor persoonlijk advies een fiscalist.",
+    "followups": [],
+    "keywords": [
+      "fiscale",
+      "gevolgen",
+      "halalhypotheek",
+      "comparison",
+      "with",
+      "conventional",
+      "mortgages"
+    ],
+    "source": "DAR Hypotheken fiscal workstream",
+    "reviewStatus": "DAR to confirm tax treatment"
+  },
+  {
+    "id": "Q060",
+    "category": "Comparison with Conventional Mortgages",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "comparison",
+      "with",
+      "conventional",
+      "mortgages"
+    ],
+    "source": "Soliman (2017) §3.3",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q061",
+    "category": "Process & Eligibility",
+    "title": "Wie kan een halalhypotheek aanvragen bij DAR Hypotheken?",
+    "question": "Wie kan een halalhypotheek aanvragen bij DAR Hypotheken?",
+    "content": "DAR Hypotheken accepteert aanvragen van Nederlandse ingezetenen die voldoen aan standaardcriteria voor financiële geschiktheid: stabiel inkomen, beheersbare bestaande verplichtingen en een inbreng die proportioneel is aan de woningwaarde. Iedereen is welkom. Specifieke criteria voor inkomen, leeftijd en verblijfsstatus worden bij de lancering gepubliceerd.\n\nRelated question: Moet ik een praktiserend moslim zijn?\nAnswer: Nee, religie is geen criterium.\n\nRelated question: Kunnen buitenlandse ingezetenen aanvragen?\nAnswer: In het algemeen wel, mits u rechtmatig in Nederland woont met het recht om vastgoed te kopen. Specifieke eisen voor verblijfsstatus en inkomensdocumentatie worden bij de lancering gepubliceerd.",
+    "followups": [
+      {
+        "q": "Moet ik een praktiserend moslim zijn?",
+        "a": "Nee, religie is geen criterium."
+      },
+      {
+        "q": "Kunnen buitenlandse ingezetenen aanvragen?",
+        "a": "In het algemeen wel, mits u rechtmatig in Nederland woont met het recht om vastgoed te kopen. Specifieke eisen voor verblijfsstatus en inkomensdocumentatie worden bij de lancering gepubliceerd."
+      }
+    ],
+    "keywords": [
+      "halalhypotheek",
+      "aanvragen",
+      "dar",
+      "hypotheken",
+      "moet",
+      "praktiserend",
+      "moslim",
+      "kunnen",
+      "buitenlandse",
+      "ingezetenen",
+      "process",
+      "eligibility"
+    ],
+    "source": "DAR Hypotheken eligibility policy",
+    "reviewStatus": "DAR to finalise acceptance criteria"
+  },
+  {
+    "id": "Q062",
+    "category": "Process & Eligibility",
+    "title": "Welke inkomenseisen gelden?",
+    "question": "Welke inkomenseisen gelden?",
+    "content": "DAR Hypotheken hanteert Nederlandse toezichtsnormen voor betaalbaarheid (Gedragscode Hypothecaire Financieringen en de inkomensafhankelijke maximumfinancieringstabellen van het ministerie). U heeft een regelmatig, aantoonbaar inkomen nodig dat toereikend is voor de beoogde woningwaarde. De exacte schuld-inkomensberekening volgt de Nederlandse normen.\n\nRelated question: Welke inkomenssoorten tellen mee?\nAnswer: Loondienst, langdurig contractinkomen, zelfstandig inkomen met voldoende historie, pensioen, en vaak partnerinkomen. Variabele onderdelen, bonussen en nevenverdiensten kunnen deels meetellen, afhankelijk van onderbouwing.\n\nRelated question: Is er een minimuminkomen?\nAnswer: Er is geen absoluut minimum, maar het vereiste inkomen hangt af van de beoogde woningwaarde. Uw DAR-adviseur berekent bij het eerste gesprek het maximaal financierbare bedrag.",
+    "followups": [
+      {
+        "q": "Welke inkomenssoorten tellen mee?",
+        "a": "Loondienst, langdurig contractinkomen, zelfstandig inkomen met voldoende historie, pensioen, en vaak partnerinkomen. Variabele onderdelen, bonussen en nevenverdiensten kunnen deels meetellen, afhankelijk van onderbouwing."
+      },
+      {
+        "q": "Is er een minimuminkomen?",
+        "a": "Er is geen absoluut minimum, maar het vereiste inkomen hangt af van de beoogde woningwaarde. Uw DAR-adviseur berekent bij het eerste gesprek het maximaal financierbare bedrag."
+      }
+    ],
+    "keywords": [
+      "welke",
+      "inkomenseisen",
+      "gelden",
+      "inkomenssoorten",
+      "tellen",
+      "mee",
+      "minimuminkomen",
+      "process",
+      "eligibility"
+    ],
+    "source": "Gedragscode Hypothecaire Financieringen",
+    "reviewStatus": "DAR to confirm product-specific thresholds"
+  },
+  {
+    "id": "Q063",
+    "category": "Process & Eligibility",
+    "title": "Hoeveel eigen geld heb ik nodig?",
+    "question": "Hoeveel eigen geld heb ik nodig?",
+    "content": "U heeft een inbreng nodig die uw aanvangsaandeel in de woning vertegenwoordigt. Exacte percentages worden bij de lancering gepubliceerd, maar verwacht een minimum vergelijkbaar met of iets hoger dan conventionele Nederlandse eisen.\n\nRelated question: Kan de inbreng uit een lening komen?\nAnswer: Het mag niet uit een rentedragende lening komen, omdat dat riba terug in de structuur zou brengen. Het kan komen uit spaargeld, verkoop van een ander goed of familiesteun. Bespreek met onze adviseur als u bijzondere bronnen heeft.\n\nRelated question: Is een hogere inbreng een nadeel?\nAnswer: Het past bij de richting die de Nederlandse regelgeving toch al inslaat en draagt bij aan de veiligheid van het product — huishoudens met meer eigen vermogen zijn veerkrachtiger in neergangen.",
+    "followups": [
+      {
+        "q": "Kan de inbreng uit een lening komen?",
+        "a": "Het mag niet uit een rentedragende lening komen, omdat dat riba terug in de structuur zou brengen. Het kan komen uit spaargeld, verkoop van een ander goed of familiesteun. Bespreek met onze adviseur als u bijzondere bronnen heeft."
+      },
+      {
+        "q": "Is een hogere inbreng een nadeel?",
+        "a": "Het past bij de richting die de Nederlandse regelgeving toch al inslaat en draagt bij aan de veiligheid van het product — huishoudens met meer eigen vermogen zijn veerkrachtiger in neergangen."
+      }
+    ],
+    "keywords": [
+      "hoeveel",
+      "eigen",
+      "geld",
+      "heb",
+      "nodig",
+      "inbreng",
+      "lening",
+      "komen",
+      "hogere",
+      "nadeel",
+      "process",
+      "eligibility"
+    ],
+    "source": "DAR Hypotheken criteria & DNB LTV guidance",
+    "reviewStatus": "DAR to publish exact minima"
+  },
+  {
+    "id": "Q064",
+    "category": "Process & Eligibility",
+    "title": "Wat is het maximaal financierbare bedrag?",
+    "question": "Wat is het maximaal financierbare bedrag?",
+    "content": "Het maximum hangt af van uw inkomen, inbreng en de woningwaarde — berekend volgens de Nederlandse betaalbaarheidstabellen. DAR Hypotheken hanteert hetzelfde kader als conventionele aanbieders. Bij uw eerste consult berekent een adviseur de maximaal financierbare woningwaarde voor uw situatie.\n\nRelated question: Is er een absoluut plafond op de financieringsomvang?\nAnswer: DAR Hypotheken publiceert bij de lancering productspecifieke plafonds. Voor zeer hoge woningwaarden kunnen alternatieve afspraken per geval worden overwogen.\n\nRelated question: Kan ik mijn inkomen combineren met dat van een partner?\nAnswer: Ja — gezamenlijke aanvragen met echtgenoten of geregistreerde partners zijn standaard. Gecombineerd inkomen verhoogt het maximum, mits binnen de betaalbaarheidsnormen.",
+    "followups": [
+      {
+        "q": "Is er een absoluut plafond op de financieringsomvang?",
+        "a": "DAR Hypotheken publiceert bij de lancering productspecifieke plafonds. Voor zeer hoge woningwaarden kunnen alternatieve afspraken per geval worden overwogen."
+      },
+      {
+        "q": "Kan ik mijn inkomen combineren met dat van een partner?",
+        "a": "Ja — gezamenlijke aanvragen met echtgenoten of geregistreerde partners zijn standaard. Gecombineerd inkomen verhoogt het maximum, mits binnen de betaalbaarheidsnormen."
+      }
+    ],
+    "keywords": [
+      "maximaal",
+      "financierbare",
+      "bedrag",
+      "absoluut",
+      "plafond",
+      "financieringsomvang",
+      "inkomen",
+      "combineren",
+      "partner",
+      "process",
+      "eligibility"
+    ],
+    "source": "DAR Hypotheken criteria & Dutch affordability tables",
+    "reviewStatus": "DAR to confirm product-specific ceilings"
+  },
+  {
+    "id": "Q065",
+    "category": "Process & Eligibility",
+    "title": "Hoe lang duurt het goedkeuringsproces?",
+    "question": "Hoe lang duurt het goedkeuringsproces?",
+    "content": "De aanvraagprocedure volgt Nederlandse standaarden: eerste consult, documentverzameling, betaalbaarheids- en geschiktheidstoets, aanbod en passeren bij de notaris. De totale doorlooptijd van aanvraag tot sleutel ligt meestal tussen 6 en 10 weken, vergelijkbaar met een conventionele hypotheek. Bepaalde stappen — met name de sharia-toets — zijn geïntegreerd en verlengen de doorlooptijd niet wezenlijk.\n\nRelated question: Wat vertraagt het proces?\nAnswer: Zoals bij elke hypotheek zijn taxatie, werkgeversverklaringen en notarisplanning de belangrijkste variabelen. Het team van DAR Hypotheken signaleert en volgt dit proactief op.\n\nRelated question: Kan ik een voorafgaande check doen?\nAnswer: Ja. Een indicatief pre-qualification aanbod is beschikbaar, met een maximaal financieringsbedrag om mee te werken tijdens uw zoektocht. Dit vervangt geen volledige aanvraag, maar versterkt uw positie bij verkopers.",
+    "followups": [
+      {
+        "q": "Wat vertraagt het proces?",
+        "a": "Zoals bij elke hypotheek zijn taxatie, werkgeversverklaringen en notarisplanning de belangrijkste variabelen. Het team van DAR Hypotheken signaleert en volgt dit proactief op."
+      },
+      {
+        "q": "Kan ik een voorafgaande check doen?",
+        "a": "Ja. Een indicatief pre-qualification aanbod is beschikbaar, met een maximaal financieringsbedrag om mee te werken tijdens uw zoektocht. Dit vervangt geen volledige aanvraag, maar versterkt uw positie bij verkopers."
+      }
+    ],
+    "keywords": [
+      "lang",
+      "duurt",
+      "goedkeuringsproces",
+      "vertraagt",
+      "proces",
+      "voorafgaande",
+      "check",
+      "doen",
+      "process",
+      "eligibility"
+    ],
+    "source": "DAR Hypotheken process design",
+    "reviewStatus": "DAR to confirm SLA"
+  },
+  {
+    "id": "Q066",
+    "category": "Process & Eligibility",
+    "title": "Moet ik Nederlander zijn?",
+    "question": "Moet ik Nederlander zijn?",
+    "content": "Nee — het Nederlanderschap is niet vereist. Wat wel vereist is, is rechtmatig verblijf met het recht om vastgoed te kopen in Nederland. EU-burgers en derdelanders met geldige verblijfsvergunningen komen doorgaans in aanmerking, mits aan de inkomens- en documentatievereisten wordt voldaan.\n\nRelated question: Heeft mijn nationaliteit invloed op de voorwaarden?\nAnswer: Nationaliteit op zich beïnvloedt de prijsstelling niet. Verblijfsstatus kan de documentatievereisten beïnvloeden — expats moeten bijvoorbeeld extra bewijs van stabiel werk en voornemen tot verblijf overleggen.\n\nRelated question: En als ik binnenkort naar Nederland verhuis?\nAnswer: DAR Hypotheken kan in een vroeg stadium met u meedenken, maar een formele aanvraag vereist doorgaans Nederlands verblijf en een lokaal arbeidscontract of vergelijkbaar inkomensbewijs. Bespreek de timing met ons team.",
+    "followups": [
+      {
+        "q": "Heeft mijn nationaliteit invloed op de voorwaarden?",
+        "a": "Nationaliteit op zich beïnvloedt de prijsstelling niet. Verblijfsstatus kan de documentatievereisten beïnvloeden — expats moeten bijvoorbeeld extra bewijs van stabiel werk en voornemen tot verblijf overleggen."
+      },
+      {
+        "q": "En als ik binnenkort naar Nederland verhuis?",
+        "a": "DAR Hypotheken kan in een vroeg stadium met u meedenken, maar een formele aanvraag vereist doorgaans Nederlands verblijf en een lokaal arbeidscontract of vergelijkbaar inkomensbewijs. Bespreek de timing met ons team."
+      }
+    ],
+    "keywords": [
+      "moet",
+      "nederlander",
+      "nationaliteit",
+      "invloed",
+      "voorwaarden",
+      "binnenkort",
+      "nederland",
+      "verhuis",
+      "process",
+      "eligibility"
+    ],
+    "source": "DAR Hypotheken policy",
+    "reviewStatus": "DAR to finalise residency requirements"
+  },
+  {
+    "id": "Q067",
+    "category": "Process & Eligibility",
+    "title": "Welke documenten moet ik aanleveren?",
+    "question": "Welke documenten moet ik aanleveren?",
+    "content": "Verwacht de gebruikelijke Nederlandse hypotheekset: geldig identiteitsbewijs, bewijs van verblijf, recente loonstroken (meestal drie maanden), werkgeversverklaring of arbeidscontract, jaaropgaaf, bankafschriften, bewijs van herkomst inbreng, overzichten van bestaande leningen en de koopovereenkomst. Voor zelfstandigen geldt aanvullende documentatie.\n\nRelated question: Moet ik iets 'islamitisch' aanleveren?\nAnswer: Nee. Er is geen religieuze documentatievereiste. Het sharia-compliance werk gebeurt aan de kant van DAR Hypotheken — u levert dezelfde documenten aan als voor elke Nederlandse hypotheek.\n\nRelated question: Kan ik documenten digitaal aanleveren?\nAnswer: Ja. Het aanvraagportaal van DAR Hypotheken accepteert digitale uploads. Uw adviseur geeft aan welke documenten bij de notaris natte handtekeningen vereisen.",
+    "followups": [
+      {
+        "q": "Moet ik iets 'islamitisch' aanleveren?",
+        "a": "Nee. Er is geen religieuze documentatievereiste. Het sharia-compliance werk gebeurt aan de kant van DAR Hypotheken — u levert dezelfde documenten aan als voor elke Nederlandse hypotheek."
+      },
+      {
+        "q": "Kan ik documenten digitaal aanleveren?",
+        "a": "Ja. Het aanvraagportaal van DAR Hypotheken accepteert digitale uploads. Uw adviseur geeft aan welke documenten bij de notaris natte handtekeningen vereisen."
+      }
+    ],
+    "keywords": [
+      "welke",
+      "documenten",
+      "moet",
+      "aanleveren",
+      "iets",
+      "islamitisch",
+      "digitaal",
+      "process",
+      "eligibility"
+    ],
+    "source": "DAR Hypotheken application process",
+    "reviewStatus": "DAR to finalise doc list"
+  },
+  {
+    "id": "Q068",
+    "category": "Process & Eligibility",
+    "title": "Kan ik aanvragen als ik ZZP'er ben?",
+    "question": "Kan ik aanvragen als ik ZZP'er ben?",
+    "content": "Ja. Zelfstandigen (ZZP'ers) zijn welkom. Nederlandse regelgeving vereist doorgaans 1 tot 3 jaar ondernemingshistorie; DAR Hypotheken hanteert vergelijkbare eisen. Inkomen wordt beoordeeld op basis van winstaangiften, belastingaangiften en waar relevant accountantsverklaringen.\n\nRelated question: Is een korte historie een uitsluitingsgrond?\nAnswer: Niet automatisch. Aanvullend bewijs — sterke bankafschriften, lopende contracten, sectorervaring — kan helpen. Een adviseur beoordeelt uw specifieke situatie.\n\nRelated question: Is mijn ondernemingsvorm relevant?\nAnswer: Eenmanszaak, VOF en BV-structuren worden allemaal geaccepteerd. De vereiste documentatie verschilt iets per structuur. Uw DAR-adviseur begeleidt u hierin.",
+    "followups": [
+      {
+        "q": "Is een korte historie een uitsluitingsgrond?",
+        "a": "Niet automatisch. Aanvullend bewijs — sterke bankafschriften, lopende contracten, sectorervaring — kan helpen. Een adviseur beoordeelt uw specifieke situatie."
+      },
+      {
+        "q": "Is mijn ondernemingsvorm relevant?",
+        "a": "Eenmanszaak, VOF en BV-structuren worden allemaal geaccepteerd. De vereiste documentatie verschilt iets per structuur. Uw DAR-adviseur begeleidt u hierin."
+      }
+    ],
+    "keywords": [
+      "aanvragen",
+      "zzp",
+      "ben",
+      "korte",
+      "historie",
+      "uitsluitingsgrond",
+      "ondernemingsvorm",
+      "relevant",
+      "process",
+      "eligibility"
+    ],
+    "source": "DAR Hypotheken ZZP policy",
+    "reviewStatus": "DAR to confirm ZZP criteria"
+  },
+  {
+    "id": "Q069",
+    "category": "Process & Eligibility",
+    "title": "Kan mijn partner samen met mij aanvragen?",
+    "question": "Kan mijn partner samen met mij aanvragen?",
+    "content": "Ja. Gezamenlijke aanvragen zijn standaard en verbeteren vaak de toegankelijkheid door gecombineerd inkomen. Beide aanvragers zijn mede-eigenaar samen met DAR Hypotheken. De musharaka-overeenkomst regelt het gezamenlijke eigendom aan consumentenzijde; beide aanvragers tekenen de huur- en koopovereenkomsten.\n\nRelated question: Moeten wij getrouwd zijn?\nAnswer: Nee. Gehuwden, geregistreerde partners en ongehuwd samenwonenden kunnen allen gezamenlijk aanvragen. Het Nederlandse familierecht kent verschillende standaardregimes; de adviseur licht de implicaties per situatie toe.\n\nRelated question: Wat als één partner een zwakker profiel heeft?\nAnswer: Het sterkere profiel kan de gezamenlijke aanvraag optillen, maar het zwakkere profiel wordt ook beoordeeld. DAR Hypotheken past de Nederlandse geschiktheidsnormen gezamenlijk toe.",
+    "followups": [
+      {
+        "q": "Moeten wij getrouwd zijn?",
+        "a": "Nee. Gehuwden, geregistreerde partners en ongehuwd samenwonenden kunnen allen gezamenlijk aanvragen. Het Nederlandse familierecht kent verschillende standaardregimes; de adviseur licht de implicaties per situatie toe."
+      },
+      {
+        "q": "Wat als één partner een zwakker profiel heeft?",
+        "a": "Het sterkere profiel kan de gezamenlijke aanvraag optillen, maar het zwakkere profiel wordt ook beoordeeld. DAR Hypotheken past de Nederlandse geschiktheidsnormen gezamenlijk toe."
+      }
+    ],
+    "keywords": [
+      "partner",
+      "samen",
+      "mij",
+      "aanvragen",
+      "moeten",
+      "getrouwd",
+      "één",
+      "zwakker",
+      "profiel",
+      "process",
+      "eligibility"
+    ],
+    "source": "DAR Hypotheken joint-application policy",
+    "reviewStatus": "DAR to confirm co-applicant rules"
+  },
+  {
+    "id": "Q070",
+    "category": "Process & Eligibility",
+    "title": "Is er een leeftijdsgrens?",
+    "question": "Is er een leeftijdsgrens?",
+    "content": "Er is geen absolute bovengrens, maar de looptijd van de halalhypotheek moet passen bij een realistische inkomenscontinuïteit. Voor aanvragers rond of na pensioen worden pensioeninkomen en vermogenspositie beoordeeld. Jongere aanvragers ervaren geen bijzondere drempels buiten de standaard inkomens- en inbrengeisen.\n\nRelated question: Kan ik op mijn 22e mijn eerste woning financieren?\nAnswer: Ja, mits u aan de betaalbaarheidseisen voldoet. Een schenking van ouders voor de inbreng is gangbaar bij starters en past bij de halalhypotheek, zolang het geen rentedragende lening is.\n\nRelated question: Kunnen gepensioneerden aanvragen?\nAnswer: Ja. De cruciale variabelen zijn pensioeninkomen en inbreng. Voor kortere looptijden kunnen gepensioneerden juist goed passen.",
+    "followups": [
+      {
+        "q": "Kan ik op mijn 22e mijn eerste woning financieren?",
+        "a": "Ja, mits u aan de betaalbaarheidseisen voldoet. Een schenking van ouders voor de inbreng is gangbaar bij starters en past bij de halalhypotheek, zolang het geen rentedragende lening is."
+      },
+      {
+        "q": "Kunnen gepensioneerden aanvragen?",
+        "a": "Ja. De cruciale variabelen zijn pensioeninkomen en inbreng. Voor kortere looptijden kunnen gepensioneerden juist goed passen."
+      }
+    ],
+    "keywords": [
+      "leeftijdsgrens",
+      "22e",
+      "eerste",
+      "woning",
+      "financieren",
+      "kunnen",
+      "gepensioneerden",
+      "aanvragen",
+      "process",
+      "eligibility"
+    ],
+    "source": "DAR Hypotheken acceptance policy",
+    "reviewStatus": "DAR to confirm age policy"
+  },
+  {
+    "id": "Q071",
+    "category": "Financial Mechanics",
+    "title": "Hoe zijn de maandelijkse betalingen precies opgebouwd?",
+    "question": "Hoe zijn de maandelijkse betalingen precies opgebouwd?",
+    "content": "Elke maandbetaling bestaat uit twee delen: een aflossing— berekend over DAR's bijdrage aan de koopprijs — en een opslag. De som hiervan is uw totale maandlast. De maandlasten blijven gelijk tot aan einde looptijd.\n\nRelated question: Gaan beide delen naar DAR Hypotheken?\nAnswer: Ja, beide componenten worden aan DAR betaald.\n\nRelated question: Kan ik een schema zien?\nAnswer: Een schema in annuïteitsstijl, met per maand aflossing en opslag, wordt bij aanvraag verstrekt en blijft beschikbaar in uw klantportaal.",
+    "followups": [
+      {
+        "q": "Gaan beide delen naar DAR Hypotheken?",
+        "a": "Ja, beide componenten worden aan DAR betaald."
+      },
+      {
+        "q": "Kan ik een schema zien?",
+        "a": "Een schema in annuïteitsstijl, met per maand aflossing en opslag, wordt bij aanvraag verstrekt en blijft beschikbaar in uw klantportaal."
+      }
+    ],
+    "keywords": [
+      "maandelijkse",
+      "betalingen",
+      "precies",
+      "opgebouwd",
+      "gaan",
+      "beide",
+      "delen",
+      "dar",
+      "hypotheken",
+      "schema",
+      "zien",
+      "financial",
+      "mechanics"
+    ],
+    "source": "DAR Hypotheken payment schedule design",
+    "reviewStatus": "DAR to confirm portal features"
+  },
+  {
+    "id": "Q072",
+    "category": "Financial Mechanics",
+    "title": "Kan ik vervroegd aflossen?",
+    "question": "Kan ik vervroegd aflossen?",
+    "content": "Ja, vervroegd aflossen is mogelijk onder bepaalde voorwaarden. Bespreek dit met uw adviseur.",
+    "followups": [],
+    "keywords": [
+      "vervroegd",
+      "aflossen",
+      "financial",
+      "mechanics"
+    ],
+    "source": "Soliman (2016) §3.2 & DAR Hypotheken policy",
+    "reviewStatus": "DAR to confirm transfer cost policy"
+  },
+  {
+    "id": "Q073",
+    "category": "Financial Mechanics",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "financial",
+      "mechanics"
+    ],
+    "source": "Soliman (2017) §3.3 hardship flexibility",
+    "reviewStatus": "DAR to publish hardship protocol"
+  },
+  {
+    "id": "Q074",
+    "category": "Financial Mechanics",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "financial",
+      "mechanics"
+    ],
+    "source": "DAR Hypotheken hardship protocol",
+    "reviewStatus": "DAR to publish official protocol"
+  },
+  {
+    "id": "Q075",
+    "category": "Financial Mechanics",
+    "title": "Zijn er boetes bij te late betaling?",
+    "question": "Zijn er boetes bij te late betaling?",
+    "content": "Er komen geen boetes bij DAR Hypotheken terecht. Het contract bevat wel een boetebeding ten behoeve van een goed doel: bij te late betaling verplicht u zich eenzijdig een vast bedrag over te maken aan een gecertificeerd goed doel. DAR ontvangt dit geld niet.\n\nRelated question: Hoeveel is het bedrag voor het goede doel?\nAnswer: Het is een vooraf afgesproken vast bedrag per te late betaling, vermeld in het contract.\n\nRelated question: Wie kiest het goede doel?\nAnswer: U kunt doorgaans kiezen uit een goedgekeurde lijst, zodat de schenking aansluit bij uw waarden.",
+    "followups": [
+      {
+        "q": "Hoeveel is het bedrag voor het goede doel?",
+        "a": "Het is een vooraf afgesproken vast bedrag per te late betaling, vermeld in het contract."
+      },
+      {
+        "q": "Wie kiest het goede doel?",
+        "a": "U kunt doorgaans kiezen uit een goedgekeurde lijst, zodat de schenking aansluit bij uw waarden."
+      }
+    ],
+    "keywords": [
+      "boetes",
+      "late",
+      "betaling",
+      "hoeveel",
+      "bedrag",
+      "goede",
+      "doel",
+      "kiest",
+      "financial",
+      "mechanics"
+    ],
+    "source": "Soliman (2016) §3.2 & HR 20-4-1990",
+    "reviewStatus": "DAR to confirm charity partners"
+  },
+  {
+    "id": "Q076",
+    "category": "Financial Mechanics",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "financial",
+      "mechanics"
+    ],
+    "source": "Soliman (2017) §3.2 EIBOR/EURIBOR/LIBOR use",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q077",
+    "category": "Financial Mechanics",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "financial",
+      "mechanics"
+    ],
+    "source": "Soliman (2016) §3.3.2 rent protection",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q078",
+    "category": "Financial Mechanics",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "financial",
+      "mechanics"
+    ],
+    "source": "Soliman (2017) §3.3",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q079",
+    "category": "Financial Mechanics",
+    "title": "",
+    "question": "",
+    "content": "\n\nRelated question: Kan ik van een conventionele hypotheek overstappen naar een halalhypotheek?\nAnswer: Ja — DAR Hypotheken kan u helpen bij een herfinanciering. U lost daarmee uw bestaande conventionele hypotheek af en gaat een halalhypotheek aan met DAR voor uw resterende waarde. Uw adviseur helpt de overgang zo efficiënt mogelijk te structureren.\n\nRelated question: En omgekeerd?\nAnswer: Technisch mogelijk — u koopt DAR's aandeel uit en neemt een conventionele hypotheek op de volledige woning. De meeste klanten die voor de halalhypotheek kiezen, stappen niet terug, maar er is geen contractuele lock-in.",
+    "followups": [
+      {
+        "q": "Kan ik van een conventionele hypotheek overstappen naar een halalhypotheek?",
+        "a": "Ja — DAR Hypotheken kan u helpen bij een herfinanciering. U lost daarmee uw bestaande conventionele hypotheek af en gaat een halalhypotheek aan met DAR voor uw resterende waarde. Uw adviseur helpt de overgang zo efficiënt mogelijk te structureren."
+      },
+      {
+        "q": "En omgekeerd?",
+        "a": "Technisch mogelijk — u koopt DAR's aandeel uit en neemt een conventionele hypotheek op de volledige woning. De meeste klanten die voor de halalhypotheek kiezen, stappen niet terug, maar er is geen contractuele lock-in."
+      }
+    ],
+    "keywords": [
+      "conventionele",
+      "hypotheek",
+      "overstappen",
+      "halalhypotheek",
+      "omgekeerd",
+      "financial",
+      "mechanics"
+    ],
+    "source": "DAR Hypotheken switching policy",
+    "reviewStatus": "DAR to confirm switch workflow"
+  },
+  {
+    "id": "Q080",
+    "category": "Financial Mechanics",
+    "title": "Kan ik mijn halalhypotheek meenemen naar een andere woning?",
+    "question": "Kan ik mijn halalhypotheek meenemen naar een andere woning?",
+    "content": "Verhuizen is mogelijk, maar een halalhypotheek is gekoppeld aan de specifieke woning die u met DAR in mede-eigendom heeft. Meestal verkoopt u de huidige woning en start u een nieuwe halalhypotheek op de volgende woning. DAR Hypotheken biedt een gestroomlijnd traject voor terugkerende klanten.\n\nRelated question: Moet ik opnieuw kwalificeren?\nAnswer: Een nieuwe halalhypotheek is een nieuwe aanvraag, maar uw historie bij DAR maakt het proces efficiënter. Voor de nieuwe woning gelden actuele inkomens- en betaalbaarheidschecks.\n\nRelated question: Zijn er voordelen bij een verhuizing?\nAnswer: DAR Hypotheken biedt voorrang en vereenvoudiging voor klanten die binnen het product doorstromen — snellere afhandeling, minder administratieve last en mogelijke prijsvoordelen, te bevestigen bij de lancering.",
+    "followups": [
+      {
+        "q": "Moet ik opnieuw kwalificeren?",
+        "a": "Een nieuwe halalhypotheek is een nieuwe aanvraag, maar uw historie bij DAR maakt het proces efficiënter. Voor de nieuwe woning gelden actuele inkomens- en betaalbaarheidschecks."
+      },
+      {
+        "q": "Zijn er voordelen bij een verhuizing?",
+        "a": "DAR Hypotheken biedt voorrang en vereenvoudiging voor klanten die binnen het product doorstromen — snellere afhandeling, minder administratieve last en mogelijke prijsvoordelen, te bevestigen bij de lancering."
+      }
+    ],
+    "keywords": [
+      "halalhypotheek",
+      "meenemen",
+      "andere",
+      "woning",
+      "moet",
+      "opnieuw",
+      "kwalificeren",
+      "voordelen",
+      "verhuizing",
+      "financial",
+      "mechanics"
+    ],
+    "source": "DAR Hypotheken client mobility",
+    "reviewStatus": "DAR to finalise repeat-client benefits"
+  },
+  {
+    "id": "Q081",
+    "category": "Dutch Legal & Regulatory",
+    "title": "Staat DAR Hypotheken onder toezicht van de AFM?",
+    "question": "Staat DAR Hypotheken onder toezicht van de AFM?",
+    "content": "Nee, de hypotheek van DAR Hypotheken is geen rentedragende geldlening en valt daarom momenteel niet onder de Wet op het financieel toezicht. DAR Hypotheken houdt rekening met de situatie dat er in de toekomst een wetswijziging plaatsvindt om onze hypotheek net als conventioneel hypotheken onder hetzelfde toezicht te stellen. Om die reden houden wij ons wel zoveel als mogelijk aan alle regels voor conventionele hypotheken.\n\nRelated question: Weet de AFM wat een halalhypotheek is?\nAnswer: Ja. DNB en AFM voltooiden tussen 2006 en 2008 een verkennend onderzoek naar islamitisch financieren. DAR Hypotheken is actief in dialoog met de toezichthouder om volledig wederzijds begrip te waarborgen.\n\nRelated question: Krijg ik dezelfde consumentenbescherming?\nAnswer: Ja. Nederlandse consumentenbeschermingsstandaarden voor consumentenkrediet zijn van toepassing. DAR Hypotheken moet heldere informatie vooraf geven, prijstransparantie bieden, passend advies baseren op uw situatie en een bedenktijd respecteren.",
+    "followups": [
+      {
+        "q": "Weet de AFM wat een halalhypotheek is?",
+        "a": "Ja. DNB en AFM voltooiden tussen 2006 en 2008 een verkennend onderzoek naar islamitisch financieren. DAR Hypotheken is actief in dialoog met de toezichthouder om volledig wederzijds begrip te waarborgen."
+      },
+      {
+        "q": "Krijg ik dezelfde consumentenbescherming?",
+        "a": "Ja. Nederlandse consumentenbeschermingsstandaarden voor consumentenkrediet zijn van toepassing. DAR Hypotheken moet heldere informatie vooraf geven, prijstransparantie bieden, passend advies baseren op uw situatie en een bedenktijd respecteren."
+      }
+    ],
+    "keywords": [
+      "staat",
+      "dar",
+      "hypotheken",
+      "onder",
+      "toezicht",
+      "afm",
+      "weet",
+      "halalhypotheek",
+      "krijg",
+      "dezelfde",
+      "consumentenbescherming",
+      "dutch",
+      "legal",
+      "regulatory"
+    ],
+    "source": "Soliman (2016) §4.1 & Verhoef 2008",
+    "reviewStatus": "DAR to confirm final AFM/DNB status"
+  },
+  {
+    "id": "Q082",
+    "category": "Dutch Legal & Regulatory",
+    "title": "",
+    "question": "",
+    "content": "\n\nRelated question: Heeft DAR een bankvergunning?\nAnswer: Nee, de hypotheek van DAR Hypotheken is geen rentedragende geldlening en valt daarom momenteel niet onder de Wet op het financieel toezicht. DAR Hypotheken houdt rekening met de situatie dat er in de toekomst een wetswijziging plaatsvindt om onze hypotheek net als conventioneel hypotheken onder hetzelfde toezicht te stellen. Om die reden houden wij ons wel zoveel als mogelijk aan alle regels voor conventionele hypotheken.",
+    "followups": [
+      {
+        "q": "Heeft DAR een bankvergunning?",
+        "a": "Nee, de hypotheek van DAR Hypotheken is geen rentedragende geldlening en valt daarom momenteel niet onder de Wet op het financieel toezicht. DAR Hypotheken houdt rekening met de situatie dat er in de toekomst een wetswijziging plaatsvindt om onze hypotheek net als conventioneel hypotheken onder hetzelfde toezicht te stellen. Om die reden houden wij ons wel zoveel als mogelijk aan alle regels voor conventionele hypotheken."
+      }
+    ],
+    "keywords": [
+      "dar",
+      "bankvergunning",
+      "dutch",
+      "legal",
+      "regulatory"
+    ],
+    "source": "Soliman (2016) §4.1 & §4.2",
+    "reviewStatus": "DAR to confirm licensing"
+  },
+  {
+    "id": "Q083",
+    "category": "Dutch Legal & Regulatory",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "dutch",
+      "legal",
+      "regulatory"
+    ],
+    "source": "Soliman (2017) §3.4 & §5 recommendations",
+    "reviewStatus": "DAR to confirm final vehicle"
+  },
+  {
+    "id": "Q084",
+    "category": "Dutch Legal & Regulatory",
+    "title": "Hoe wordt de woning in het Kadaster geregistreerd?",
+    "question": "Hoe wordt de woning in het Kadaster geregistreerd?",
+    "content": "Bij aankoop worden zowel u als DAR Hypotheken (of haar aangewezen vehikel) als mede-eigenaren ingeschreven in het Kadaster, met respectieve eigendomsaandelen vastgelegd. Aan het einde van de looptijd verschijnt u als enig eigenaar. De notaris verzorgt alle registraties binnen het standaardproces.\n\nRelated question: Is mijn aandeel zichtbaar in het openbare register?\nAnswer: Het Kadaster is deels openbaar (eigendom is publiek raadpleegbaar). Uw eigendomspercentage op elk moment wordt in de registratie weergegeven, net als bij elke standaardgemeenschap.\n\nRelated question: Wie betaalt elke registratie?\nAnswer: Notaris- en registratiekosten worden gedragen zoals contractueel afgesproken. DAR Hypotheken werkt met notariële partners om aandelenoverdrachten efficiënt te bundelen, zodat de totale kosten beheersbaar blijven.",
+    "followups": [
+      {
+        "q": "Is mijn aandeel zichtbaar in het openbare register?",
+        "a": "Het Kadaster is deels openbaar (eigendom is publiek raadpleegbaar). Uw eigendomspercentage op elk moment wordt in de registratie weergegeven, net als bij elke standaardgemeenschap."
+      },
+      {
+        "q": "Wie betaalt elke registratie?",
+        "a": "Notaris- en registratiekosten worden gedragen zoals contractueel afgesproken. DAR Hypotheken werkt met notariële partners om aandelenoverdrachten efficiënt te bundelen, zodat de totale kosten beheersbaar blijven."
+      }
+    ],
+    "keywords": [
+      "woning",
+      "kadaster",
+      "geregistreerd",
+      "aandeel",
+      "zichtbaar",
+      "openbare",
+      "register",
+      "betaalt",
+      "elke",
+      "registratie",
+      "dutch",
+      "legal",
+      "regulatory"
+    ],
+    "source": "Soliman (2017) §3.4.1 note 44 notariskosten",
+    "reviewStatus": "DAR to finalise notaris partners"
+  },
+  {
+    "id": "Q085",
+    "category": "Dutch Legal & Regulatory",
+    "title": "Welke consumentenbescherming geldt voor de halalhypotheek?",
+    "question": "Welke consumentenbescherming geldt voor de halalhypotheek?",
+    "content": "Alle standaard Nederlandse consumentenbeschermingsregels zijn van toepassing: heldere precontractuele informatie, bedenktijd, bescherming tegen onredelijke bedingen, gedragstoezicht door de AFM en toegang tot de onafhankelijke financiële ombudsman (KiFiD) bij geschillen. Waar de halalhypotheek anders buiten een specifieke toezichtcategorie zou vallen, past DAR Hypotheken vrijwillig gelijkwaardige normen toe.\n\nRelated question: En de bedenktijd van 14 dagen?\nAnswer: Nederlandse regels voorzien in een bedenktijd bij woningaankopen en hypotheekcontracten. DAR Hypotheken hanteert deze bedenktijd volledig.",
+    "followups": [
+      {
+        "q": "En de bedenktijd van 14 dagen?",
+        "a": "Nederlandse regels voorzien in een bedenktijd bij woningaankopen en hypotheekcontracten. DAR Hypotheken hanteert deze bedenktijd volledig."
+      }
+    ],
+    "keywords": [
+      "welke",
+      "consumentenbescherming",
+      "geldt",
+      "halalhypotheek",
+      "bedenktijd",
+      "dagen",
+      "dutch",
+      "legal",
+      "regulatory"
+    ],
+    "source": "Soliman (2017) §4 consumentenbescherming",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q086",
+    "category": "Dutch Legal & Regulatory",
+    "title": "Wat als DAR Hypotheken failliet gaat?",
+    "question": "Wat als DAR Hypotheken failliet gaat?",
+    "content": "Het eigendomsdeel van DAR in de woning wordt niet rechtstreeks door DAR zelf gehouden, maar ondergebracht in een afzonderlijke special purpose vehicle (SPV). Dit is een juridisch afgescheiden entiteit die uitsluitend wordt gebruikt voor het houden van het betreffende aandeel in de woning en geen andere bedrijfsactiviteiten verricht.\r\n\r\nDoor deze structuur wordt de financiering faillissementsbestendig ingericht. Dat betekent dat een eventueel faillissement van DAR geen onderdeel vormt van de vermogenspositie van de SPV en daardoor geen gevolgen heeft voor het eigendomsrecht van de woning. Uw woning valt dus buiten het faillissementsvermogen van DAR.\n\nRelated question: Kan ik verplicht worden alles vervroegd uit te kopen?\nAnswer: Nee. De contracten versnellen niet bij DAR's faillissement.\n\nRelated question: Is mijn aandeel beschermd tegen DAR's schuldeisers?\nAnswer: Ja. Uw eigendomsaandeel staat op uw naam in het Kadaster en behoort niet tot het vermogen van DAR Hypotheken — schuldeisers van DAR kunnen dit aandeel niet opeisen.",
+    "followups": [
+      {
+        "q": "Kan ik verplicht worden alles vervroegd uit te kopen?",
+        "a": "Nee. De contracten versnellen niet bij DAR's faillissement."
+      },
+      {
+        "q": "Is mijn aandeel beschermd tegen DAR's schuldeisers?",
+        "a": "Ja. Uw eigendomsaandeel staat op uw naam in het Kadaster en behoort niet tot het vermogen van DAR Hypotheken — schuldeisers van DAR kunnen dit aandeel niet opeisen."
+      }
+    ],
+    "keywords": [
+      "dar",
+      "hypotheken",
+      "failliet",
+      "gaat",
+      "verplicht",
+      "alles",
+      "vervroegd",
+      "kopen",
+      "aandeel",
+      "beschermd",
+      "tegen",
+      "schuldeisers",
+      "dutch",
+      "legal",
+      "regulatory"
+    ],
+    "source": "Soliman (2017) §3.4.2 gemeenschap analysis",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q087",
+    "category": "Dutch Legal & Regulatory",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "dutch",
+      "legal",
+      "regulatory"
+    ],
+    "source": "DGS scope — not applicable to property",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q088",
+    "category": "Dutch Legal & Regulatory",
+    "title": "Kan een gewone Nederlandse notaris dit verwerken?",
+    "question": "Kan een gewone Nederlandse notaris dit verwerken?",
+    "content": "Ja. DAR Hypotheken werkt met notariële partners die zijn voorgelicht over het product zodat het eerste traject vlot verloopt, maar elke Nederlandse civielrechtelijke notaris kan dit in principe verwerken.",
+    "followups": [],
+    "keywords": [
+      "gewone",
+      "nederlandse",
+      "notaris",
+      "verwerken",
+      "dutch",
+      "legal",
+      "regulatory"
+    ],
+    "source": "Soliman (2017) §3.4.1 notariskosten",
+    "reviewStatus": "DAR to confirm notaris network"
+  },
+  {
+    "id": "Q089",
+    "category": "Dutch Legal & Regulatory",
+    "title": "",
+    "question": "",
+    "content": "\n\nRelated question: Komen er met terugwerkende kracht wijzigingen?\nAnswer: Fiscale regels kunnen veranderen, zoals ook bij conventionele hypotheken geldt. DAR Hypotheken communiceert proactief over wijzigingen die bestaande klanten raken.",
+    "followups": [
+      {
+        "q": "Komen er met terugwerkende kracht wijzigingen?",
+        "a": "Fiscale regels kunnen veranderen, zoals ook bij conventionele hypotheken geldt. DAR Hypotheken communiceert proactief over wijzigingen die bestaande klanten raken."
+      }
+    ],
+    "keywords": [
+      "komen",
+      "terugwerkende",
+      "kracht",
+      "wijzigingen",
+      "dutch",
+      "legal",
+      "regulatory"
+    ],
+    "source": "DAR Hypotheken fiscal dialogue",
+    "reviewStatus": "DAR to confirm ruling status"
+  },
+  {
+    "id": "Q090",
+    "category": "Dutch Legal & Regulatory",
+    "title": "Hoe past de halalhypotheek binnen de overdrachtsbelasting?",
+    "question": "Hoe past de halalhypotheek binnen de overdrachtsbelasting?",
+    "content": "U betaalt overdrachtsbelasting aan het begin en aan het eind van de looptijd. Tussentijds is er geen sprake van overdrachtsbelasting. Bespreek dit verder met uw adviseur.\n\nRelated question: Betaal ik telkens overdrachtsbelasting bij elke aandelenkoop?\nAnswer: Nee, alleen aan het begin en aan het eind van de looptijd.\n\nRelated question: Kwalificeren starters nog voor de vrijstelling?\nAnswer: Voor de initiële gezamenlijke aankoop zou de startersvrijstelling (mits u aan de leeftijds- en prijsgrenzen voldoet) normaal gelden.",
+    "followups": [
+      {
+        "q": "Betaal ik telkens overdrachtsbelasting bij elke aandelenkoop?",
+        "a": "Nee, alleen aan het begin en aan het eind van de looptijd."
+      },
+      {
+        "q": "Kwalificeren starters nog voor de vrijstelling?",
+        "a": "Voor de initiële gezamenlijke aankoop zou de startersvrijstelling (mits u aan de leeftijds- en prijsgrenzen voldoet) normaal gelden."
+      }
+    ],
+    "keywords": [
+      "past",
+      "halalhypotheek",
+      "binnen",
+      "overdrachtsbelasting",
+      "betaal",
+      "telkens",
+      "elke",
+      "aandelenkoop",
+      "kwalificeren",
+      "starters",
+      "vrijstelling",
+      "dutch",
+      "legal",
+      "regulatory"
+    ],
+    "source": "DAR Hypotheken fiscal workstream",
+    "reviewStatus": "DAR to confirm overdrachtsbelasting treatment"
+  },
+  {
+    "id": "Q091",
+    "category": "Shariah Governance & About DAR",
+    "title": "Wie zit in de sharia-raad van DAR Hypotheken?",
+    "question": "Wie zit in de sharia-raad van DAR Hypotheken?",
+    "content": "DAR werkt samen met een internationaal erkende organisatie voor de halalcertificering van haar producten.\n\nRelated question: Zijn zij onafhankelijk?\nAnswer: Ja, DAR's partner opereert voor diverse islamitisch-financiele instellingen.",
+    "followups": [
+      {
+        "q": "Zijn zij onafhankelijk?",
+        "a": "Ja, DAR's partner opereert voor diverse islamitisch-financiele instellingen."
+      }
+    ],
+    "keywords": [
+      "zit",
+      "sharia",
+      "raad",
+      "dar",
+      "hypotheken",
+      "onafhankelijk",
+      "shariah",
+      "governance",
+      "about"
+    ],
+    "source": "Soliman (2016) §2.2.4 governance norms",
+    "reviewStatus": "DAR to publish final board members"
+  },
+  {
+    "id": "Q092",
+    "category": "Shariah Governance & About DAR",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "shariah",
+      "governance",
+      "about",
+      "dar"
+    ],
+    "source": "Soliman (2016) §2.2.4 fatwa & Ayub 2007",
+    "reviewStatus": "DAR to publish fatwa summary"
+  },
+  {
+    "id": "Q093",
+    "category": "Shariah Governance & About DAR",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "shariah",
+      "governance",
+      "about",
+      "dar"
+    ],
+    "source": "Soliman (2016) §2.2.4 ongoing compliance",
+    "reviewStatus": "DAR to confirm report format"
+  },
+  {
+    "id": "Q094",
+    "category": "Shariah Governance & About DAR",
+    "title": "",
+    "question": "",
+    "content": "",
+    "followups": [],
+    "keywords": [
+      "shariah",
+      "governance",
+      "about",
+      "dar"
+    ],
+    "source": "Industry best practice (Al Rayan & others)",
+    "reviewStatus": "DAR to produce public summary"
+  },
+  {
+    "id": "Q095",
+    "category": "Shariah Governance & About DAR",
+    "title": "Wie heeft uw product gecertificeerd?",
+    "question": "Wie heeft uw product gecertificeerd?",
+    "content": "De halalhypotheek van DAR Hypotheken is gecertificeerd door een internationaal erkende organisatie. Het halalcertificaat is toegankelijk op onze website.",
+    "followups": [],
+    "keywords": [
+      "product",
+      "gecertificeerd",
+      "shariah",
+      "governance",
+      "about",
+      "dar"
+    ],
+    "source": "DAR Hypotheken certification dossier",
+    "reviewStatus": "DAR to confirm audit cadence"
+  },
+  {
+    "id": "Q096",
+    "category": "Shariah Governance & About DAR",
+    "title": "Wie heeft DAR Hypotheken opgericht?",
+    "question": "Wie heeft DAR Hypotheken opgericht?",
+    "content": "DAR Hypotheken is opgericht door een team waaronder Sharif Soliman — een voormalig advocaat die het toonaangevende Nederlandse juridische standaardwerk over islamitisch financieren schreef (Islamitisch financieren: civielrechtelijke en toezichtrechtelijke mogelijkheden in Nederland, Celsus 2016). Het oprichtingsteam combineert juridische, financiële en sharia-expertise om een product te leveren dat zowel aan Nederlandse juridische standaarden als aan internationale islamitische financiële normen voldoet.\n\nRelated question: Is Sharif Soliman een autoriteit op dit gebied?\nAnswer: Het boek van Sharif is voorgewoord door Prof. mr. W.A.K. Rank (Universiteit Leiden, NautaDutilh) en wordt breed beschouwd als het fundamentele Nederlandstalige naslagwerk over islamitisch financieren. Zijn vervolgartikel uit 2017 'De halalhypotheek: een toekomstige oplossing voor de schuldenproblematiek?' gaat specifiek over het product dat DAR Hypotheken lanceert.\n\nRelated question: Wie zit er nog meer in het team?\nAnswer: Volledige teampresentaties, inclusief leiderschap, sharia-geleerden en belangrijke adviseurs, worden gepubliceerd op de website en lanceringsmaterialen van DAR Hypotheken.",
+    "followups": [
+      {
+        "q": "Is Sharif Soliman een autoriteit op dit gebied?",
+        "a": "Het boek van Sharif is voorgewoord door Prof. mr. W.A.K. Rank (Universiteit Leiden, NautaDutilh) en wordt breed beschouwd als het fundamentele Nederlandstalige naslagwerk over islamitisch financieren. Zijn vervolgartikel uit 2017 'De halalhypotheek: een toekomstige oplossing voor de schuldenproblematiek?' gaat specifiek over het product dat DAR Hypotheken lanceert."
+      },
+      {
+        "q": "Wie zit er nog meer in het team?",
+        "a": "Volledige teampresentaties, inclusief leiderschap, sharia-geleerden en belangrijke adviseurs, worden gepubliceerd op de website en lanceringsmaterialen van DAR Hypotheken."
+      }
+    ],
+    "keywords": [
+      "dar",
+      "hypotheken",
+      "opgericht",
+      "sharif",
+      "soliman",
+      "autoriteit",
+      "gebied",
+      "zit",
+      "team",
+      "shariah",
+      "governance",
+      "about"
+    ],
+    "source": "Soliman (2016) voorwoord & biographical",
+    "reviewStatus": "DAR to confirm team bios"
+  },
+  {
+    "id": "Q097",
+    "category": "Shariah Governance & About DAR",
+    "title": "",
+    "question": "",
+    "content": "\n\nRelated question: Kan DAR buiten Nederland uitbreiden?\nAnswer: De productstructuur is afgestemd op Nederlands recht, maar vertoont gelijkenissen met buurlanden. DAR Hypotheken beoogt op middellange termijn ook de stap naar het buitenland te maken.",
+    "followups": [
+      {
+        "q": "Kan DAR buiten Nederland uitbreiden?",
+        "a": "De productstructuur is afgestemd op Nederlands recht, maar vertoont gelijkenissen met buurlanden. DAR Hypotheken beoogt op middellange termijn ook de stap naar het buitenland te maken."
+      }
+    ],
+    "keywords": [
+      "dar",
+      "buiten",
+      "nederland",
+      "uitbreiden",
+      "shariah",
+      "governance",
+      "about"
+    ],
+    "source": "Soliman (2017) §5 & Rabobank 200k estimate",
+    "reviewStatus": "Ready"
+  },
+  {
+    "id": "Q098",
+    "category": "Shariah Governance & About DAR",
+    "title": "",
+    "question": "",
+    "content": "\n\nRelated question: Waarom Deutsche Bank?\nAnswer: Deutsche Bank heeft diepgaande expertise in gestructureerde islamitische financiële producten, een gevestigd Islamic window en de Europese voetafdruk om effectief te partneren met een Nederlandse instelling. Dat maakt hen een natuurlijke gesprekspartner voor opschaling van de halalhypotheek.",
+    "followups": [
+      {
+        "q": "Waarom Deutsche Bank?",
+        "a": "Deutsche Bank heeft diepgaande expertise in gestructureerde islamitische financiële producten, een gevestigd Islamic window en de Europese voetafdruk om effectief te partneren met een Nederlandse instelling. Dat maakt hen een natuurlijke gesprekspartner voor opschaling van de halalhypotheek."
+      }
+    ],
+    "keywords": [
+      "waarom",
+      "deutsche",
+      "bank",
+      "shariah",
+      "governance",
+      "about",
+      "dar"
+    ],
+    "source": "DAR Hypotheken partnership discussions",
+    "reviewStatus": "DAR to finalise partner announcement"
+  },
+  {
+    "id": "Q099",
+    "category": "Shariah Governance & About DAR",
+    "title": "Wanneer gaat DAR Hypotheken live of accepteert u aanvragen?",
+    "question": "Wanneer gaat DAR Hypotheken live of accepteert u aanvragen?",
+    "content": "DAR Hypotheken bevindt zich in de laatste fase. De officiële lanceringsdatum wordt op de website van DAR Hypotheken gepubliceerd. Geïnteresseerde toekomstige klanten kunnen zich al registreren voor vroegtijdige melding.\n\nRelated question: Kan ik mij alvast aanmelden?\nAnswer: Ja. Voorregistratie is beschikbaar via de website van DAR Hypotheken, waar u uw interesse kunt aangeven en als prioriteit wordt geïnformeerd zodra aanvragen openen.\n\nRelated question: Komt er een wachtlijst?\nAnswer: Gezien de verwachte vraag worden vroege aanvragers mogelijk volgorde van binnenkomst behandeld binnen de initiële fundingcapaciteit. Voorregistratie helpt uw plek in de wachtrij te reserveren.",
+    "followups": [
+      {
+        "q": "Kan ik mij alvast aanmelden?",
+        "a": "Ja. Voorregistratie is beschikbaar via de website van DAR Hypotheken, waar u uw interesse kunt aangeven en als prioriteit wordt geïnformeerd zodra aanvragen openen."
+      },
+      {
+        "q": "Komt er een wachtlijst?",
+        "a": "Gezien de verwachte vraag worden vroege aanvragers mogelijk volgorde van binnenkomst behandeld binnen de initiële fundingcapaciteit. Voorregistratie helpt uw plek in de wachtrij te reserveren."
+      }
+    ],
+    "keywords": [
+      "wanneer",
+      "gaat",
+      "dar",
+      "hypotheken",
+      "live",
+      "accepteert",
+      "aanvragen",
+      "mij",
+      "alvast",
+      "aanmelden",
+      "komt",
+      "wachtlijst",
+      "shariah",
+      "governance",
+      "about"
+    ],
+    "source": "DAR Hypotheken timeline",
+    "reviewStatus": "DAR to publish official launch date"
+  },
+  {
+    "id": "Q100",
+    "category": "Shariah Governance & About DAR",
+    "title": "Hoe blijf ik op de hoogte of neem ik contact op?",
+    "question": "Hoe blijf ik op de hoogte of neem ik contact op?",
+    "content": "Bezoek www.darhypotheken.nl om u voor te registreren, updates te volgen en het laatste materiaal te lezen. U kunt het team ook rechtstreeks bereiken via het contactformulier op de website voor persoonlijke vragen, partnerschapsverzoeken of media-aanvragen. Updates worden ook gedeeld via de nieuwsbrief van DAR Hypotheken voor geregistreerde gebruikers.\n\nRelated question: Is er een klantenservice?\nAnswer: Een klantenservice is operationeel vanaf de productlancering. In de pre-lancering is het contactformulier op de website de snelste manier om het team te bereiken.\n\nRelated question: Kan ik het team persoonlijk ontmoeten?\nAnswer: Persoonlijke ontmoetingen worden gepland voor potentiële partners, institutionele beleggers en media. Voor individuele potentiële klanten zijn persoonlijke consulten beschikbaar vanaf de productlancering.",
+    "followups": [
+      {
+        "q": "Is er een klantenservice?",
+        "a": "Een klantenservice is operationeel vanaf de productlancering. In de pre-lancering is het contactformulier op de website de snelste manier om het team te bereiken."
+      },
+      {
+        "q": "Kan ik het team persoonlijk ontmoeten?",
+        "a": "Persoonlijke ontmoetingen worden gepland voor potentiële partners, institutionele beleggers en media. Voor individuele potentiële klanten zijn persoonlijke consulten beschikbaar vanaf de productlancering."
+      }
+    ],
+    "keywords": [
+      "blijf",
+      "hoogte",
+      "neem",
+      "contact",
+      "klantenservice",
+      "team",
+      "persoonlijk",
+      "ontmoeten",
+      "shariah",
+      "governance",
+      "about",
+      "dar"
+    ],
+    "source": "DAR Hypotheken website & team",
+    "reviewStatus": "Ready"
   }
 ]

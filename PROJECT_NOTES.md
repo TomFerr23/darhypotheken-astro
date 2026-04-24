@@ -190,10 +190,27 @@ This means the form never breaks for users even if the sheet is down.
 
 ## Pending / future
 
-- **Chatbot LLM integration** — `/api/chat` currently returns the
-  "coming soon" message. Wire it to Anthropic's API when ready.
-  Knowledge base lives in `src/data/knowledge/chunks-{nl,en}.json`
-  and `src/data/faq/faq-{nl,en}.json`.
+- **Chatbot LLM** — `/api/chat` is wired to Anthropic
+  (`claude-haiku-4-5-20251001`). `ANTHROPIC_API_KEY` is set in Vercel.
+  The knowledge base is regenerated from
+  `~/Downloads/Dar_Hypotheken_QA_Knowledge_Base - input Sharif.xlsx`
+  via `scripts/import-knowledge-base.mjs`; re-run it whenever Sharif
+  ships an updated xlsx. Outputs:
+   - `src/data/knowledge/chunks-{nl,en}.json` — 100 chunks per locale
+     (one per Q001–Q100). Each chunk carries the main Q/A plus both
+     follow-up Q/A pairs concatenated into `content`, auto-extracted
+     keywords, `category`, `source`, `reviewStatus`.
+   - `src/data/faq/faq-{nl,en}.json` — flat list of every Ready row's
+     main + follow-up Q/A pairs, for instant answers via the
+     `matchFaq()` fuzzy matcher before we hit Claude.
+   - `src/data/faq/hot-faqs-{nl,en}.json` — the 4 questions shown as
+     home-screen preview chips + in-chat suggestion chips (currently
+     Q037, Q042, Q050, Q051). Edit `HOT_FAQ_IDS` in the import script
+     to change the picks.
+  Retrieval in `src/lib/chat/knowledge.ts` scores: question ×5,
+  follow-up questions ×3 each, keywords ×3, title ×2, content ×1.
+  System prompt in `src/lib/chat/system-prompt.ts` tells Claude to
+  caveat answers when a chunk's `reviewStatus` is not "Ready".
 - **Blog restore** when content is ready: rename `_blog` folders back
   to `blog` and uncomment the two blocks in `Footer.astro` +
   `HomePage.astro`.

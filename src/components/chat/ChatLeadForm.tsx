@@ -6,7 +6,7 @@ import type { LeadApiResponse } from "@/lib/chat/types";
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export default function ChatLeadForm() {
-  const { setLead, locale, setView, pendingFaqIndex } = useChat();
+  const { setLead, locale, setView, pendingFaqId } = useChat();
   const t = (key: string) => chatT(locale, key);
 
   const [name, setName] = useState("");
@@ -65,7 +65,7 @@ export default function ChatLeadForm() {
           email: email.trim(),
           leadId: data.leadId,
         });
-        setView(pendingFaqIndex !== null ? "answer" : "conversation");
+        setView(pendingFaqId !== null ? "answer" : "conversation");
       } else {
         setApiError(data.error || t("errorGeneric"));
       }

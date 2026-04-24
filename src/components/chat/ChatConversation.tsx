@@ -2,15 +2,15 @@ import { useEffect, useRef, useState, type FormEvent } from "react";
 import { useChat } from "./ChatContext";
 import { chatT } from "./chatTranslations";
 import type { ChatApiResponse, ChatMessage } from "@/lib/chat/types";
-import faqNl from "@/data/faq/faq-nl.json";
-import faqEn from "@/data/faq/faq-en.json";
+import hotFaqsNl from "@/data/faq/hot-faqs-nl.json";
+import hotFaqsEn from "@/data/faq/hot-faqs-en.json";
 
-interface FaqEntry {
-  patterns: string[];
+interface HotFaq {
+  id: string;
+  question: string;
   answer: string;
+  category: string;
 }
-
-const QUICK_FAQ_COUNT = 4;
 
 export default function ChatConversation() {
   const {
@@ -31,8 +31,7 @@ export default function ChatConversation() {
   const [hasSeededWelcome, setHasSeededWelcome] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const faq = (locale === "en" ? faqEn : faqNl) as FaqEntry[];
-  const quickFaqs = faq.slice(0, QUICK_FAQ_COUNT);
+  const quickFaqs = (locale === "en" ? hotFaqsEn : hotFaqsNl) as HotFaq[];
 
   // Seed a welcome message on first render so the chat isn't empty
   useEffect(() => {
@@ -127,13 +126,12 @@ export default function ChatConversation() {
   };
 
   // Tap on a quick FAQ chip — inserts local answer, no API call
-  const handleQuickFaq = (item: FaqEntry) => {
+  const handleQuickFaq = (item: HotFaq) => {
     if (isLoading) return;
-    const question = capitalise(item.patterns[0]);
     addMessage({
       id: `user-${Date.now()}`,
       role: "user",
-      content: question,
+      content: item.question,
       timestamp: Date.now(),
     });
     window.setTimeout(() => {
@@ -171,14 +169,14 @@ export default function ChatConversation() {
 
         {showQuickFaqs && (
           <div className="mt-1 flex flex-wrap gap-2">
-            {quickFaqs.map((item, idx) => (
+            {quickFaqs.map((item) => (
               <button
-                key={idx}
+                key={item.id}
                 onClick={() => handleQuickFaq(item)}
                 disabled={isLoading}
                 className="rounded-full border border-[#cbd5e1] bg-white px-3 py-1.5 text-xs font-medium text-[#1c3349] transition-colors hover:border-[#80C33F] hover:bg-[#80C33F]/10 disabled:cursor-not-allowed disabled:opacity-50"
               >
-                {capitalise(item.patterns[0])}
+                {item.question}
               </button>
             ))}
           </div>
@@ -279,7 +277,3 @@ function TypingDots() {
   );
 }
 
-function capitalise(s: string): string {
-  if (!s) return "";
-  return s.charAt(0).toUpperCase() + s.slice(1);
-}

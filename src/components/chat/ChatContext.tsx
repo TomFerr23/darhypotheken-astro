@@ -18,7 +18,7 @@ interface ChatContextValue {
   messages: ChatMessage[];
   lead: LeadInfo | null;
   qualifier: QualifierAnswers;
-  pendingFaqIndex: number | null;
+  pendingFaqId: string | null;
   isLoading: boolean;
   isAvailable: boolean;
   locale: string;
@@ -27,7 +27,7 @@ interface ChatContextValue {
   setLead: (lead: LeadInfo) => void;
   updateQualifier: (patch: Partial<QualifierAnswers>) => void;
   resetQualifier: () => void;
-  setPendingFaqIndex: (idx: number | null) => void;
+  setPendingFaqId: (id: string | null) => void;
   addMessage: (message: ChatMessage) => void;
   replaceTypingMessage: (message: ChatMessage) => void;
   setLoading: (loading: boolean) => void;
@@ -42,7 +42,7 @@ export function ChatProvider({ children, locale = "nl" }: { children: ReactNode;
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [lead, setLeadState] = useState<LeadInfo | null>(null);
   const [qualifier, setQualifier] = useState<QualifierAnswers>({});
-  const [pendingFaqIndex, setPendingFaqIndexState] = useState<number | null>(null);
+  const [pendingFaqId, setPendingFaqIdState] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isAvailable, setIsAvailable] = useState(true);
 
@@ -59,8 +59,8 @@ export function ChatProvider({ children, locale = "nl" }: { children: ReactNode;
 
   const resetQualifier = useCallback(() => setQualifier({}), []);
 
-  const setPendingFaqIndex = useCallback((idx: number | null) => {
-    setPendingFaqIndexState(idx);
+  const setPendingFaqId = useCallback((id: string | null) => {
+    setPendingFaqIdState(id);
   }, []);
 
   const addMessage = useCallback((message: ChatMessage) => {
@@ -95,7 +95,7 @@ export function ChatProvider({ children, locale = "nl" }: { children: ReactNode;
         messages,
         lead,
         qualifier,
-        pendingFaqIndex,
+        pendingFaqId,
         isLoading,
         isAvailable,
         locale,
@@ -104,7 +104,7 @@ export function ChatProvider({ children, locale = "nl" }: { children: ReactNode;
         setLead,
         updateQualifier,
         resetQualifier,
-        setPendingFaqIndex,
+        setPendingFaqId,
         addMessage,
         replaceTypingMessage,
         setLoading,
