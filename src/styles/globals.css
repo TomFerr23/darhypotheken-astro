@@ -58,6 +58,18 @@ body {
   scroll-margin-top: 80px;
 }
 
+/* iOS Safari zooms in on focused inputs when their font-size is below
+   16px. Force >=16px on mobile for every form control so the viewport
+   stays steady when the user taps into a field. Desktop styling
+   (text-sm etc.) is unaffected. */
+@media (max-width: 767px) {
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+  }
+}
+
 /* Cloud animations — use calc to stay within viewport bounds */
 @keyframes cloud-move-right {
   0% { transform: translateX(-100%); }

@@ -221,6 +221,8 @@ export default function ChatConversation() {
           onChange={(e) => setDraft(e.target.value)}
           placeholder={t("inputPlaceholder")}
           disabled={isLoading || !isAvailable}
+          enterKeyHint="send"
+          autoComplete="off"
           className="flex-1 rounded-full border border-[#cbd5e1] bg-white px-4 py-2 text-sm text-[#1c3349] placeholder:text-[#94a3b8] focus:border-[#060097] focus:outline-none focus:ring-1 focus:ring-[#060097] disabled:opacity-60"
         />
         <button
