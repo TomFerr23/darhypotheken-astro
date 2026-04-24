@@ -26,10 +26,10 @@ const translations: Record<string, Record<string, string>> = {
       "Hoi! Stel gerust uw vraag over onze halal hypotheek, of tik op een van de onderwerpen hieronder.",
     conversationWelcomeNamed:
       "Hoi {name}! Stel gerust uw vraag over onze halal hypotheek, of tik op een van de onderwerpen hieronder.",
-    scheduleCallTitle: "Plan een terugbelafspraak",
+    scheduleCallTitle: "Vraag persoonlijk contact aan",
     scheduleCallSub: "Beantwoord 6 korte vragen zodat de adviseur zich kan voorbereiden.",
     // Lead form
-    leadFormIntro: "Laat uw contactgegevens achter en wij bellen u binnen 24 uur terug. Het is gratis en vrijblijvend.",
+    leadFormIntro: "Laat uw contactgegevens achter en wij nemen binnen 24 uur per e-mail contact met u op. Gratis en vrijblijvend.",
     labelName: "Naam",
     labelEmail: "E-mail",
     labelPhone: "Telefoon",
@@ -49,7 +49,7 @@ const translations: Record<string, Record<string, string>> = {
     rateLimited: "U stuurt te veel berichten. Wacht even en probeer het opnieuw.",
     poweredBy: "Powered by DAR Hypotheken",
     consentLabel:
-      "Ik ga ermee akkoord dat DAR mijn gegevens verwerkt en per e-mail of telefoon contact met mij opneemt.",
+      "Ik ga ermee akkoord dat DAR mijn gegevens verwerkt en per e-mail contact met mij opneemt.",
     errorConsentRequired: "U moet akkoord gaan om door te gaan.",
     // Qualifier
     qualifierIntro: "Een paar korte vragen zodat de adviseur zich kan voorbereiden.",
@@ -116,9 +116,9 @@ const translations: Record<string, Record<string, string>> = {
       "Hi! Ask anything about our halal mortgage, or tap one of the topics below.",
     conversationWelcomeNamed:
       "Hi {name}! Ask anything about our halal mortgage, or tap one of the topics below.",
-    scheduleCallTitle: "Schedule a call back",
+    scheduleCallTitle: "Request personal contact",
     scheduleCallSub: "Answer 6 short questions so the advisor can prepare.",
-    leadFormIntro: "Leave your contact details and we'll call you back within 24 hours. Free and without obligation.",
+    leadFormIntro: "Leave your contact details and we'll get back to you by email within 24 hours. Free and without obligation.",
     labelName: "Name",
     labelEmail: "Email",
     labelPhone: "Phone",
@@ -138,7 +138,7 @@ const translations: Record<string, Record<string, string>> = {
     rateLimited: "You are sending too many messages. Please wait and try again.",
     poweredBy: "Powered by DAR Hypotheken",
     consentLabel:
-      "I agree that DAR may process my data and contact me by email or phone.",
+      "I agree that DAR may process my data and contact me by email.",
     errorConsentRequired: "You must agree to continue.",
     qualifierIntro: "A few quick questions so your advisor can prepare.",
     qualifierProgress: "Question {current} of {total}",
