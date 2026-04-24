@@ -557,20 +557,26 @@ export default function AanmeldenForm({ locale }: Props) {
             {t("sectionContact")}
           </h2>
           <div className="mt-6 space-y-5">
-            {/* Combined Consent — single checkbox covering both statements */}
-            <label className="flex items-start gap-3 cursor-pointer">
-              <input
-                type="checkbox"
-                checked={form.dataConsent && form.emailConsent}
-                onChange={(e) => {
-                  updateField("dataConsent", e.target.checked);
-                  updateField("emailConsent", e.target.checked);
-                }}
-                className="mt-1 h-5 w-5 shrink-0 rounded border-gray-300 text-[#060097] accent-[#060097]"
-              />
-              <span className="text-sm text-dar-slate leading-relaxed space-y-3 block">
-                <span className="block">{t("emailConsent")}</span>
-                <span className="block">{t("dataConsent")}</span>
+            {/* Combined consent — single checkbox covers both statements, but
+                visually sits next to the active-agreement "I agree…" line. The
+                awareness notice above is indented to match the checkbox column. */}
+            <label className="flex flex-col gap-3 cursor-pointer">
+              <span className="block pl-8 text-sm text-dar-slate leading-relaxed">
+                {t("dataConsent")}
+              </span>
+              <span className="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  checked={form.dataConsent && form.emailConsent}
+                  onChange={(e) => {
+                    updateField("dataConsent", e.target.checked);
+                    updateField("emailConsent", e.target.checked);
+                  }}
+                  className="mt-1 h-5 w-5 shrink-0 rounded border-gray-300 text-[#060097] accent-[#060097]"
+                />
+                <span className="block text-sm text-dar-slate leading-relaxed">
+                  {t("emailConsent")}
+                </span>
               </span>
             </label>
             {errors.dataConsent && (
