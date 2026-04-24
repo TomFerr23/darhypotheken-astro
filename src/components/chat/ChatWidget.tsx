@@ -83,7 +83,7 @@ function ChatFab() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 20, scale: 0.95 }}
               transition={{ duration: 0.2, ease: "easeOut" }}
-              className="fixed bottom-24 right-6 z-[60] flex w-[400px] h-[640px] max-h-[calc(100dvh-120px)] max-md:inset-x-0 max-md:bottom-0 max-md:right-auto max-md:w-full max-md:h-[88svh] max-md:max-h-[88svh]"
+              className="fixed bottom-24 right-6 z-[60] flex w-[400px] h-[640px] max-h-[calc(100dvh-120px)] max-md:inset-x-0 max-md:bottom-0 max-md:right-auto max-md:w-full max-md:h-[100dvh] max-md:max-h-[100dvh]"
             >
               <ChatPanel />
             </motion.div>
