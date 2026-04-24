@@ -111,11 +111,22 @@ function scoreChunk(query: string, chunk: KnowledgeChunk): number {
 }
 
 /**
+ * Minimum score required for a chunk to be considered relevant.
+ * Tuned so that a single random keyword match doesn't drag in unrelated
+ * chunks. One main-question match (×5) clears it, as does one follow-up
+ * match (×3). Pure keyword overlap needs at least two token hits.
+ */
+const MIN_RELEVANCE_SCORE = 3;
+
+/**
  * Retrieve the most relevant knowledge chunks for a query.
  *
- * We keep this intentionally narrow (default 3 chunks) because each chunk
- * now carries a main answer + follow-up Q/A pairs (~1.2k chars), and Haiku
- * has a 500-token output budget.
+ * Returns [] (empty) when nothing clears MIN_RELEVANCE_SCORE — the system
+ * prompt then instructs the model to honestly say it lacks that
+ * information rather than hallucinate from general knowledge.
+ *
+ * Default cap of 3 chunks because each one now carries main + follow-up
+ * Q/A pairs (~1.2k chars) and Haiku has a 500-token output budget.
  */
 export function retrieveRelevantChunks(
   query: string,
@@ -126,16 +137,13 @@ export function retrieveRelevantChunks(
 
   const scored = chunks
     .map((chunk) => ({ chunk, score: scoreChunk(query, chunk) }))
-    .filter(({ score }) => score > 0)
+    .filter(({ score }) => score >= MIN_RELEVANCE_SCORE)
     .sort((a, b) => b.score - a.score)
     .slice(0, maxChunks);
 
-  // Fallback: if nothing matched, seed with the first couple of chunks so
-  // the model at least has *something* to ground on.
-  if (scored.length === 0) {
-    return chunks.slice(0, Math.min(2, chunks.length));
-  }
-
+  // Intentionally NO fallback to "first few chunks" — we'd rather the
+  // assistant say "I don't have that information" than invent an answer
+  // from unrelated context.
   return scored.map(({ chunk }) => chunk);
 }
 

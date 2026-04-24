@@ -35,6 +35,22 @@ export function buildSystemPrompt(
 ): string {
   const p = PROMPTS[locale];
 
+  const fallbackNl = `Als het KENNISBLOK hieronder leeg is of het antwoord niet bevat, zeg dan letterlijk dat u die specifieke informatie niet heeft en verwijs naar info@darhypotheken.nl of 020-210 1656. Verzin nooit een antwoord.`;
+  const fallbackEn = `If the KNOWLEDGE BASE below is empty or does not contain the answer, say so explicitly and refer the user to info@darhypotheken.nl or 020-210 1656. Never invent an answer.`;
+  const fallback = locale === "nl" ? fallbackNl : fallbackEn;
+
+  const groundingNl = `STRIKTE GRONDINGSREGELS:
+- Baseer uw antwoord UITSLUITEND op het KENNISBLOK hieronder. Gebruik GEEN algemene kennis of aannames.
+- Kopieer de feiten; parafraseer ze in vloeiend Nederlands, maar voeg geen eigen feiten toe.
+- Als het KENNISBLOK niet ingaat op de vraag, zeg dat eerlijk en vraag de gebruiker om contact op te nemen.
+- Noem expliciet dat een beleid "nog wordt afgerond" wanneer een blok een "Review status"-opmerking bevat.`;
+  const groundingEn = `STRICT GROUNDING RULES:
+- Base your answer SOLELY on the KNOWLEDGE BASE below. Do NOT use general knowledge or assumptions.
+- Restate the facts from the context; rephrase them in fluent English but add no new facts.
+- If the KNOWLEDGE BASE does not cover the question, say so honestly and ask the user to get in touch.
+- Explicitly say a policy is "still being finalised" when a chunk carries a "Review status" note.`;
+  const grounding = locale === "nl" ? groundingNl : groundingEn;
+
   return `${p.role}
 
 ${p.personality}
@@ -43,10 +59,11 @@ ${p.language}
 
 ${p.boundaries}
 
+${grounding}
+
 KNOWLEDGE BASE:
-Use the following information to answer questions. Only use this information — do not make up facts.
 
-${context}
+${context || "(no relevant context available)"}
 
-If the user's question is not covered by the knowledge base, politely say you don't have that information and suggest contacting DAR Hypotheken directly.`;
+${fallback}`;
 }

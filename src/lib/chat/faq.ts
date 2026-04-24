@@ -60,12 +60,10 @@ function extractKeywords(text: string, locale: "nl" | "en"): string[] {
  * Calculate keyword overlap ratio between user message keywords and pattern keywords.
  * Returns value between 0 and 1.
  */
-function keywordOverlap(
+function keywordHits(
   messageKeywords: string[],
   patternKeywords: string[],
 ): number {
-  if (patternKeywords.length === 0) return 0;
-
   let matches = 0;
   for (const pk of patternKeywords) {
     for (const mk of messageKeywords) {
@@ -76,15 +74,20 @@ function keywordOverlap(
       }
     }
   }
-
-  return matches / patternKeywords.length;
+  return matches;
 }
 
 /**
  * Match a user message against the FAQ database.
- * Returns the pre-compiled answer if a match is found (>= 60% keyword overlap),
- * or null if no match.
+ *
+ * Requires BOTH a minimum absolute token-hit count (so a single
+ * coincidental word can't trigger a match) AND a minimum overlap ratio.
+ * When no pattern clears both bars we return null, and the chat endpoint
+ * falls through to the grounded Claude path.
  */
+const MIN_TOKEN_HITS = 2;
+const MIN_OVERLAP_RATIO = 0.7;
+
 export function matchFaq(
   message: string,
   locale: "nl" | "en",
@@ -101,9 +104,16 @@ export function matchFaq(
   for (const entry of entries) {
     for (const pattern of entry.patterns) {
       const patternKeywords = extractKeywords(pattern, locale);
-      const overlap = keywordOverlap(messageKeywords, patternKeywords);
+      if (patternKeywords.length === 0) continue;
 
-      if (overlap >= 0.6 && overlap > bestScore) {
+      const hits = keywordHits(messageKeywords, patternKeywords);
+      const overlap = hits / patternKeywords.length;
+
+      if (
+        hits >= MIN_TOKEN_HITS &&
+        overlap >= MIN_OVERLAP_RATIO &&
+        overlap > bestScore
+      ) {
         bestScore = overlap;
         bestAnswer = entry.answer;
       }
