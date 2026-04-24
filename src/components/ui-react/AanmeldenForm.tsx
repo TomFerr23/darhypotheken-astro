@@ -569,8 +569,8 @@ export default function AanmeldenForm({ locale }: Props) {
                 className="mt-1 h-5 w-5 shrink-0 rounded border-gray-300 text-[#060097] accent-[#060097]"
               />
               <span className="text-sm text-dar-slate leading-relaxed space-y-3 block">
-                <span className="block">{t("dataConsent")}</span>
                 <span className="block">{t("emailConsent")}</span>
+                <span className="block">{t("dataConsent")}</span>
               </span>
             </label>
             {errors.dataConsent && (
