@@ -19,8 +19,8 @@ const translations: Record<string, Record<string, string>> = {
     tabChat: "Gesprek",
     // Answer view
     answerLabel: "Antwoord",
-    answerContinue: "Stel een vervolgvraag",
-    answerContinueHint: "U kunt meteen verder chatten met onze assistent.",
+    answerContinue: "Verder chatten",
+    answerContinueHint: "Stel gerust nog meer vragen over onze halal hypotheek.",
     // Conversation view
     conversationWelcome:
       "Hoi! Stel gerust uw vraag over onze halal hypotheek, of tik op een van de onderwerpen hieronder.",
@@ -110,8 +110,8 @@ const translations: Record<string, Record<string, string>> = {
     tabHome: "Home",
     tabChat: "Chat",
     answerLabel: "Answer",
-    answerContinue: "Ask a follow-up",
-    answerContinueHint: "Keep chatting with our assistant.",
+    answerContinue: "Keep chatting",
+    answerContinueHint: "Ask anything else about our halal mortgage.",
     conversationWelcome:
       "Hi! Ask anything about our halal mortgage, or tap one of the topics below.",
     conversationWelcomeNamed:
