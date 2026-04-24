@@ -186,7 +186,7 @@ export default function ChatQualifier() {
   }
 
   return (
-    <div className="flex flex-1 flex-col overflow-y-auto bg-[#f4f6fa] px-5 pb-6 pt-5">
+    <div className="flex flex-1 flex-col overflow-y-auto overscroll-contain bg-[#f4f6fa] px-5 pb-6 pt-5">
       {/* Progress */}
       <div className="mb-4">
         <div className="mb-2 flex items-center justify-between text-xs text-[#64748b]">

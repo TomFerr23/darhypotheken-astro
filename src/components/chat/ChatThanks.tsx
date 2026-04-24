@@ -9,7 +9,7 @@ export default function ChatThanks() {
   const email = t("thanksEmailAddress");
 
   return (
-    <div className="flex flex-1 flex-col items-center justify-center overflow-y-auto bg-[#f4f6fa] px-6 py-10 text-center">
+    <div className="flex flex-1 flex-col items-center justify-center overflow-y-auto overscroll-contain bg-[#f4f6fa] px-6 py-10 text-center">
       <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-[#80C33F]/15">
         <svg
           xmlns="http://www.w3.org/2000/svg"

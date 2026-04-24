@@ -161,7 +161,7 @@ export default function ChatConversation() {
       {/* Message list */}
       <div
         ref={scrollRef}
-        className="flex flex-1 flex-col gap-3 overflow-y-auto px-4 py-4"
+        className="flex flex-1 flex-col gap-3 overflow-y-auto overscroll-contain px-4 py-4"
       >
         {messages.map((m) => (
           <MessageBubble key={m.id} message={m} />

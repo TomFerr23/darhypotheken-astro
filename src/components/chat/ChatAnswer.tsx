@@ -51,7 +51,7 @@ export default function ChatAnswer() {
   };
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col overflow-y-auto bg-[#f4f6fa] px-5 pb-6 pt-5">
+    <div className="flex min-h-0 flex-1 flex-col overflow-y-auto overscroll-contain bg-[#f4f6fa] px-5 pb-6 pt-5">
       <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-[#64748b]">
         {t("answerLabel")}
       </p>

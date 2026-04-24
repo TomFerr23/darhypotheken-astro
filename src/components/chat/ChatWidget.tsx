@@ -1,9 +1,41 @@
+import { useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { ChatProvider, useChat } from "./ChatContext";
 import ChatPanel from "./ChatPanel";
 
+/**
+ * Lock the underlying page from scrolling while the sheet is open on mobile.
+ * Desktop keeps normal scroll since the chat is a floating card and the user
+ * may want to reference the page content behind it.
+ *
+ * Why both `overflow: hidden` and `touch-action: none`:
+ *   iOS Safari can still scroll the body when only `overflow: hidden` is set
+ *   if a rubber-band gesture is in flight. Pairing them kills that cleanly.
+ */
+function useBodyScrollLock(active: boolean) {
+  useEffect(() => {
+    if (!active) return;
+    // Only lock on mobile (<= 767px to match the sheet breakpoint)
+    const mq = window.matchMedia("(max-width: 767px)");
+    if (!mq.matches) return;
+
+    const body = document.body;
+    const prevOverflow = body.style.overflow;
+    const prevTouchAction = body.style.touchAction;
+
+    body.style.overflow = "hidden";
+    body.style.touchAction = "none";
+
+    return () => {
+      body.style.overflow = prevOverflow;
+      body.style.touchAction = prevTouchAction;
+    };
+  }, [active]);
+}
+
 function ChatFab() {
   const { isOpen, toggleOpen } = useChat();
+  useBodyScrollLock(isOpen);
 
   return (
     <>
@@ -29,13 +61,16 @@ function ChatFab() {
       <AnimatePresence>
         {isOpen && (
           <>
-            {/* Scrim — only on mobile, fades in behind the sheet, tap to dismiss */}
+            {/* Scrim — only on mobile. Fades in behind the sheet, tap to
+                dismiss. touch-action: none on the scrim makes sure vertical
+                drags on it don't leak to the page underneath. */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
               onClick={toggleOpen}
+              style={{ touchAction: "none" }}
               className="fixed inset-0 z-[55] bg-black/40 md:hidden"
               aria-hidden
             />

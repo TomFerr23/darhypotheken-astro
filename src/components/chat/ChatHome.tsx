@@ -27,7 +27,7 @@ export default function ChatHome() {
   };
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col overflow-y-auto bg-[#f4f6fa]">
+    <div className="flex min-h-0 flex-1 flex-col overflow-y-auto overscroll-contain bg-[#f4f6fa]">
       {/* Hero */}
       <div className="shrink-0 bg-[#0f2336] px-5 pb-7 pt-5 text-white">
         <div className="flex items-start justify-between gap-3">
